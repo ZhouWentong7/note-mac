@@ -160,13 +160,23 @@
               "icon": "calendar-with-checkmark",
               "title": "Calendar"
             }
+          },
+          {
+            "id": "d5db7e7cbf756fe1",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -182,11 +192,50 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "352016358fb19a13",
+  "floating": {
+    "id": "eff0b68b2d1972dd",
+    "type": "floating",
+    "children": [
+      {
+        "id": "db22fc1dad950c2c",
+        "type": "window",
+        "children": [
+          {
+            "id": "b02d15ab5e4e4474",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "b948d728027afcb9",
+                "type": "leaf",
+                "state": {
+                  "type": "webviewer",
+                  "state": {
+                    "url": "https://publish.obsidian.md/git-doc/Start+here",
+                    "title": "Start here - Git Documentation - Obsidian Publish",
+                    "mode": "webview"
+                  },
+                  "icon": "globe-2",
+                  "title": "Start here - Git Documentation - Obsidian Publish"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 223,
+        "y": 38,
+        "width": 1024,
+        "height": 800,
+        "maximize": false,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "d7cc4a277046e281",
   "lastOpenFiles": [
+    "技术学习/01-ReactNative项目-Reddit克隆/00-学习目录.md",
     "拓展学习",
     "技术学习/11-目标检测YOLO-小土堆",
-    "技术学习/01-ReactNative项目-Reddit克隆/00-学习目录.md",
     "技术学习/01-ReactNative项目-Reddit克隆",
     "技术学习/02-推荐系统（工业）/03-概要03：推荐系统的AB测试.md",
     "技术学习/02-推荐系统（工业）/attachments/holdhout.png",
