@@ -1,0 +1,6 @@
+{
+  "attachmentFolderPath": "./attachments",
+  "showUnsupportedFiles": false,
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "current"
+}
