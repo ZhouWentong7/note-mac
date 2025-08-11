@@ -1,4 +1,8 @@
 {
-  "cssTheme": "Atom",
-  "baseFontSize": 21
+  "cssTheme": "Things",
+  "baseFontSize": 21,
+  "theme": "system",
+  "accentColor": "#5ca6f5",
+  "nativeMenus": false,
+  "translucency": true
 }
