@@ -11,14 +11,10 @@
             "id": "866e6b3038420bb1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "日常生活/吐槽.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "吐槽"
+              "title": "新标签页"
             }
           }
         ]
@@ -94,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "日常生活/吐槽.md",
+                "file": "技术学习/11-目标检测YOLO-小土堆/02-目标检测常用数据集.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +100,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "吐槽 的反向链接列表"
+              "title": "02-目标检测常用数据集 的反向链接列表"
             }
           },
           {
@@ -113,12 +109,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "日常生活/吐槽.md",
+                "file": "技术学习/11-目标检测YOLO-小土堆/02-目标检测常用数据集.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "吐槽 的出链列表"
+              "title": "02-目标检测常用数据集 的出链列表"
             }
           },
           {
@@ -142,13 +138,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "日常生活/吐槽.md",
+                "file": "技术学习/11-目标检测YOLO-小土堆/02-目标检测常用数据集.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "吐槽 的大纲"
+              "title": "02-目标检测常用数据集 的大纲"
             }
           },
           {
@@ -192,84 +188,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "floating": {
-    "id": "eff0b68b2d1972dd",
-    "type": "floating",
-    "children": [
-      {
-        "id": "a0e2ef2595fef0ed",
-        "type": "window",
-        "children": [
-          {
-            "id": "edf9dbafda28809f",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "f76b79842c7ed363",
-                "type": "leaf",
-                "state": {
-                  "type": "webviewer",
-                  "state": {
-                    "url": "https://github.com/AnubisNekhet/AnuPpuccin/blob/main/snippets/extended-colorschemes.css",
-                    "title": "AnuPpuccin/snippets/extended-colorschemes.css at main · AnubisNekhet/AnuPpuccin · GitHub",
-                    "mode": "webview"
-                  },
-                  "icon": "globe-2",
-                  "title": "AnuPpuccin/snippets/extended-colorschemes.css at main · AnubisNekhet/AnuPpuccin · GitHub"
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 223,
-        "y": 38,
-        "width": 1024,
-        "height": 800,
-        "maximize": false,
-        "zoom": 0
-      },
-      {
-        "id": "2d0086f0dfbd1fb1",
-        "type": "window",
-        "children": [
-          {
-            "id": "43141964d5b90efb",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "b23ba05e8b48a9d9",
-                "type": "leaf",
-                "state": {
-                  "type": "webviewer",
-                  "state": {
-                    "url": "https://github.com/AnubisNekhet/AnuPpuccin",
-                    "title": "GitHub - AnubisNekhet/AnuPpuccin: Personal theme for Obsidian",
-                    "mode": "webview"
-                  },
-                  "icon": "globe-2",
-                  "title": "GitHub - AnubisNekhet/AnuPpuccin: Personal theme for Obsidian"
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 223,
-        "y": 38,
-        "width": 1024,
-        "height": 800,
-        "maximize": false,
-        "zoom": 0
-      }
-    ]
-  },
   "active": "866e6b3038420bb1",
   "lastOpenFiles": [
-    "日常生活/直播碎碎念.md",
-    "日常生活/吐槽.md",
-    "技术学习/11-目标检测YOLO-小土堆/01-什么是目标检测.md",
+    "技术学习/11-目标检测YOLO-小土堆/02-目标检测常用数据集.md",
     "技术学习/11-目标检测YOLO-小土堆/00-Dection学习目录.md",
+    "技术学习/11-目标检测YOLO-小土堆/01-什么是目标检测.md",
+    "技术学习/11-目标检测YOLO-小土堆/attachments/target-1.png",
+    "技术学习/11-目标检测YOLO-小土堆/attachments",
+    "研究相关/论文思路.md",
+    "日常生活/吐槽.md",
+    "日常生活/直播碎碎念.md",
     "技术学习/01-ReactNative项目-Reddit克隆/00-ReactNavi学习目录.md",
     "技术学习/02-推荐系统（工业）/00-学习目录.md",
     "未命名",
@@ -288,10 +216,8 @@
     "技术学习/02-推荐系统（工业）/02-概要02：推荐系统的链路.md",
     "技术学习/02-推荐系统（工业）/01-概要01：推荐系统的基本概念.md",
     "技术学习/02-推荐系统（工业）/attachments/粗排与精排.png",
-    "技术学习/02-推荐系统（工业）/attachments/Pasted image 20250726181436.png",
     "技术学习/02-推荐系统（工业）/attachments",
     "学习/推荐系统（工业）/未命名看板.md",
-    "研究相关/论文思路.md",
     "技术学习/02-推荐系统（工业）",
     "技术学习",
     "研究相关",
