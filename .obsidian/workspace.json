@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "42c22cc28f006f8e",
@@ -196,9 +195,12 @@
   },
   "active": "866e6b3038420bb1",
   "lastOpenFiles": [
-    "技术学习/11-目标检测YOLO-小土堆/attachments/VOC2007.png",
-    "技术学习/11-目标检测YOLO-小土堆/00-Dection学习目录.md",
+    "技术学习/11-目标检测YOLO-小土堆/attachments/expample-2.png",
     "技术学习/11-目标检测YOLO-小土堆/02-目标检测常用数据集.md",
+    "技术学习/11-目标检测YOLO-小土堆/attachments/VOC2007.png",
+    "技术学习/11-目标检测YOLO-小土堆/attachments/Pasted image 20250811164143.png",
+    "技术学习/11-目标检测YOLO-小土堆/attachments/Pasted image 20250811164155.png",
+    "技术学习/11-目标检测YOLO-小土堆/00-Dection学习目录.md",
     "技术学习/11-目标检测YOLO-小土堆/01-什么是目标检测.md",
     "技术学习/11-目标检测YOLO-小土堆/attachments/example-1.png",
     "技术学习/11-目标检测YOLO-小土堆/attachments",
@@ -217,10 +219,6 @@
     "技术学习/02-推荐系统（工业）/attachments/不同层正交.png",
     "技术学习/02-推荐系统（工业）/attachments/同层互斥.png",
     "技术学习/02-推荐系统（工业）/attachments/分层实验-不同层正交-2.png",
-    "技术学习/02-推荐系统（工业）/attachments/分层实验-不同层正交.png",
-    "技术学习/02-推荐系统（工业）/attachments/分层实验-1.png",
-    "技术学习/02-推荐系统（工业）/attachments/随机分桶-2.png",
-    "技术学习/02-推荐系统（工业）/attachments/随机分桶-1.png",
     "技术学习/02-推荐系统（工业）/02-概要02：推荐系统的链路.md",
     "技术学习/02-推荐系统（工业）/01-概要01：推荐系统的基本概念.md",
     "技术学习/02-推荐系统（工业）/attachments",
