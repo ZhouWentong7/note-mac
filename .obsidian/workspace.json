@@ -172,7 +172,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -196,39 +196,6 @@
     "id": "eff0b68b2d1972dd",
     "type": "floating",
     "children": [
-      {
-        "id": "e94992c8265fb15d",
-        "type": "window",
-        "children": [
-          {
-            "id": "292f02605bd700e3",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "c2af315bf910ec6f",
-                "type": "leaf",
-                "state": {
-                  "type": "webviewer",
-                  "state": {
-                    "url": "https://github.com/AnubisNekhet/AnuPpuccin/discussions/categories/snippets",
-                    "title": "AnubisNekhet/AnuPpuccin Snippets · Discussions · GitHub",
-                    "mode": "webview"
-                  },
-                  "icon": "globe-2",
-                  "title": "AnubisNekhet/AnuPpuccin Snippets · Discussions · GitHub"
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 223,
-        "y": 38,
-        "width": 1024,
-        "height": 800,
-        "maximize": false,
-        "zoom": 0
-      },
       {
         "id": "a0e2ef2595fef0ed",
         "type": "window",
@@ -294,148 +261,16 @@
         "height": 800,
         "maximize": false,
         "zoom": 0
-      },
-      {
-        "id": "d0069967ec40aa86",
-        "type": "window",
-        "children": [
-          {
-            "id": "a29757a23d3a7f1c",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "2df6f797b699d713",
-                "type": "leaf",
-                "state": {
-                  "type": "webviewer",
-                  "state": {
-                    "url": "https://github.com/AnubisNekhet/AnuPpuccin/blob/main/snippets/custom-background.css",
-                    "title": "AnuPpuccin/snippets/custom-background.css at main · AnubisNekhet/AnuPpuccin · GitHub",
-                    "mode": "webview"
-                  },
-                  "icon": "globe-2",
-                  "title": "AnuPpuccin/snippets/custom-background.css at main · AnubisNekhet/AnuPpuccin · GitHub"
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 223,
-        "y": 38,
-        "width": 1024,
-        "height": 800,
-        "maximize": false,
-        "zoom": 0
-      },
-      {
-        "id": "ff67c0b239e49a02",
-        "type": "window",
-        "children": [
-          {
-            "id": "d7d0f772b6b83099",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "5786f11a8cc6818f",
-                "type": "leaf",
-                "state": {
-                  "type": "webviewer",
-                  "state": {
-                    "url": "https://github.com/AnubisNekhet/AnuPpuccin/tree/main/snippets/src",
-                    "title": "AnuPpuccin/snippets/src at main · AnubisNekhet/AnuPpuccin · GitHub",
-                    "mode": "webview"
-                  },
-                  "icon": "globe-2",
-                  "title": "AnuPpuccin/snippets/src at main · AnubisNekhet/AnuPpuccin · GitHub"
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 223,
-        "y": 38,
-        "width": 1024,
-        "height": 800,
-        "maximize": false,
-        "zoom": 0
-      },
-      {
-        "id": "beb4fc1607d94e89",
-        "type": "window",
-        "children": [
-          {
-            "id": "30f6e08cb5b9d470",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "2473afe65de40480",
-                "type": "leaf",
-                "state": {
-                  "type": "webviewer",
-                  "state": {
-                    "url": "https://github.com/mgmeyers/obsidian-style-settings",
-                    "title": "GitHub - mgmeyers/obsidian-style-settings: A dynamic user interface for adjusting theme, plugin, and snippet CSS variables within Obsidian",
-                    "mode": "webview"
-                  },
-                  "icon": "globe-2",
-                  "title": "GitHub - mgmeyers/obsidian-style-settings: A dynamic user interface for adjusting theme, plugin, and snippet CSS variables within Obsidian"
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 223,
-        "y": 38,
-        "width": 1024,
-        "height": 800,
-        "maximize": false,
-        "zoom": 0
-      },
-      {
-        "id": "6f1782cb212bd570",
-        "type": "window",
-        "children": [
-          {
-            "id": "3c1f666226656814",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "159db4bf34f3c4d8",
-                "type": "leaf",
-                "state": {
-                  "type": "webviewer",
-                  "state": {
-                    "url": "https://github.com/AnubisNekhet/AnuPpuccin/discussions/categories/snippets",
-                    "title": "AnubisNekhet/AnuPpuccin Snippets · Discussions · GitHub",
-                    "mode": "webview"
-                  },
-                  "icon": "globe-2",
-                  "title": "AnubisNekhet/AnuPpuccin Snippets · Discussions · GitHub"
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 223,
-        "y": 38,
-        "width": 1024,
-        "height": 800,
-        "maximize": false,
-        "zoom": 0
       }
     ]
   },
   "active": "866e6b3038420bb1",
   "lastOpenFiles": [
-    "技术学习/01-ReactNative项目-Reddit克隆/00-ReactNavi学习目录.md",
     "日常生活/直播碎碎念.md",
-    "技术学习/11-目标检测YOLO-小土堆/01-什么是目标检测.md",
     "日常生活/吐槽.md",
+    "技术学习/11-目标检测YOLO-小土堆/01-什么是目标检测.md",
     "技术学习/11-目标检测YOLO-小土堆/00-Dection学习目录.md",
+    "技术学习/01-ReactNative项目-Reddit克隆/00-ReactNavi学习目录.md",
     "技术学习/02-推荐系统（工业）/00-学习目录.md",
     "未命名",
     "拓展学习",
