@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "df412dfee3602a9e",
+        "id": "72d43f8c90035608",
         "type": "tabs",
         "children": [
           {
-            "id": "866e6b3038420bb1",
+            "id": "fa621d0821e62b59",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "技术学习/01-ReactNative项目-Reddit克隆/00-ReactNavi学习目录.md",
+                "file": "技术学习/11-目标检测YOLO-小土堆/02-目标检测常用数据集.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00-ReactNavi学习目录"
-            }
-          },
-          {
-            "id": "d18093f9cf368cc0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "拓展学习/01-深入理解计算机系统CSAP/00-CSAP学习目录.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "00-CSAP学习目录"
+              "title": "02-目标检测常用数据集"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -93,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "42c22cc28f006f8e",
@@ -187,7 +173,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -207,20 +193,23 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d18093f9cf368cc0",
+  "active": "fa621d0821e62b59",
   "lastOpenFiles": [
-    "技术学习/01-ReactNative项目-Reddit克隆/11-Expo Router.md",
+    "技术学习/11-目标检测YOLO-小土堆/attachments/yolo-annotate-1.png",
+    "技术学习/11-目标检测YOLO-小土堆/00-Dection学习目录.md",
+    "技术学习/11-目标检测YOLO-小土堆/03-必备基础知识.md",
+    "技术学习/11-目标检测YOLO-小土堆/02-目标检测常用数据集.md",
+    "技术学习/11-目标检测YOLO-小土堆/attachments/coco-annotat-structure.png",
+    "研究相关/论文思路.md",
+    "技术学习/01-ReactNative项目-Reddit克隆/00-ReactNavi学习目录.md",
     "拓展学习/01-深入理解计算机系统CSAP/00-CSAP学习目录.md",
+    "技术学习/01-ReactNative项目-Reddit克隆/11-Expo Router.md",
     "拓展学习/01-深入理解计算机系统CSAP",
     "技术学习/01-ReactNative项目-Reddit克隆/attachments/indexEmptyError.png",
-    "技术学习/01-ReactNative项目-Reddit克隆/00-ReactNavi学习目录.md",
     "技术学习/01-ReactNative项目-Reddit克隆/10-Setup a fresh Expo project.md",
-    "技术学习/11-目标检测YOLO-小土堆/00-Dection学习目录.md",
     "技术学习/01-ReactNative项目-Reddit克隆/attachments/project-init.png",
     "技术学习/01-ReactNative项目-Reddit克隆/attachments",
     "技术学习/01-ReactNative项目-Reddit克隆/01-Expo Router.md",
-    "技术学习/11-目标检测YOLO-小土堆/02-目标检测常用数据集.md",
-    "技术学习/11-目标检测YOLO-小土堆/03-必备基础知识.md",
     "技术学习/11-目标检测YOLO-小土堆/attachments/expample-2.png",
     "技术学习/11-目标检测YOLO-小土堆/attachments/VOC2007.png",
     "技术学习/11-目标检测YOLO-小土堆/attachments/Pasted image 20250811164143.png",
@@ -229,7 +218,6 @@
     "技术学习/11-目标检测YOLO-小土堆/attachments/example-1.png",
     "技术学习/11-目标检测YOLO-小土堆/attachments",
     "技术学习/11-目标检测YOLO-小土堆/attachments/target-1.png",
-    "研究相关/论文思路.md",
     "日常生活/吐槽.md",
     "日常生活/直播碎碎念.md",
     "技术学习/02-推荐系统（工业）/00-学习目录.md",
@@ -238,7 +226,6 @@
     "技术学习/01-ReactNative项目-Reddit克隆",
     "技术学习/02-推荐系统（工业）/03-概要03：推荐系统的AB测试.md",
     "技术学习/02-推荐系统（工业）/attachments/holdhout.png",
-    "技术学习/02-推荐系统（工业）/attachments/不同层正交.png",
     "技术学习/02-推荐系统（工业）/02-概要02：推荐系统的链路.md",
     "技术学习/02-推荐系统（工业）/01-概要01：推荐系统的基本概念.md",
     "技术学习/02-推荐系统（工业）/attachments",
