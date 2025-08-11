@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "42c22cc28f006f8e",
@@ -176,7 +177,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -194,6 +196,7 @@
   },
   "active": "866e6b3038420bb1",
   "lastOpenFiles": [
+    "技术学习/11-目标检测YOLO-小土堆/attachments/VOC2007.png",
     "技术学习/11-目标检测YOLO-小土堆/00-Dection学习目录.md",
     "技术学习/11-目标检测YOLO-小土堆/02-目标检测常用数据集.md",
     "技术学习/11-目标检测YOLO-小土堆/01-什么是目标检测.md",
