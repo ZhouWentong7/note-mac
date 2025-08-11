@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "技术学习/01-ReactNative项目-Reddit克隆/11-Expo Router.md",
+                "file": "拓展学习/01-深入理解计算机系统CSAP/00-CSAP学习目录.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "11-Expo Router"
+              "title": "00-CSAP学习目录"
             }
           }
         ],
@@ -93,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "42c22cc28f006f8e",
@@ -192,8 +191,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -211,9 +209,11 @@
   },
   "active": "d18093f9cf368cc0",
   "lastOpenFiles": [
+    "技术学习/01-ReactNative项目-Reddit克隆/11-Expo Router.md",
+    "拓展学习/01-深入理解计算机系统CSAP/00-CSAP学习目录.md",
+    "拓展学习/01-深入理解计算机系统CSAP",
     "技术学习/01-ReactNative项目-Reddit克隆/attachments/indexEmptyError.png",
     "技术学习/01-ReactNative项目-Reddit克隆/00-ReactNavi学习目录.md",
-    "技术学习/01-ReactNative项目-Reddit克隆/11-Expo Router.md",
     "技术学习/01-ReactNative项目-Reddit克隆/10-Setup a fresh Expo project.md",
     "技术学习/11-目标检测YOLO-小土堆/00-Dection学习目录.md",
     "技术学习/01-ReactNative项目-Reddit克隆/attachments/project-init.png",
@@ -233,14 +233,12 @@
     "日常生活/吐槽.md",
     "日常生活/直播碎碎念.md",
     "技术学习/02-推荐系统（工业）/00-学习目录.md",
-    "未命名",
     "拓展学习",
     "技术学习/11-目标检测YOLO-小土堆",
     "技术学习/01-ReactNative项目-Reddit克隆",
     "技术学习/02-推荐系统（工业）/03-概要03：推荐系统的AB测试.md",
     "技术学习/02-推荐系统（工业）/attachments/holdhout.png",
     "技术学习/02-推荐系统（工业）/attachments/不同层正交.png",
-    "技术学习/02-推荐系统（工业）/attachments/同层互斥.png",
     "技术学习/02-推荐系统（工业）/02-概要02：推荐系统的链路.md",
     "技术学习/02-推荐系统（工业）/01-概要01：推荐系统的基本概念.md",
     "技术学习/02-推荐系统（工业）/attachments",
