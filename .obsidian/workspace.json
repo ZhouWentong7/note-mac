@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "拓展学习/01-深入理解计算机系统CSAP/11-计算机系统的漫游.md",
+                "file": "技术学习/12-自然语言处理/00-课本.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "11-计算机系统的漫游"
+              "title": "00-课本"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "拓展学习/01-深入理解计算机系统CSAP/11-计算机系统的漫游.md",
+                "file": "技术学习/12-自然语言处理/00-课本.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "11-计算机系统的漫游 的大纲"
+              "title": "00-课本 的大纲"
             }
           },
           {
@@ -194,6 +194,10 @@
   },
   "active": "fa621d0821e62b59",
   "lastOpenFiles": [
+    "技术学习/12-自然语言处理/00-学习目录.md",
+    "技术学习/12-自然语言处理/00-课本.md",
+    "拓展学习/01-深入理解计算机系统CSAP/11-计算机系统的漫游.md",
+    "技术学习/12-自然语言处理",
     "拓展学习/01-深入理解计算机系统CSAP/attachments/OS.png",
     "拓展学习/01-深入理解计算机系统CSAP/attachments/memory hierarchy.png",
     "拓展学习/01-深入理解计算机系统CSAP/attachments/Caches matter.png",
@@ -201,7 +205,6 @@
     "拓展学习/01-深入理解计算机系统CSAP/attachments/CPU-1.png",
     "拓展学习/01-深入理解计算机系统CSAP/attachments/CPU.png",
     "拓展学习/01-深入理解计算机系统CSAP/00-CSAP学习目录.md",
-    "拓展学习/01-深入理解计算机系统CSAP/11-计算机系统的漫游.md",
     "拓展学习/01-深入理解计算机系统CSAP/attachments/The Compilation System.png",
     "拓展学习/01-深入理解计算机系统CSAP/attachments",
     "技术学习/11-目标检测YOLO-小土堆/02-目标检测常用数据集.md",
@@ -212,7 +215,6 @@
     "拓展学习/02-WebHacking/00-学习资料与目录.md",
     "拓展学习/02-WebHacking",
     "技术学习/21-SRC漏洞挖掘",
-    "技术学习/11-目标检测YOLO-小土堆/attachments/yolo-annotate-1.png",
     "技术学习/11-目标检测YOLO-小土堆/00-Dection学习目录.md",
     "研究相关/论文思路.md",
     "技术学习/01-ReactNative项目-Reddit克隆/00-ReactNavi学习目录.md",
@@ -232,7 +234,6 @@
     "技术学习/02-推荐系统（工业）/03-概要03：推荐系统的AB测试.md",
     "技术学习/02-推荐系统（工业）/02-概要02：推荐系统的链路.md",
     "技术学习/02-推荐系统（工业）/01-概要01：推荐系统的基本概念.md",
-    "技术学习/02-推荐系统（工业）/attachments",
     "学习/推荐系统（工业）/未命名看板.md",
     "欢迎.md"
   ]
