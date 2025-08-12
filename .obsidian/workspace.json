@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "42c22cc28f006f8e",
@@ -192,8 +193,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "fa621d0821e62b59",
+  "active": "d5db7e7cbf756fe1",
   "lastOpenFiles": [
+    "技术学习/11-目标检测YOLO-小土堆/attachments/yolo-annotate-3.png",
+    "技术学习/11-目标检测YOLO-小土堆/attachments/Pasted image 20250812094834.png",
+    "技术学习/11-目标检测YOLO-小土堆/attachments/yolo-annotate-2.png",
     "技术学习/11-目标检测YOLO-小土堆/03-必备基础知识.md",
     "拓展学习/02-WebHacking/00-学习资料与目录.md",
     "技术学习/11-目标检测YOLO-小土堆/02-目标检测常用数据集.md",
@@ -217,9 +221,7 @@
     "技术学习/11-目标检测YOLO-小土堆/attachments/Pasted image 20250811164143.png",
     "技术学习/11-目标检测YOLO-小土堆/attachments/Pasted image 20250811164155.png",
     "技术学习/11-目标检测YOLO-小土堆/01-什么是目标检测.md",
-    "技术学习/11-目标检测YOLO-小土堆/attachments/example-1.png",
     "技术学习/11-目标检测YOLO-小土堆/attachments",
-    "技术学习/11-目标检测YOLO-小土堆/attachments/target-1.png",
     "日常生活/吐槽.md",
     "日常生活/直播碎碎念.md",
     "技术学习/02-推荐系统（工业）/00-学习目录.md",
