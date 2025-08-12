@@ -11,11 +11,9 @@
             "id": "fa621d0821e62b59",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf-annotator",
               "state": {
-                "file": "技术学习/12-自然语言处理/00-课本.md",
-                "mode": "source",
-                "source": false
+                "file": "技术学习/12-自然语言处理/00-课本.md"
               },
               "icon": "lucide-file",
               "title": "00-课本"
@@ -176,7 +174,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
