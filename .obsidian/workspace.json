@@ -36,7 +36,7 @@
             }
           },
           {
-            "id": "996f7cc71cbfd56a",
+            "id": "8194e778de801942",
             "type": "leaf",
             "state": {
               "type": "pdf-annotator",
@@ -221,9 +221,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "996f7cc71cbfd56a",
+  "active": "8194e778de801942",
   "lastOpenFiles": [
     "技术学习/12-自然语言处理/03-word2vec.md",
+    "技术学习/12-自然语言处理/attachments/fig3-19.png",
     "技术学习/12-自然语言处理/00-课本.md",
     "技术学习/12-自然语言处理/attachments/fig3-9.png",
     "技术学习/12-自然语言处理/00-学习目录.md",
@@ -242,7 +243,6 @@
     "拓展学习/01-深入理解计算机系统CSAP/attachments/memory hierarchy.png",
     "拓展学习/01-深入理解计算机系统CSAP/attachments/Caches matter.png",
     "拓展学习/01-深入理解计算机系统CSAP/attachments/Pasted image 20250812114204.png",
-    "拓展学习/01-深入理解计算机系统CSAP/attachments/CPU-1.png",
     "拓展学习/01-深入理解计算机系统CSAP/00-CSAP学习目录.md",
     "拓展学习/01-深入理解计算机系统CSAP/attachments",
     "技术学习/11-目标检测YOLO-小土堆/02-目标检测常用数据集.md",

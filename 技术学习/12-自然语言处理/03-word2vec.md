@@ -39,4 +39,45 @@ CBOW是根据上下文预测的当前单词的神经网络。
 
 输出层则是各个单词的概率（使用softmax和交叉熵误差)。从输入层到中间层的$W_{in}$会在学习的过程中不断变化，这就是我们需要的单词的分布式。
 
+第一层$h_1$ ，第二层转化为$h_2$那么，中间层的神经元就是$h_1 + h_2$。
 
+代码如下：
+
+```python
+# coding: utf-8
+
+import sys
+sys.path.append('..')
+import numpy as np
+from common.layers import MatMul
+# 样本的上下文数据
+c0 = np.array([[1, 0, 0, 0, 0, 0, 0]])
+c1 = np.array([[0, 0, 1, 0, 0, 0, 0]])
+
+# 初始化权重
+W_in = np.random.randn(7, 3)
+W_out = np.random.randn(3, 7)
+
+# 生成层
+in_layer0 = MatMul(W_in)
+in_layer1 = MatMul(W_in)
+out_layer = MatMul(W_out)
+ 
+
+# 正向传播
+
+h0 = in_layer0.forward(c0)
+
+h1 = in_layer1.forward(c1)
+
+h = 0.5 * (h0 + h1)
+
+s = out_layer.forward(h)
+
+print(s)
+```
+
+
+这里的输出，再经过Softmax之后就可以得到各个单词的概率，这个概率会表示哪个单词会出现在这个输入的上下文中间。
+
+![[fig3-19.png]]
