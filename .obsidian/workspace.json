@@ -205,7 +205,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -221,7 +222,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8194e778de801942",
+  "active": "352016358fb19a13",
   "lastOpenFiles": [
     "未命名文件夹",
     "技术学习/12-自然语言处理/00-课本.md",
