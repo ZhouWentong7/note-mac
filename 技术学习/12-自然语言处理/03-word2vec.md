@@ -98,3 +98,140 @@ print(s)
 
 ## 学习数据的准备
 
+word2vec中使用的神经网络的**输入是上下文**，它的**正确解标签**是被这些上下文包围**在中间的单词**，**即目标词**。
+
+**将上下文与目标词转化为one-hot流程：**
+1. 处理为contexts 与 target矩阵
+2. 使用词典的方法转化为ID的形式。
+3. 进一步转换为one-hot
+
+![[fig3-18.png]]
+
+代码：
+
+```python
+text = 'You say goodbye and I say hello.'
+
+corpus, word_to_id, id_to_word = preprocess(text) 
+
+vocab_size = len(word_to_id)
+
+contexts, target = create_contexts_target(corpus, window_size)
+
+target = convert_one_hot(target, vocab_size)
+
+contexts = convert_one_hot(contexts, vocab_size)
+```
+
+
+#### 实现简单的CBOW模型
+
+```python
+# coding: utf-8
+
+import sys
+sys.path.append('..')
+import numpy as np
+from common.layers import MatMul, SoftmaxWithLoss
+
+class SimpleCBOW:
+
+	def __init__(self, vocab_size, hidden_size):
+	
+		V, H = vocab_size, hidden_size
+		
+		# 初始化权重
+		
+		W_in = 0.01 * np.random.randn(V, H).astype('f')
+		
+		W_out = 0.01 * np.random.randn(H, V).astype('f')
+	
+		# 生成层
+		
+		self.in_layer0 = MatMul(W_in)
+		self.in_layer1 = MatMul(W_in)
+		self.out_layer = MatMul(W_out)
+		self.loss_layer = SoftmaxWithLoss()
+	
+		# 将所有的权重和梯度整理到列表中
+		layers = [self.in_layer0, self.in_layer1, self.out_layer]
+		self.params, self.grads = [], []
+		for layer in layers:
+		self.params += layer.params
+		self.grads += layer.grads
+	
+		# 将单词的分布式表示设置为成员变量
+		self.word_vecs = W_in
+
+  
+
+	def forward(self, contexts, target):
+
+		h0 = self.in_layer0.forward(contexts[:, 0])
+		h1 = self.in_layer1.forward(contexts[:, 1])
+		h = (h0 + h1) * 0.5
+		score = self.out_layer.forward(h)
+		loss = self.loss_layer.forward(score, target)
+		
+		return loss
+
+  
+
+	def backward(self, dout=1):
+	
+		ds = self.loss_layer.backward(dout)
+		da = self.out_layer.backward(ds)
+		da *= 0.5
+		self.in_layer1.backward(da)
+		self.in_layer0.backward(da)
+		
+		return None
+```
+
+## word2vec的补充说明
+
+### CBOW 的概率模型
+
+- $P( \dot )$
+- $P( A )$：事件A发生的概率
+- $P( A, B )$：联合概率，A和B同时发生的概率
+- $P( A | B )$：后验概率——在给定事件B（的信息）时事件A发生的概率
+![[fig3-22.png]]
+
+那目标词的上下文和目标词之间的概率可以表示为：
+
+$$
+P(w_t | w_{t-1},w_{t+1})
+$$
+
+使用上述式可以简洁地表示CBOW模型的损失函数。先回顾一下交叉熵损失：
+
+$$
+Loss = -\sum_k t_k \log y_k 
+$$
+
+  
+$y_k$表示第k个事件发生的概率。$t_k$是监督标签,它是one-hot向量的元素,只有当正确的时候，one-hot对应元素为1. 所以可以进一步得到：
+
+$$
+Loss = -log P(w_t | w_{t-1},w_{t+1})
+$$
+
+上述公式是一笔数据样本的损失，若拓展到整个语料库：
+
+$$
+Loss = -\frac{1}{T} \sum_{t=1}^T log P(w_t | w_{t-1},w_{t+1})
+$$
+
+
+### skip-gram模型
+
+![[fig3-23.png]]
+- 一个输入层，多个输出层。
+- 分别求出各个输出层的损失之后相加，得到该模型的损失。
+
+数学模型：
+
+$$
+P( w_{t-1},w_{t+1}|w_t )
+$$
