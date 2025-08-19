@@ -39,14 +39,12 @@
             "id": "8194e778de801942",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf-annotator",
               "state": {
-                "file": "技术学习/11-目标检测YOLO-小土堆/03-必备基础知识.md",
-                "mode": "source",
-                "source": false
+                "file": "技术学习/12-自然语言处理/00-课本.md"
               },
               "icon": "lucide-file",
-              "title": "03-必备基础知识"
+              "title": "00-课本"
             }
           }
         ],
@@ -107,7 +105,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "42c22cc28f006f8e",
@@ -201,12 +200,11 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -219,14 +217,18 @@
       "obsidian-kanban:创建新看板": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-excalidraw-plugin:新建绘图文件": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "352016358fb19a13",
+  "active": "8194e778de801942",
   "lastOpenFiles": [
-    "未命名文件夹",
-    "技术学习/12-自然语言处理/00-课本.md",
     "技术学习/12-自然语言处理/03-word2vec.md",
+    "技术学习/12-自然语言处理/00-课本.md",
+    "技术学习/11-目标检测YOLO-小土堆/03-必备基础知识.md",
+    "未命名文件夹",
     "技术学习/12-自然语言处理/attachments/fig3-19.png",
     "技术学习/12-自然语言处理/attachments/fig3-9.png",
     "技术学习/12-自然语言处理/00-学习目录.md",
@@ -248,7 +250,6 @@
     "拓展学习/01-深入理解计算机系统CSAP/00-CSAP学习目录.md",
     "拓展学习/01-深入理解计算机系统CSAP/attachments",
     "技术学习/11-目标检测YOLO-小土堆/02-目标检测常用数据集.md",
-    "技术学习/11-目标检测YOLO-小土堆/03-必备基础知识.md",
     "拓展学习/02-WebHacking/00-学习资料与目录.md",
     "拓展学习/02-WebHacking",
     "技术学习/21-SRC漏洞挖掘",
@@ -265,7 +266,6 @@
     "日常生活/吐槽.md",
     "日常生活/直播碎碎念.md",
     "技术学习/02-推荐系统（工业）/00-学习目录.md",
-    "拓展学习",
     "技术学习/02-推荐系统（工业）/03-概要03：推荐系统的AB测试.md",
     "技术学习/02-推荐系统（工业）/02-概要02：推荐系统的链路.md",
     "技术学习/02-推荐系统（工业）/01-概要01：推荐系统的基本概念.md",
