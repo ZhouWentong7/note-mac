@@ -46,9 +46,21 @@
               "icon": "lucide-file",
               "title": "00-课本"
             }
+          },
+          {
+            "id": "3a33b3cb73fe7fae",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.9.10"
+              },
+              "icon": "lucide-book-up",
+              "title": "版本说明 1.9.10"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -208,6 +220,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -223,7 +236,7 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "8194e778de801942",
+  "active": "3a33b3cb73fe7fae",
   "lastOpenFiles": [
     "技术学习/12-自然语言处理/04-word2vec的高速化.md",
     "技术学习/12-自然语言处理/attachments/fig4-4.png",
