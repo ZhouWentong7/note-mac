@@ -241,57 +241,38 @@ CMD ["可执行文件"， "参数1"， "参数2"]
 
 ## 完整Dockerfile
 在文件下创建Dockerfile：
->GPT 生成的DL环境
+>GPT 生成的DL环境，适用与Win和Mac
 
 ```dockerfile
-# 基础镜像：Ubuntu + CUDA + cuDNN
-FROM nvidia/cuda:12.1.1-cudnn8-runtime-ubuntu22.04
+# 使用官方 Python 3.11 slim 版本，适配 x86_64 和 ARM64
+FROM python:3.11-slim
 
-# 设置环境变量，避免交互安装
-ENV DEBIAN_FRONTEND=noninteractive
-ENV TZ=Asia/Shanghai
-
-# 更新软件源并安装常用工具
-RUN apt-get update && apt-get install -y \
-    build-essential \
-    wget \
-    git \
-    curl \
-    vim \
-    unzip \
-    ca-certificates \
-    python3 \
-    python3-pip \
-    python3-dev \
-    && rm -rf /var/lib/apt/lists/*
-
-# 设置 python 命令为 python3
-RUN update-alternatives --install /usr/bin/python python /usr/bin/python3 1
-
-# 升级 pip
-RUN pip install --upgrade pip
-
-# 安装常见的深度学习依赖库
-RUN pip install \
-    torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121 \
-    tensorflow \
-    jupyterlab \
-    numpy \
-    pandas \
-    matplotlib \
-    scikit-learn \
-    seaborn \
-    opencv-python \
-    tqdm \
-    scipy
-
-# 创建工作目录
+# 设置工作目录
 WORKDIR /workspace
 
-# 开放 JupyterLab 默认端口
+# 避免 Python 输出缓冲
+ENV PYTHONUNBUFFERED=1
+
+# 安装系统依赖
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    git wget curl vim build-essential ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+
+# 安装通用 PyTorch（CPU 版本），兼容 Windows/Linux/Mac
+RUN pip install --no-cache-dir \
+    torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu \
+    numpy pandas matplotlib seaborn scikit-learn jupyterlab tqdm opencv-python
+
+# 设置 PyTorch MPS（Mac GPU）环境变量
+ENV PYTORCH_ENABLE_MPS_FALLBACK=1
+
+# 可选：复制项目代码
+# COPY . /workspace
+
+# 暴露 Jupyter Lab 端口
 EXPOSE 8888
 
-# 启动时默认运行 JupyterLab
+# 默认启动 Jupyter Lab
 CMD ["jupyter", "lab", "--ip=0.0.0.0", "--allow-root", "--no-browser"]
 ```
 
@@ -306,3 +287,9 @@ docker build -t dl-env:1.0 .
 docker run --gpus all -it -p 8888:8888 -v $(pwd):/workspace dl-env
 ```
 启动一个基于 dl-env 镜像的容器，启用 GPU，进入交互模式，把宿主机当前目录挂载到容器 /workspace，并把容器里的 **JupyterLab (8888)** 映射到宿主机的 **8888 端口**。
+
+如果不使用GPU的话：
+
+```
+ 
+```
