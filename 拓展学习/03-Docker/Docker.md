@@ -298,7 +298,7 @@ CMD ["./main"]
 
 ### 如果需要多个文件编译，可以使用makefile等
 
-### DL环境
+### 构建简单的DL环境
 在文件下创建Dockerfile：
 >GPT 生成的DL环境，适用与Win和Mac
 
@@ -356,7 +356,7 @@ dl-env docker run -it --rm -p 8888:8888 -v $(pwd):/workspace dl-env:1.0
 - 优点：不会占用磁盘空间。
 - 缺点：如果你在容器里修改了数据，但没有挂载本地目录，修改的数据会丢失。
 
-
+根据控制台的输出，可以进入jupyter notebook的页面。
 ## 镜像是如何构建的
 
 镜像具有**分层存储**的特性，而Dockerfile的**每一行命令**都会建立一个新的层。每一层都在上一层基础上机械能修改，每层构建后不会再发生改变，任何改变都只发生在自己的层，而不会影响前面的层。
@@ -380,3 +380,134 @@ RUN pip install -r /workspace/requirements.txt  # Layer 4: Python依赖
 - 生成的镜像体积更小，因为共享了重复的层。
 
 
+## 构建镜像上下文
+
+`docker build`命令的最后那个`.`。
+
+文件系统中`.`表示当前目录，但是在Dockerfile中，路径是由`-f`指定的，这个`.`值得是上下文路径。
+> 一般来说，dockerfile都会在项目的根目录下，所以`.`是最常用的。
+
+
+在这个路径显得文件会被上传用于构建镜像，所以 Docker **只能访问上下文里的文件**，上下文外的文件无法被 COPY 或 ADD。
+
+例子：
+
+```
+FROM python:3.11-slim
+COPY requirements.txt /workspace/
+RUN pip install -r /workspace/requirements.txt
+COPY . /workspace/
+```
+
+- `COPY requirements.txt /workspace/`
+    → 只能复制 **构建上下文内** 的 requirements.txt。如果你写了 `../requirements.txt`，Docker 会报错。
+- `COPY . /workspace/`
+    → 把上下文里的所有文件都复制到容器 `/workspace`。
+
+也可以看出，如果上下文很大，则构建速度会很慢，可以写`.dockerignore`文件排除不需要的文件夹和文件，例如：
+
+```
+data/
+*.log
+.git/
+```
+
+## 更实际的使用场景Djiango
+
+略
+
+## 多阶段构建
+
+之前都是一次性完成所有的构建，最终得到的镜像里面除了可执行文件之外，还有原始项目文件、编译库等，但其实，以C++为例，编译后无需再利用原始代码和库，可以在任意ubuntu下运行，这些只会增加镜像大小。
+
+所以使用多阶段构建，将构建过程分成多个阶段完成，每一个FROM都是一个阶段的开始：
+
+```
+# build
+
+FROM ubuntu AS builder
+
+RUN apt update
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt install -y build-essential
+
+WORKDIR /usr/src/cpp
+
+COPY main.cpp .
+
+RUN g++ -o main main.cpp
+
+# runtime
+FROM ubuntu AS runtime
+
+COPY --from=builder /usr/src/cpp/main .
+
+CMD ["./main"]
+
+```
+
+可以看到image的大小明显缩水：
+
+```
+
+base) ➜  cpp2 docker images
+REPOSITORY                 TAG       IMAGE ID       CREATED             SIZE
+cpp-env                    2.0       9e41e2c5e16a   2 minutes ago       101MB
+dl-env                     1.0       b971fb0aaaec   About an hour ago   8.18GB
+cpp-env                    1.0       7d22325bcd01   About an hour ago   465MB
+```
+
+- builder 阶段用来做 “重的编译工作”，不影响最终镜像大小
+
+
+
+第二阶段也不一定非要使用ubuntu，可以换位scrach这种纯空的镜像，在里面安装cpp使用的库。
+
+# 数据管理
+
+持久化数据需求。
+
+后端代码更新后，需要重新构建镜像并创建新的容器，则原来的容器中的数据就消失了。
+
+可以使用Docker的数据卷和挂在主机目录两种方式来避免这个问题。
+
+## 数据卷
+
+一个可供一个或多个容器使用的特殊目录，可以绕过Docker的联合文件系统：
+- 容器间共享
+- 对其的修改立刻生效
+- 对数据卷的更新不影响镜像
+- 数据卷默认一直存在，即使容器被删除
+
+### 创建数据卷
+
+```
+docker volume create <vol_name>
+```
+
+### 查看数据卷
+
+```
+docker volume ls
+```
+
+### 查看所有数据卷信息
+
+```
+docker volume inspect <vol_name>
+```
+
+### 挂在数据卷
+
+在docker run的时候挂在数据卷
+
+
+```
+docker run --rm --mount source=<vol_name>,target= path/to/data
+```
+
+## 挂载主机目录
+
+略 
