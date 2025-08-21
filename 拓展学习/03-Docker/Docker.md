@@ -303,11 +303,10 @@ CMD ["./main"]
 >GPT 生成的DL环境，适用与Win和Mac
 
 ```dockerfile
-# 使用官方 Python 3.11 slim 版本，适配 x86_64 和 ARM64
-FROM python:3.11-slim
+FROM condaforge/miniforge3
 
-# 设置工作目录
 WORKDIR /workspace
+
 
 # 避免 Python 输出缓冲
 ENV PYTHONUNBUFFERED=1
@@ -318,10 +317,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 # 安装通用 PyTorch（CPU 版本），兼容 Windows/Linux/Mac
-RUN pip install --no-cache-dir \
-    torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu \
-    numpy pandas matplotlib seaborn scikit-learn jupyterlab tqdm opencv-python
+# 安装 Python + PyTorch
+RUN conda install -y python=3.11 \
+    pytorch torchvision torchaudio -c pytorch -c conda-forge \
+    && conda clean -a -y
 
+# 安装其他数据科学库
+RUN conda install -y numpy pandas matplotlib seaborn scikit-learn jupyterlab tqdm opencv \
+    -c conda-forge \
+    && conda clean -a -y
 # 设置 PyTorch MPS（Mac GPU）环境变量
 ENV PYTORCH_ENABLE_MPS_FALLBACK=1
 
@@ -343,17 +347,36 @@ docker build -t dl-env:1.0 .
 
 构建镜像：
 ```
-docker run --gpus all -it -p 8888:8888 -v $(pwd):/workspace dl-env
+dl-env docker run -it --rm -p 8888:8888 -v $(pwd):/workspace dl-env:1.0 
 ```
 启动一个基于 dl-env 镜像的容器，启用 GPU，进入交互模式，把宿主机当前目录挂载到容器 /workspace，并把容器里的 **JupyterLab (8888)** 映射到宿主机的 **8888 端口**。
 
-如果不使用GPU的话：
+- --rm 参数的作用是 **容器停止后自动删除容器**。
+- 也就是说，你关闭 Jupyter Lab 或按 Ctrl+C 停止容器后，Docker 会自动清理这个容器。 
+- 优点：不会占用磁盘空间。
+- 缺点：如果你在容器里修改了数据，但没有挂载本地目录，修改的数据会丢失。
 
-```
- 
-```
 
 ## 镜像是如何构建的
 
 镜像具有**分层存储**的特性，而Dockerfile的**每一行命令**都会建立一个新的层。每一层都在上一层基础上机械能修改，每层构建后不会再发生改变，任何改变都只发生在自己的层，而不会影响前面的层。
+
+假设有个Dockerfile：
+```
+FROM python:3.11-slim      # Layer 1: 基础镜像
+RUN apt-get update && apt-get install -y git wget  # Layer 2: 系统依赖
+COPY requirements.txt /workspace/                # Layer 3: 拷贝文件
+RUN pip install -r /workspace/requirements.txt  # Layer 4: Python依赖
+```
+
+- **Layer 1**：Python 基础镜像，所有使用 Python 镜像的 Dockerfile 都可以复用。
+- **Layer 2**：安装 git/wget，只在这个 Dockerfile 中生成。
+- **Layer 3**：拷贝 requirements.txt 文件，只在这一步修改时重新构建。
+- **Layer 4**：安装 Python 库，基于 Layer 3 增量构建。  
+
+**好处：**
+
+- 如果你修改了 requirements.txt，只有 Layer 3 和 Layer 4 会重新构建，Layer 1 和 Layer 2 可以复用缓存。     
+- 生成的镜像体积更小，因为共享了重复的层。
+
 
