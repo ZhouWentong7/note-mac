@@ -11,10 +11,14 @@
             "id": "cb7997e67d9aa4e9",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "拓展学习/03-Docker/Docker.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "Docker"
             }
           }
         ]
@@ -138,12 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "拓展学习/03-Docker/Docker.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "Docker 的大纲"
             }
           },
           {
@@ -193,6 +198,7 @@
   },
   "active": "cb7997e67d9aa4e9",
   "lastOpenFiles": [
+    "拓展学习/03-Docker/Docker.md",
     "日常生活/阅读计划/阅读计划.md",
     "日常生活/阅读计划",
     "拓展学习/01-深入理解计算机系统CSAP/attachments/memory hierarchy.png",
@@ -202,7 +208,6 @@
     "拓展学习/01-深入理解计算机系统CSAP/attachments/Caches matter.png",
     "拓展学习/01-深入理解计算机系统CSAP/attachments/CPU.png",
     "拓展学习/01-深入理解计算机系统CSAP/attachments/CPU-1.png",
-    "拓展学习/03-Docker/Docker.md",
     "拓展学习/02-WebHacking/00-学习资料与目录.md",
     "拓展学习/01-深入理解计算机系统CSAP/attachments",
     "拓展学习/01-深入理解计算机系统CSAP/11-计算机系统的漫游.md",
