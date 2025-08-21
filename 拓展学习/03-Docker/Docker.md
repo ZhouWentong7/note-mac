@@ -240,6 +240,65 @@ CMD ["可执行文件"， "参数1"， "参数2"]
 
 
 ## 完整Dockerfile
+
+### 简单的CPP环境
+
+在文件夹下创建一个cpp的main文件，写一个简单的输出：
+
+```cpp
+#include<iostream>
+
+using namespace std;
+
+  
+
+int main() {
+
+	cout << "Hello, CPP docker!" << endl;
+
+	return 0;
+
+}
+```
+
+dockerfile:
+
+```txt
+FROM ubuntu
+
+RUN apt update
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt install -y build-essential
+
+WORKDIR /usr/src/cpp
+
+# 将main.cpp从宿主机复制到上述文件夹下
+COPY main.cpp .
+
+RUN g++ -o main main.cpp
+
+CMD ["./main"]
+
+```
+
+创建：
+
+```
+(base) ➜  cpp1 docker build -t cpp-env:1.0 .
+```
+
+执行：
+
+```
+(base) ➜  cpp1 docker run --rm cpp-env:1.0    
+```               
+> Hello, CPP docker!
+
+### 如果需要多个文件编译，可以使用makefile等
+
+### DL环境
 在文件下创建Dockerfile：
 >GPT 生成的DL环境，适用与Win和Mac
 
@@ -293,3 +352,8 @@ docker run --gpus all -it -p 8888:8888 -v $(pwd):/workspace dl-env
 ```
  
 ```
+
+## 镜像是如何构建的
+
+镜像具有**分层存储**的特性，而Dockerfile的**每一行命令**都会建立一个新的层。每一层都在上一层基础上机械能修改，每层构建后不会再发生改变，任何改变都只发生在自己的层，而不会影响前面的层。
+
