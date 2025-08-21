@@ -11,14 +11,10 @@
             "id": "cb7997e67d9aa4e9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "拓展学习/03-Docker/Docker.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Docker"
+              "title": "新标签页"
             }
           }
         ]
@@ -78,8 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "42c22cc28f006f8e",
@@ -143,13 +138,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "拓展学习/03-Docker/Docker.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Docker 的大纲"
+              "title": "大纲"
             }
           },
           {
@@ -197,53 +191,52 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "d5db7e7cbf756fe1",
+  "active": "cb7997e67d9aa4e9",
   "lastOpenFiles": [
-    "拓展学习/03-Docker/Docker.md",
-    "拓展学习/03-Docker",
-    "技术学习/12-自然语言处理/00-学习目录.md",
-    "技术学习/12-自然语言处理/04-word2vec的高速化.md",
-    "技术学习/12-自然语言处理/00-课本.md",
-    "技术学习/12-自然语言处理/attachments/fig4-4.png",
-    "技术学习/12-自然语言处理/attachments/fig4-3.png",
-    "技术学习/12-自然语言处理/03-word2vec.md",
-    "技术学习/12-自然语言处理/attachments/fig3-23.png",
-    "技术学习/12-自然语言处理/attachments/fig3-22.png",
-    "技术学习/12-自然语言处理/attachments/fig3-18.png",
-    "技术学习/11-目标检测YOLO-小土堆/03-必备基础知识.md",
-    "未命名文件夹",
-    "技术学习/12-自然语言处理/attachments/fig3-19.png",
-    "技术学习/12-自然语言处理/attachments/fig3-9.png",
     "日常生活/阅读计划/阅读计划.md",
     "日常生活/阅读计划",
-    "技术学习/12-自然语言处理/02-自然语言和文法.md",
-    "技术学习/12-自然语言处理/attachments/fig2-9.png",
-    "技术学习/12-自然语言处理/attachments/fig2-8.png",
-    "技术学习/12-自然语言处理/attachments/fig2-7.png",
-    "技术学习/12-自然语言处理/attachments",
-    "技术学习/12-自然语言处理/01-基础回顾.md",
-    "拓展学习/01-深入理解计算机系统CSAP/11-计算机系统的漫游.md",
-    "技术学习/12-自然语言处理",
-    "拓展学习/01-深入理解计算机系统CSAP/00-CSAP学习目录.md",
-    "拓展学习/01-深入理解计算机系统CSAP/attachments",
-    "技术学习/11-目标检测YOLO-小土堆/02-目标检测常用数据集.md",
+    "拓展学习/01-深入理解计算机系统CSAP/attachments/memory hierarchy.png",
+    "拓展学习/01-深入理解计算机系统CSAP/attachments/The Compilation System.png",
+    "拓展学习/01-深入理解计算机系统CSAP/attachments/Pasted image 20250812114204.png",
+    "拓展学习/01-深入理解计算机系统CSAP/attachments/OS.png",
+    "拓展学习/01-深入理解计算机系统CSAP/attachments/Caches matter.png",
+    "拓展学习/01-深入理解计算机系统CSAP/attachments/CPU.png",
+    "拓展学习/01-深入理解计算机系统CSAP/attachments/CPU-1.png",
+    "拓展学习/03-Docker/Docker.md",
     "拓展学习/02-WebHacking/00-学习资料与目录.md",
+    "拓展学习/01-深入理解计算机系统CSAP/attachments",
+    "拓展学习/01-深入理解计算机系统CSAP/11-计算机系统的漫游.md",
+    "拓展学习/01-深入理解计算机系统CSAP/00-CSAP学习目录.md",
+    "拓展学习/03-Docker",
     "拓展学习/02-WebHacking",
-    "技术学习/21-SRC漏洞挖掘",
+    "拓展学习/01-深入理解计算机系统CSAP",
+    "拓展学习",
+    "技术学习/12-自然语言处理/attachments/fig4-4.png",
+    "技术学习/12-自然语言处理/attachments/fig4-3.png",
+    "技术学习/12-自然语言处理/attachments/fig3-9.png",
+    "技术学习/12-自然语言处理/attachments",
+    "技术学习/12-自然语言处理/04-word2vec的高速化.md",
+    "技术学习/12-自然语言处理/03-word2vec.md",
+    "技术学习/12-自然语言处理/02-自然语言和文法.md",
+    "技术学习/12-自然语言处理/01-基础回顾.md",
+    "技术学习/12-自然语言处理/00-课本.md",
+    "技术学习/12-自然语言处理/00-学习目录.md",
+    "技术学习/12-自然语言处理",
+    "技术学习/11-目标检测YOLO-小土堆/attachments",
+    "技术学习/11-目标检测YOLO-小土堆/03-必备基础知识.md",
+    "技术学习/11-目标检测YOLO-小土堆/02-目标检测常用数据集.md",
+    "技术学习/01-ReactNative项目-Reddit克隆/attachments",
+    "技术学习/01-ReactNative项目-Reddit克隆/11-Expo Router.md",
+    "技术学习/01-ReactNative项目-Reddit克隆/10-Setup a fresh Expo project.md",
     "技术学习/11-目标检测YOLO-小土堆/00-Dection学习目录.md",
     "研究相关/论文思路.md",
     "技术学习/01-ReactNative项目-Reddit克隆/00-ReactNavi学习目录.md",
-    "技术学习/01-ReactNative项目-Reddit克隆/11-Expo Router.md",
-    "拓展学习/01-深入理解计算机系统CSAP",
-    "技术学习/01-ReactNative项目-Reddit克隆/10-Setup a fresh Expo project.md",
-    "技术学习/01-ReactNative项目-Reddit克隆/attachments",
     "技术学习/01-ReactNative项目-Reddit克隆/01-Expo Router.md",
     "技术学习/11-目标检测YOLO-小土堆/01-什么是目标检测.md",
     "日常生活/吐槽.md",
     "日常生活/直播碎碎念.md",
     "技术学习/02-推荐系统（工业）/00-学习目录.md",
     "技术学习/02-推荐系统（工业）/03-概要03：推荐系统的AB测试.md",
-    "技术学习/02-推荐系统（工业）/02-概要02：推荐系统的链路.md",
-    "技术学习/02-推荐系统（工业）/01-概要01：推荐系统的基本概念.md"
+    "技术学习/02-推荐系统（工业）/02-概要02：推荐系统的链路.md"
   ]
 }
