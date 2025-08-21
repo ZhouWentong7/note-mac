@@ -508,6 +508,26 @@ docker volume inspect <vol_name>
 docker run --rm --mount source=<vol_name>,target= path/to/data
 ```
 
+
+例子：
+```
+docker run -it --rm \
+    --mount source=mydata,target=/workspace/data \
+    dl-env:1.0 /bin/bash
+```
+
+> 注意
+> 1. **不要留空格**
+>    ```
+> --mount source=mydata,target=/workspace/data   # 正确
+--mount source=mydata, target=/workspace/data  # ❌ 空格会报错
+>    ```
+> 2. --mount 是 **推荐的新语法**，比 -v mydata:/workspace/data 更明确，尤其是生产环境。
+> 3. target **必须是容器内路径**，不能是宿主机路径。
+### 删除卷
+```
+docker volume rm mydata
+```
 ## 挂载主机目录
 
 略 
