@@ -173,12 +173,11 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -198,7 +197,7 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "cb7997e67d9aa4e9",
+  "active": "d5db7e7cbf756fe1",
   "lastOpenFiles": [
     "拓展学习/03-Docker/Docker.md",
     "拓展学习/03-Docker",

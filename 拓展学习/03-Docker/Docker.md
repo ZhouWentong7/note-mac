@@ -1,5 +1,4 @@
 
-
 # 基本概念
 Docker中三个重要的基本概念：镜像、容器、仓库。
 
@@ -530,4 +529,157 @@ docker volume rm mydata
 ```
 ## 挂载主机目录
 
-略 
+挂载主机目录必须使用**绝对路径**，默认权限为**读写**。
+```
+docker run -it --rm \
+    --mount type=bind,source=/path/on/host,target=/workspace \
+    dl-env:1.0 /bin/bash
+```
+
+- type=bind → 表示挂载主机目录
+- source → 宿主机目录
+- target → 容器内路径
+
+可以增加`readonly`选项控制**只读**。
+```
+docker run --name web_backend \
+	--mount type=bind,source=/usr/apps/web_database,target=/app/database,readonly \
+	backend
+```
+
+也可挂载主机文件：
+
+```
+docker run --name web_backend \
+	--mount type=bind,source=/usr/apps/web_app/.env,target=/app/.env,readonly \
+	backend 
+```
+
+可以多个挂载：
+略（多写几行--mount)
+
+# Docker Compose
+一个大项目往往需要多个应用组成，需要输入多个Docker命令，且数据卷挂载和容器间通信更为糟糕。
+
+Compose就是一个**容器集群快速编排**的工具。
+
+使用YAML文件配置项目容器集群，并通过`docker compose`快速启动
+
+## 配置一组容器
+`Docker-Compose.yml`选项与Docker命令基本一致，只是需要改为YAML写法。 
+
+下面是GPT给的一个前后端案例：
+
+假设你有一个 Django Web 项目 + PostgreSQL 数据库。
+
+我们用 Docker Compose 管理 **两个服务**：
+
+1. web → Django 后端
+    
+2. db → PostgreSQL 数据库
+    
+
+---
+docker-compose.yml 示例
+
+```
+version: "3.9"
+
+services:
+  web:
+    image: my_django_app:latest   # 已构建的 Django 镜像
+    container_name: web_backend
+    ports:
+      - "8000:8000"               # 映射宿主机端口
+    volumes:
+      - ./web_app:/app             # 挂载本地项目目录
+      - ./web_app/.env:/app/.env:ro  # 挂载只读环境文件
+    depends_on:
+      - db                        # 确保 db 服务先启动
+    environment:
+      - DEBUG=1
+
+  db:
+    image: postgres:15
+    container_name: postgres_db
+    restart: always
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: mydb
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+volumes:
+  db_data:
+```
+
+---
+
+对应 Docker 命令解释
+
+| **Compose 配置**                            | **对应的 Docker 命令**                                                                |
+| ----------------------------------------- | -------------------------------------------------------------------------------- |
+| image: my_django_app:latest               | `docker run my_django_app:latest`                                                |
+| ports: - "8000:8000"                      | `docker run -p 8000:8000`                                                        |
+| volumes: - ./web_app:/app                 | `docker run -v $(pwd)/web_app:/app`                                              |
+| volumes: - ./web_app/.env:/app/.env:ro    | `docker run -v $(pwd)/web_app/.env:/app/.env:ro`                                 |
+| depends_on: - db                          | 手动顺序启动 `docker run -d db `再 `docker run web`                                     |
+| environment:                              | `docker run -e DEBUG=1`                                                          |
+| volumes: db_data:/var/lib/postgresql/data | `docker volume create db_data && docker run -v db_data:/var/lib/postgresql/data` |
+
+---
+
+使用 Docker Compose 命令
+
+1. 构建镜像（如果 Dockerfile 在当前目录）：
+    
+
+```
+docker compose build
+```
+
+2. 启动所有服务：
+    
+
+```
+docker compose up
+```
+
+- 使用 -d 后台运行：
+    
+
+```
+docker compose up -d
+```
+
+3. 停止服务：
+    
+
+```
+docker compose down
+```
+
+- 会停止并删除容器，但默认不会删除卷（数据持久化保留）。
+    
+
+  
+
+4. 查看日志：
+    
+
+```
+docker compose logs -f web
+```
+
+---
+
+ 优点
+
+- 不用手动写多个 docker run 命令，Compose 自动管理依赖顺序和网络。
+    
+- 可以挂载卷、设置环境变量、映射端口，非常适合开发和多服务部署。
+    
+
+---
+
