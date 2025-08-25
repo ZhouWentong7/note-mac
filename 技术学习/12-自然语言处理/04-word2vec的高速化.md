@@ -77,6 +77,38 @@ class Embedding:
 
 Embedding层的正向传播只是从权重矩阵W 中提取特定的行，并将该特定行的神经元原样传给下一层。
 
-在反 向传播时，从上一层（输出侧的层）传过来的梯度将原样传给下一层
+在反向传播时，从上一层（输出侧的层）传过来的梯度将原样传给下一层
 ![[fig4-4.png]]
+
+但需要注意的是，若idx在一个句子中多次出现，那反向传播会发生冲突，可以采取加法的方法进行赋值：
+
+```python
+    def backward(self, dout):
+        dW, = self.grads
+        dW[...] = 0
+        if GPU:
+            np.scatter_add(dW, self.idx, dout)
+        else:
+            np.add.at(dW, self.idx, dout)
+        return None
+```
+
+## 负采样（  negative sampling）
+
+解决中间层之后的处理，即矩阵乘积和Softmax层的计算。
+
+使用**负采样**替代Softmax，保持计算的快捷和稳定。
+
+**耗时的地方**
+- 中间层神经元与$W_{out}$的乘积计算
+- Softmax的计算
+
+若词典有100w个，那softmax的分母部分也要进行100w次exp的计算。这个部分与词汇量成正比。
+
+负采样的思想来自于使用二分类拟合多分类。
+
+
+’
+
+
 
