@@ -90,8 +90,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "42c22cc28f006f8e",
@@ -212,7 +211,9 @@
   "active": "ec5683a5154d0578",
   "lastOpenFiles": [
     "技术学习/12-自然语言处理/04-word2vec的高速化.md",
+    "技术学习/12-自然语言处理/00-学习目录.md",
     "技术学习/12-自然语言处理/00-课本.md",
+    "技术学习/12-自然语言处理/05-RNN.md",
     "技术学习/01-ReactNative项目-Reddit克隆/10-Setup a fresh Expo project.md",
     "技术学习/01-ReactNative项目-Reddit克隆/attachments/project-init.png",
     "技术学习/01-ReactNative项目-Reddit克隆/00-ReactNavi学习目录.md",
@@ -245,7 +246,6 @@
     "技术学习/12-自然语言处理/03-word2vec.md",
     "技术学习/12-自然语言处理/02-自然语言和文法.md",
     "技术学习/12-自然语言处理/01-基础回顾.md",
-    "技术学习/12-自然语言处理/00-学习目录.md",
     "技术学习/12-自然语言处理",
     "技术学习/11-目标检测YOLO-小土堆/03-必备基础知识.md",
     "技术学习/11-目标检测YOLO-小土堆/02-目标检测常用数据集.md",
