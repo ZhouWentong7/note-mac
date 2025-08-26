@@ -20,6 +20,20 @@
             }
           },
           {
+            "id": "6680396bdcc6399f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "技术学习/12-自然语言处理/就职方向.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "就职方向"
+            }
+          },
+          {
             "id": "cb7997e67d9aa4e9",
             "type": "leaf",
             "state": {
@@ -33,7 +47,8 @@
               "title": "04-word2vec的高速化"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -154,13 +169,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "技术学习/12-自然语言处理/00-课本.md",
+                "file": "技术学习/12-自然语言处理/就职方向.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "00-课本 的大纲"
+              "title": "就职方向 的大纲"
             }
           },
           {
@@ -208,11 +223,13 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "ec5683a5154d0578",
+  "active": "6680396bdcc6399f",
   "lastOpenFiles": [
+    "技术学习/12-自然语言处理/00-课本.md",
+    "技术学习/12-自然语言处理/就职方向.md",
+    "日常生活/就职",
     "技术学习/12-自然语言处理/04-word2vec的高速化.md",
     "技术学习/12-自然语言处理/00-学习目录.md",
-    "技术学习/12-自然语言处理/00-课本.md",
     "技术学习/12-自然语言处理/05-RNN.md",
     "技术学习/01-ReactNative项目-Reddit克隆/10-Setup a fresh Expo project.md",
     "技术学习/01-ReactNative项目-Reddit克隆/attachments/project-init.png",
@@ -246,7 +263,6 @@
     "技术学习/12-自然语言处理/03-word2vec.md",
     "技术学习/12-自然语言处理/02-自然语言和文法.md",
     "技术学习/12-自然语言处理/01-基础回顾.md",
-    "技术学习/12-自然语言处理",
     "技术学习/11-目标检测YOLO-小土堆/03-必备基础知识.md",
     "技术学习/11-目标检测YOLO-小土堆/02-目标检测常用数据集.md",
     "技术学习/11-目标检测YOLO-小土堆/00-Dection学习目录.md",
@@ -254,7 +270,6 @@
     "技术学习/01-ReactNative项目-Reddit克隆/01-Expo Router.md",
     "技术学习/11-目标检测YOLO-小土堆/01-什么是目标检测.md",
     "日常生活/吐槽.md",
-    "日常生活/直播碎碎念.md",
-    "技术学习/02-推荐系统（工业）/00-学习目录.md"
+    "日常生活/直播碎碎念.md"
   ]
 }
