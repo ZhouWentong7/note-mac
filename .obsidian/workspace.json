@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "技术学习/12-自然语言处理/就职方向.md",
+                "file": "日常生活/02-就职/就职方向.md",
                 "mode": "source",
                 "source": false
               },
@@ -169,7 +169,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "技术学习/12-自然语言处理/就职方向.md",
+                "file": "日常生活/02-就职/就职方向.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -223,11 +223,12 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "6680396bdcc6399f",
+  "active": "352016358fb19a13",
   "lastOpenFiles": [
+    "日常生活/01-阅读/阅读计划.md",
+    "日常生活/02-就职/就职方向.md",
     "技术学习/12-自然语言处理/00-课本.md",
-    "技术学习/12-自然语言处理/就职方向.md",
-    "日常生活/就职",
+    "日常生活/02-就职",
     "技术学习/12-自然语言处理/04-word2vec的高速化.md",
     "技术学习/12-自然语言处理/00-学习目录.md",
     "技术学习/12-自然语言处理/05-RNN.md",
@@ -240,8 +241,7 @@
     "拓展学习/04-安琪项目",
     "拓展学习/03-Docker/Docker.md",
     "技术学习/03-JS和TS",
-    "日常生活/阅读计划/阅读计划.md",
-    "日常生活/阅读计划",
+    "日常生活/01-阅读",
     "拓展学习/01-深入理解计算机系统CSAP/attachments/memory hierarchy.png",
     "拓展学习/01-深入理解计算机系统CSAP/attachments/The Compilation System.png",
     "拓展学习/01-深入理解计算机系统CSAP/attachments/Pasted image 20250812114204.png",
