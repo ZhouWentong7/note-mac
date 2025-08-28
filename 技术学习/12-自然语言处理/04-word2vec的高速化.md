@@ -109,8 +109,116 @@ Embedding层的正向传播只是从权重矩阵W 中提取特定的行，并将
 
 负采样的思想来自于使用二分类拟合多分类。
 
+输出层从预测是否为“这个单词”，转化为具有和词汇量同等数量的神经元。
 
-’
+> 其实没太看懂解析
+
+```python
+class EmbeddingDot:
+    def __init__(self, W):
+        self.embed = Embedding(W)
+        self.params = self.embed.params
+        self.grads = self.embed.grads
+        self.cache = None
+
+    def forward(self, h, idx):
+        target_W = self.embed.forward(idx)
+        out = np.sum(target_W * h, axis=1)
+
+        self.cache = (h, target_W)
+        return out
+
+    def backward(self, dout):
+        h, target_W = self.cache
+        dout = dout.reshape(dout.shape[0], 1)
+
+        dtarget_W = dout * h
+        self.embed.backward(dtarget_W)
+        dh = dout * target_W
+        return dh
+```
 
 
+
+
+•	负采样（Negative Sampling） 方法里，会把多分类 softmax 换成 一正多负的二分类问题：
+	•	正样本：目标词出现，label = 1
+	•	负样本：随机选词，label = 0
+	•	用 sigmoid 点积代替 softmax
+	•	EmbeddingDot 就是计算 h · w_target，配合 sigmoid loss 就可以直接做二分类，不用计算整个 softmax。
+
+解释：
+负采样的核心思想：
+	•	每次只看 目标词 + 少量随机“负样本”，不计算整个词表。
+	•	将原本的多分类问题 转化为多次二分类问题：
+	•	正样本（target word）：label = 1
+	•	负样本（random word）：label = 0
+
+负采样：需要做的事情
+- 对正例，Sigmoid输出接近1
+- 对负例，Sigmoid输出接近0。
+- 选择少量的负例（5或10个）采样，将这些结果的loss架起来作为最终的损失
+
+### 负采样方法
+
+- 基于语料库的统计进行采样。
+	- 经常出现的单词更容易被抽到
+	- 使用概率分布
+Code:
+`UnigramSampler` 用于根据词语的出现频率来生成负样本，负采样是为了提高词嵌入训练效率而采用的技术，避免了对所有词汇进行更新。
+```python
+class UnigramSampler:
+    def __init__(self, corpus, power, sample_size):
+    """
+    corpus: 语料库，是一个包含词语 ID 的列表
+    - `power`：用于调整概率分布的幂次，通常设置为 0.75（Word2Vec 中的常用设置）
+	- `sample_size`：每个目标词需要生成的负样本数量
+    """
+        self.sample_size = sample_size
+        self.vocab_size = None
+        self.word_p = None
+		
+		# 
+		# 统计每个词语 ID 在语料库中出现的次数
+        counts = collections.Counter()
+        for word_id in corpus:
+            counts[word_id] += 1
+		# 计算词汇表大小
+        vocab_size = len(counts)
+        self.vocab_size = vocab_size
+
+        self.word_p = np.zeros(vocab_size)
+        for i in range(vocab_size):
+            self.word_p[i] = counts[i]
+
+		# 降低高频词的采样概率
+        self.word_p = np.power(self.word_p, power)
+        # 归一化概率分布，使所有词的概率和为 1
+        self.word_p /= np.sum(self.word_p)
+
+    def get_negative_sample(self, target):
+        batch_size = target.shape[0]
+		"""
+		区分了 CPU 和 GPU 两种计算场景，GPU 场景下优先考虑计算速度.GPU这里存在一个小问题：负样本中可能包含目标词本身，但在 GPU 计算中为了速度牺牲了这一点精度.
+		"""
+        if not GPU:
+            negative_sample = np.zeros((batch_size, self.sample_size), dtype=np.int32)
+
+            for i in range(batch_size):
+                p = self.word_p.copy()
+                target_idx = target[i]
+                p[target_idx] = 0
+                p /= p.sum()
+                negative_sample[i, :] = np.random.choice(self.vocab_size, size=self.sample_size, replace=False, p=p)
+        else:
+            # 在用GPU(cupy）计算时，优先速度
+            # 有时目标词存在于负例中
+            negative_sample = np.random.choice(self.vocab_size, size=(batch_size, self.sample_size),
+                                               replace=True, p=self.word_p)
+
+        return negative_sample
+```
+
+
+### 负采样的实现
 
