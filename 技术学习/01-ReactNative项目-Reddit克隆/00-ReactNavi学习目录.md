@@ -1,3 +1,12 @@
+---
+tags:
+  - full-stack
+  - ReactNavi
+  - Node-js
+code: https://github.com/notJust-dev/Reddit
+blogs: https://notjust.notion.site/Reddit-Clone-Guide-19eb0ec93c5a801ca2a2d4feecf4d525
+---
+ 
 # 学习资源
 
 视频地址：https://www.youtube.com/watch?v=l9ov48v0M2M&t=18424s 
@@ -9,6 +18,27 @@
 Notion: https://notjust.notion.site/Reddit-Clone-Guide-19eb0ec93c5a801ca2a2d4feecf4d525
 
 # 目录
+
+```base
+formulas:
+  未命名: ""
+views:
+  - type: table
+    name: 表格
+    filters:
+      and:
+        - file.inFolder("技术学习/01-ReactNative项目-Reddit克隆")
+        - file.ext == "md"
+    order:
+      - file.name
+      - file.tags
+    sort:
+      - property: formula.未命名
+        direction: ASC
+
+```
+
+
 ### 1 UI
 [[10-Setup a fresh Expo project]]
 [[11-Expo Router]]
