@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "2aec002a0475ac5b",
+        "id": "9d14b9069cb567cc",
         "type": "tabs",
         "children": [
           {
-            "id": "73dddcdd6acb4ea4",
+            "id": "c9669e410911bb4b",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.9.12"
+                "file": "技术学习/12-自然语言处理/06-Gated RNN.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "版本说明 1.9.12"
+              "icon": "lucide-file",
+              "title": "06-Gated RNN"
             }
           }
         ]
@@ -140,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "技术学习/12-自然语言处理/未命名 3.base",
+                "file": "技术学习/12-自然语言处理/06-Gated RNN.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "未命名 3 的大纲"
+              "title": "06-Gated RNN 的大纲"
             }
           },
           {
@@ -170,7 +172,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -195,7 +197,7 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "73dddcdd6acb4ea4",
+  "active": "c9669e410911bb4b",
   "lastOpenFiles": [
     "技术学习/12-自然语言处理/未命名 3.base",
     "技术学习/12-自然语言处理/未命名 2.base",
