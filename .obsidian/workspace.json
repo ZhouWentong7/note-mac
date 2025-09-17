@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "拓展学习/06-项目管理/00-信息手机.md",
+                "file": "技术学习/01-ReactNative项目-Reddit克隆/12-.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00-信息手机"
+              "title": "12-"
             }
           }
         ]
@@ -199,8 +199,8 @@
   },
   "active": "9b64a287cde8b369",
   "lastOpenFiles": [
-    "技术学习/12-自然语言处理/00-课本.md",
     "拓展学习/06-项目管理/00-信息手机.md",
+    "技术学习/12-自然语言处理/00-课本.md",
     "拓展学习/06-项目管理",
     "技术学习/12-自然语言处理/03-word2vec.md",
     "技术学习/01-ReactNative项目-Reddit克隆/10-Setup a fresh Expo project.md",
