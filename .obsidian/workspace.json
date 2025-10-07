@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "拓展学习/未命名.md",
+                "file": "拓展学习/07-数字图像处理_Gonzalez/00-学习安排.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "未命名"
+              "title": "00-学习安排"
             }
           }
         ]
@@ -197,15 +197,17 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "352016358fb19a13",
+  "active": "9b64a287cde8b369",
   "lastOpenFiles": [
-    "拓展学习/07-数字图像处理_",
+    "拓展学习/07-数字图像处理_Gonzalez/00-数字图像处理课本.md",
+    "技术学习/12-自然语言处理/00-课本.md",
+    "拓展学习/07-数字图像处理_Gonzalez/00-学习安排.md",
+    "拓展学习/07-数字图像处理_Gonzalez/01-.md",
+    "拓展学习/07-数字图像处理_Gonzalez",
     "技术学习/12-自然语言处理/05-RNN.md",
-    "拓展学习/未命名.md",
     "技术学习/12-自然语言处理/06-Gated RNN.md",
     "技术学习/01-ReactNative项目-Reddit克隆/12-.md",
     "拓展学习/06-项目管理/00-信息手机.md",
-    "技术学习/12-自然语言处理/00-课本.md",
     "拓展学习/06-项目管理",
     "技术学习/12-自然语言处理/03-word2vec.md",
     "技术学习/01-ReactNative项目-Reddit克隆/10-Setup a fresh Expo project.md",
@@ -239,11 +241,9 @@
     "日常生活/02-就职",
     "技术学习/03-JS和TS/Javascript语言基础.md",
     "拓展学习/04-安琪项目",
-    "技术学习/03-JS和TS",
     "拓展学习/02-WebHacking/00-学习资料与目录.md",
     "拓展学习/01-深入理解计算机系统CSAP/11-计算机系统的漫游.md",
     "拓展学习/01-深入理解计算机系统CSAP/00-CSAP学习目录.md",
-    "技术学习/12-自然语言处理/02-自然语言和文法.md",
-    "技术学习/12-自然语言处理/01-基础回顾.md"
+    "技术学习/12-自然语言处理/02-自然语言和文法.md"
   ]
 }
