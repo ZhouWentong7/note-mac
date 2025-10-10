@@ -22,7 +22,7 @@
             }
           },
           {
-            "id": "d17fb864a7c92f9d",
+            "id": "41ef4a390dff9091",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -33,6 +33,18 @@
               },
               "icon": "lucide-file",
               "title": "03-空间域和频域图像增强"
+            }
+          },
+          {
+            "id": "d17fb864a7c92f9d",
+            "type": "leaf",
+            "state": {
+              "type": "pdf-annotator",
+              "state": {
+                "file": "拓展学习/07-数字图像处理_Gonzalez/00-数字图像处理课本.md"
+              },
+              "icon": "lucide-file",
+              "title": "00-数字图像处理课本"
             }
           }
         ],
@@ -213,13 +225,15 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "d17fb864a7c92f9d",
+  "active": "41ef4a390dff9091",
   "lastOpenFiles": [
+    "拓展学习/07-数字图像处理_Gonzalez/00-数字图像处理课本.md",
     "拓展学习/07-数字图像处理_Gonzalez/03-空间域和频域图像增强.md",
+    "拓展学习/07-数字图像处理_Gonzalez/attachments/直接灰度变换.png",
+    "拓展学习/07-数字图像处理_Gonzalez/attachments",
     "拓展学习/07-数字图像处理_Gonzalez/00-学习安排.md",
     "拓展学习/07-数字图像处理_Gonzalez/01-基础.md",
     "拓展学习/07-数字图像处理_Gonzalez/01-.md",
-    "拓展学习/07-数字图像处理_Gonzalez/00-数字图像处理课本.md",
     "技术学习/12-自然语言处理/00-课本.md",
     "拓展学习/07-数字图像处理_Gonzalez",
     "技术学习/12-自然语言处理/05-RNN.md",
@@ -245,7 +259,6 @@
     "技术学习/12-自然语言处理/attachments/fig5-22.png",
     "技术学习/12-自然语言处理/attachments/fig5-20.png",
     "技术学习/12-自然语言处理/attachments/fig5-19.png",
-    "技术学习/12-自然语言处理/attachments/fig5-18.png",
     "拓展学习/04-安琪项目/抽象系统设计.md",
     "日常生活/01-阅读/阅读计划.md",
     "技术学习/12-自然语言处理/04-word2vec的高速化.md",
@@ -258,8 +271,6 @@
     "日常生活/02-就职/就职方向.md",
     "日常生活/02-就职",
     "技术学习/03-JS和TS/Javascript语言基础.md",
-    "拓展学习/04-安琪项目",
-    "拓展学习/02-WebHacking/00-学习资料与目录.md",
-    "拓展学习/01-深入理解计算机系统CSAP/11-计算机系统的漫游.md"
+    "拓展学习/02-WebHacking/00-学习资料与目录.md"
   ]
 }
