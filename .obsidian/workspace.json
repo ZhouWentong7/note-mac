@@ -36,18 +36,6 @@
             }
           },
           {
-            "id": "3e57852ee63bc776",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.9.14"
-              },
-              "icon": "lucide-book-up",
-              "title": "版本说明 1.9.14"
-            }
-          },
-          {
             "id": "d17fb864a7c92f9d",
             "type": "leaf",
             "state": {
@@ -60,7 +48,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -237,7 +225,7 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "3e57852ee63bc776",
+  "active": "41ef4a390dff9091",
   "lastOpenFiles": [
     "拓展学习/07-数字图像处理_Gonzalez/00-数字图像处理课本.md",
     "拓展学习/07-数字图像处理_Gonzalez/03-空间域和频域图像增强.md",
