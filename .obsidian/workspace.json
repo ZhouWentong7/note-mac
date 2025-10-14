@@ -48,7 +48,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -170,13 +170,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "技术学习/12-自然语言处理/06-Gated RNN.md",
+                "file": "拓展学习/07-数字图像处理_Gonzalez/03-空间域和频域图像增强.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "06-Gated RNN 的大纲"
+              "title": "03-空间域和频域图像增强 的大纲"
             }
           },
           {
@@ -200,12 +200,11 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -225,10 +224,11 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "d17fb864a7c92f9d",
+  "active": "f1e19238dc4333c2",
   "lastOpenFiles": [
-    "拓展学习/07-数字图像处理_Gonzalez/03-空间域和频域图像增强.md",
+    "拓展学习/07-数字图像处理_Gonzalez/attachments/Pasted image 20251014225434.png",
     "拓展学习/07-数字图像处理_Gonzalez/00-数字图像处理课本.md",
+    "拓展学习/07-数字图像处理_Gonzalez/03-空间域和频域图像增强.md",
     "拓展学习/07-数字图像处理_Gonzalez/attachments/直接灰度变换.png",
     "拓展学习/07-数字图像处理_Gonzalez/attachments",
     "拓展学习/07-数字图像处理_Gonzalez/00-学习安排.md",
