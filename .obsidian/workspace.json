@@ -34,7 +34,7 @@
             }
           },
           {
-            "id": "2bf24e529616173f",
+            "id": "ae4a57bf79a8e283",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -47,8 +47,7 @@
               "title": "04-频率图像增强"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -170,13 +169,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "拓展学习/07-数字图像处理_Gonzalez/04-频率图像增强.md",
+                "file": "拓展学习/07-数字图像处理_Gonzalez/00-数字图像处理课本.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "04-频率图像增强 的大纲"
+              "title": "00-数字图像处理课本 的大纲"
             }
           },
           {
@@ -225,7 +224,7 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "2bf24e529616173f",
+  "active": "9b64a287cde8b369",
   "lastOpenFiles": [
     "拓展学习/07-数字图像处理_Gonzalez/04-频率图像增强.md",
     "拓展学习/07-数字图像处理_Gonzalez/00-学习安排.md",
