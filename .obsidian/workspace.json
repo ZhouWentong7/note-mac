@@ -11,12 +11,14 @@
             "id": "9b64a287cde8b369",
             "type": "leaf",
             "state": {
-              "type": "pdf-annotator",
+              "type": "markdown",
               "state": {
-                "file": "拓展学习/07-数字图像处理_Gonzalez/00-数字图像处理课本.md"
+                "file": "拓展学习/07-数字图像处理_Gonzalez/05-图像复原与重建.md",
+                "mode": "source",
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "00-数字图像处理课本"
+              "title": "05-图像复原与重建"
             }
           },
           {
@@ -91,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "42c22cc28f006f8e",
@@ -213,11 +214,15 @@
   },
   "active": "6851d902a85a296e",
   "lastOpenFiles": [
+    "拓展学习/07-数字图像处理_Gonzalez/05-图像复原与重建.md",
     "拓展学习/07-数字图像处理_Gonzalez/00-学习安排.md",
+    "拓展学习/07-数字图像处理_Gonzalez/00-数字图像处理课本.md",
+    "拓展学习/07-数字图像处理_Gonzalez/04-频率图像增强.md",
+    "拓展学习/07-数字图像处理_Gonzalez/attachments/4-HPF.png",
+    "拓展学习/07-数字图像处理_Gonzalez/attachments/4-GLPF.png",
+    "拓展学习/07-数字图像处理_Gonzalez/attachments/4-Butterworth.png",
     "拓展学习/07-数字图像处理_Gonzalez/未命名 1.base",
     "拓展学习/07-数字图像处理_Gonzalez/未命名.base",
-    "拓展学习/07-数字图像处理_Gonzalez/04-频率图像增强.md",
-    "拓展学习/07-数字图像处理_Gonzalez/00-数字图像处理课本.md",
     "拓展学习/07-数字图像处理_Gonzalez/03-空间域和频域图像增强.md",
     "拓展学习/07-数字图像处理_Gonzalez/01-基础.md",
     "拓展学习/07-数字图像处理_Gonzalez/attachments/Pasted image 20251014225434.png",
@@ -245,9 +250,6 @@
     "技术学习/12-自然语言处理/attachments/fig5-27.png",
     "技术学习/12-自然语言处理/attachments/fig5-26.png",
     "技术学习/12-自然语言处理/attachments/fig5-25.png",
-    "技术学习/12-自然语言处理/attachments/fig5-23.png",
-    "技术学习/12-自然语言处理/attachments/fig5-22.png",
-    "技术学习/12-自然语言处理/attachments/fig5-20.png",
     "拓展学习/04-安琪项目/抽象系统设计.md",
     "日常生活/01-阅读/阅读计划.md",
     "技术学习/12-自然语言处理/04-word2vec的高速化.md",
