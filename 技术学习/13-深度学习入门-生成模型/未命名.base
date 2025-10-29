@@ -1,0 +1,6 @@
+views:
+  - type: table
+    name: 表格
+    filters:
+      and:
+        - file.inFolder("技术学习/13-深度学习入门-生成模型")
