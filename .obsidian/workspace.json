@@ -4,21 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "f4542528f6ea678f",
+        "id": "86e03437fc0ef392",
         "type": "tabs",
         "children": [
           {
-            "id": "7db7813e7d8bce33",
+            "id": "246ab97e62d36e7a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "bases",
               "state": {
-                "file": "技术学习/13-深度学习入门-生成模型/02-最大似然估计.md",
-                "mode": "source",
-                "source": false
+                "file": "技术学习/13-深度学习入门-生成模型/生成模型学习记录.base",
+                "viewName": "表格"
               },
-              "icon": "lucide-file",
-              "title": "02-最大似然估计"
+              "icon": "lucide-table",
+              "title": "生成模型学习记录"
             }
           }
         ]
@@ -197,12 +196,15 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "7db7813e7d8bce33",
+  "active": "246ab97e62d36e7a",
   "lastOpenFiles": [
-    "技术学习/13-深度学习入门-生成模型/生成模型学习记录.base",
+    "技术学习/13-深度学习入门-生成模型/03-多维正态分布.md",
+    "未命名.base",
     "技术学习/13-深度学习入门-生成模型/02-最大似然估计.md",
-    "技术学习/13-深度学习入门-生成模型/学习目录.md",
+    "技术学习/13-深度学习入门-生成模型/attachments/02-norm_example.png",
     "技术学习/13-深度学习入门-生成模型/01-正态分布.md",
+    "技术学习/13-深度学习入门-生成模型/生成模型学习记录.base",
+    "技术学习/13-深度学习入门-生成模型/学习目录.md",
     "技术学习/13-深度学习入门-生成模型/attachments/01-central-limit.png",
     "技术学习/13-深度学习入门-生成模型/attachments/01-norm_param_sigma.png",
     "技术学习/13-深度学习入门-生成模型/attachments/01-norm_param_mu.png",
@@ -237,9 +239,7 @@
     "技术学习/01-ReactNative项目-Reddit克隆/10-Setup a fresh Expo project.md",
     "拓展学习/05-机器学习理论基础/00-资料与目录.md",
     "拓展学习/05-机器学习理论基础",
-    "技术学习/12-自然语言处理/未命名 3.base",
     "技术学习/12-自然语言处理/00-学习目录.md",
-    "技术学习/12-自然语言处理/attachments/fig5-30.png",
     "拓展学习/04-安琪项目/抽象系统设计.md",
     "日常生活/01-阅读/阅读计划.md",
     "技术学习/12-自然语言处理/04-word2vec的高速化.md",
