@@ -11,13 +11,14 @@
             "id": "246ab97e62d36e7a",
             "type": "leaf",
             "state": {
-              "type": "bases",
+              "type": "markdown",
               "state": {
-                "file": "技术学习/13-深度学习入门-生成模型/生成模型学习记录.base",
-                "viewName": "表格"
+                "file": "技术学习/13-深度学习入门-生成模型/03-多维正态分布.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-table",
-              "title": "生成模型学习记录"
+              "icon": "lucide-file",
+              "title": "03-多维正态分布"
             }
           }
         ]
@@ -198,12 +199,14 @@
   },
   "active": "246ab97e62d36e7a",
   "lastOpenFiles": [
+    "技术学习/13-深度学习入门-生成模型/attachments/03-transpose.png",
+    "技术学习/13-深度学习入门-生成模型/attachments/03-矩阵积.png",
+    "技术学习/13-深度学习入门-生成模型/生成模型学习记录.base",
     "技术学习/13-深度学习入门-生成模型/03-多维正态分布.md",
     "未命名.base",
     "技术学习/13-深度学习入门-生成模型/02-最大似然估计.md",
     "技术学习/13-深度学习入门-生成模型/attachments/02-norm_example.png",
     "技术学习/13-深度学习入门-生成模型/01-正态分布.md",
-    "技术学习/13-深度学习入门-生成模型/生成模型学习记录.base",
     "技术学习/13-深度学习入门-生成模型/学习目录.md",
     "技术学习/13-深度学习入门-生成模型/attachments/01-central-limit.png",
     "技术学习/13-深度学习入门-生成模型/attachments/01-norm_param_sigma.png",
@@ -226,7 +229,6 @@
     "拓展学习/07-数字图像处理_Gonzalez/03-空间域和频域图像增强.md",
     "拓展学习/07-数字图像处理_Gonzalez/01-基础.md",
     "拓展学习/07-数字图像处理_Gonzalez/attachments/Pasted image 20251014225434.png",
-    "拓展学习/07-数字图像处理_Gonzalez/attachments/直接灰度变换.png",
     "拓展学习/07-数字图像处理_Gonzalez/attachments",
     "拓展学习/07-数字图像处理_Gonzalez/01-.md",
     "技术学习/12-自然语言处理/00-课本.md",
@@ -242,7 +244,6 @@
     "技术学习/12-自然语言处理/00-学习目录.md",
     "拓展学习/04-安琪项目/抽象系统设计.md",
     "日常生活/01-阅读/阅读计划.md",
-    "技术学习/12-自然语言处理/04-word2vec的高速化.md",
-    "技术学习/01-ReactNative项目-Reddit克隆/00-ReactNavi学习目录.md"
+    "技术学习/12-自然语言处理/04-word2vec的高速化.md"
   ]
 }
