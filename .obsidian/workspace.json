@@ -187,11 +187,12 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -211,7 +212,7 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "f1e19238dc4333c2",
+  "active": "246ab97e62d36e7a",
   "lastOpenFiles": [
     "拓展学习/07-数字图像处理_Gonzalez/04-频率图像增强.md",
     "拓展学习/07-数字图像处理_Gonzalez/05-图像复原与重建.md",
