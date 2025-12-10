@@ -22,19 +22,6 @@
             }
           },
           {
-            "id": "ae866c2de77ad695",
-            "type": "leaf",
-            "state": {
-              "type": "bases",
-              "state": {
-                "file": "拓展学习/07-数字图像处理_Gonzalez/未命名 3.base",
-                "viewName": "表格"
-              },
-              "icon": "lucide-table",
-              "title": "未命名 3"
-            }
-          },
-          {
             "id": "2607ca2e05472a67",
             "type": "leaf",
             "state": {
@@ -48,8 +35,7 @@
               "title": "04-频率图像增强"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -225,7 +211,7 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "ae866c2de77ad695",
+  "active": "352016358fb19a13",
   "lastOpenFiles": [
     "拓展学习/07-数字图像处理_Gonzalez/未命名 2.base",
     "拓展学习/07-数字图像处理_Gonzalez/未命名 3.base",
