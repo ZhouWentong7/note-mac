@@ -210,8 +210,11 @@
   },
   "active": "636089fad755303d",
   "lastOpenFiles": [
-    "技术学习/13-深度学习入门-生成模型/生成模型学习记录.base",
+    "技术学习/13-深度学习入门-生成模型/Jensen 不等式.md",
+    "技术学习/13-深度学习入门-生成模型/attachments/B-3.png",
+    "技术学习/13-深度学习入门-生成模型/attachments/B-1.png",
     "技术学习/13-深度学习入门-生成模型/05-EM算法.md",
+    "技术学习/13-深度学习入门-生成模型/生成模型学习记录.base",
     "技术学习/13-深度学习入门-生成模型/04-高斯混合模型.md",
     "技术学习/13-深度学习入门-生成模型/attachments/4-5-GMM-generate-data.png",
     "技术学习/13-深度学习入门-生成模型/03-多维正态分布.md",
@@ -235,8 +238,6 @@
     "技术学习/13-深度学习入门-生成模型/attachments/03-矩阵积.png",
     "技术学习/13-深度学习入门-生成模型/attachments/02-norm_example.png",
     "技术学习/13-深度学习入门-生成模型/attachments/01-central-limit.png",
-    "技术学习/13-深度学习入门-生成模型/attachments/01-norm_param_sigma.png",
-    "技术学习/13-深度学习入门-生成模型/attachments/01-norm_param_mu.png",
     "技术学习/13-深度学习入门-生成模型/attachments",
     "拓展学习/01-深入理解计算机系统CSAP/00-CSAP学习目录.md",
     "技术学习/13-深度学习入门-生成模型",
@@ -253,7 +254,6 @@
     "技术学习/01-ReactNative项目-Reddit克隆/12-.md",
     "拓展学习/06-项目管理/00-信息手机.md",
     "技术学习/12-自然语言处理/03-word2vec.md",
-    "技术学习/01-ReactNative项目-Reddit克隆/10-Setup a fresh Expo project.md",
-    "拓展学习/05-机器学习理论基础/00-资料与目录.md"
+    "技术学习/01-ReactNative项目-Reddit克隆/10-Setup a fresh Expo project.md"
   ]
 }
