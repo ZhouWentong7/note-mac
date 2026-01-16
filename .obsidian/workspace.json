@@ -183,7 +183,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -210,6 +210,7 @@
   },
   "active": "39d61c988cbb78aa",
   "lastOpenFiles": [
+    "技术学习/13-深度学习入门-生成模型/attachments/7-3-VAE-process.png",
     "技术学习/13-深度学习入门-生成模型/生成模型学习记录.base",
     "技术学习/13-深度学习入门-生成模型/07-变分自编码器.md",
     "技术学习/13-深度学习入门-生成模型/attachments/7-2生成数据流程.png",
