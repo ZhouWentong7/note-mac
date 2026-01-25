@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "07-变分自编码器"
             }
+          },
+          {
+            "id": "27eef976341c88c7",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.5"
+              },
+              "icon": "lucide-book-up",
+              "title": "版本说明 1.11.5"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,8 +91,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "42c22cc28f006f8e",
@@ -208,7 +220,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "39d61c988cbb78aa",
+  "active": "27eef976341c88c7",
   "lastOpenFiles": [
     "技术学习/13-深度学习入门-生成模型/attachments/Pasted image 20260119161444.png",
     "技术学习/13-深度学习入门-生成模型/attachments/7-10-Compute-ELBO.png",
