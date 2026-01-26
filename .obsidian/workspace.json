@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "拓展学习/08-大模型技术杂记/03-CoT.md",
+                "file": "拓展学习/08-大模型技术杂记/04-LoRA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "03-CoT"
+              "title": "04-LoRA"
             }
           }
         ],
@@ -238,9 +238,10 @@
   },
   "active": "b98ffd80da743a9c",
   "lastOpenFiles": [
+    "拓展学习/08-大模型技术杂记/01-RAG.md",
+    "拓展学习/08-大模型技术杂记/04-LoRA.md",
     "拓展学习/08-大模型技术杂记/02-SFT.md",
     "拓展学习/08-大模型技术杂记/03-CoT.md",
-    "拓展学习/08-大模型技术杂记/01-RAG.md",
     "技术学习/13-深度学习入门-生成模型/07-变分自编码器.md",
     "拓展学习/08-大模型技术杂记",
     "技术学习/13-深度学习入门-生成模型/attachments/Pasted image 20260119161444.png",
@@ -282,7 +283,6 @@
     "拓展学习/07-数字图像处理_Gonzalez/未命名 1.base",
     "拓展学习/07-数字图像处理_Gonzalez/未命名.base",
     "拓展学习/07-数字图像处理_Gonzalez/01-基础.md",
-    "拓展学习/07-数字图像处理_Gonzalez/01-.md",
-    "技术学习/12-自然语言处理/00-课本.md"
+    "拓展学习/07-数字图像处理_Gonzalez/01-.md"
   ]
 }

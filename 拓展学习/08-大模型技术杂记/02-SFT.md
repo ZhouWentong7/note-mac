@@ -1,3 +1,10 @@
+---
+tags:
+  - "#SFT"
+  - CoT
+  - LLMs
+---
+
 SFT： Supervised Fine-Tuning，监督微调
 目的：学会语言结构、知识和统计规律（风格和内容）。（但不知道什么是好的回答）
 ```
