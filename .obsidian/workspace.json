@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "97c81613e6a03cf4",
+        "id": "ceff7540b7c6b99a",
         "type": "tabs",
         "children": [
           {
-            "id": "1eb4cb8091dfc462",
+            "id": "ab1f0a6ce74f9083",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HomePage.md",
+                "file": "拓展学习/08-大模型技术杂记/05-LLM的2025.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "HomePage"
+              "title": "05-LLM的2025"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 283.5
   },
   "right": {
     "id": "42c22cc28f006f8e",
@@ -207,12 +207,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1eb4cb8091dfc462",
+  "active": "352016358fb19a13",
   "lastOpenFiles": [
-    "拓展学习/08-大模型技术杂记/06-2025精选论文.md",
-    "拓展学习/08-大模型技术杂记/05-LLM的2025.md",
-    "拓展学习/08-大模型技术杂记/04-LoRA.md",
+    "日常生活/03-随笔",
     "技术学习/13-深度学习入门-生成模型/07-变分自编码器.md",
+    "技术学习/13-深度学习入门-生成模型/06-神经网络.md",
+    "拓展学习/08-大模型技术杂记/05-LLM的2025.md",
+    "技术学习/13-深度学习入门-生成模型/99-思路梳理.md",
+    "HomePage.md",
+    "拓展学习/08-大模型技术杂记/06-2025精选论文.md",
+    "拓展学习/08-大模型技术杂记/04-LoRA.md",
     "拓展学习/08-大模型技术杂记/03-Reasoning LLMs.md",
     "拓展学习/08-大模型技术杂记/attachments/The development process of DeepSeek-R1-Distill models.png",
     "拓展学习/08-大模型技术杂记/attachments/The development process of DeepSeek-R1 model.png",
@@ -230,15 +234,12 @@
     "拓展学习/08-大模型技术杂记",
     "技术学习/13-深度学习入门-生成模型/学习目录.md",
     "技术学习/13-深度学习入门-生成模型/生成模型学习记录.base",
-    "技术学习/13-深度学习入门-生成模型/99-思路梳理.md",
-    "技术学习/13-深度学习入门-生成模型/06-神经网络.md",
     "技术学习/13-深度学习入门-生成模型/Jensen 不等式.md",
     "技术学习/13-深度学习入门-生成模型/05-EM算法.md",
     "技术学习/13-深度学习入门-生成模型/04-高斯混合模型.md",
     "技术学习/13-深度学习入门-生成模型/03-多维正态分布.md",
     "技术学习/13-深度学习入门-生成模型/02-最大似然估计.md",
     "技术学习/13-深度学习入门-生成模型/01-正态分布.md",
-    "HomePage.md",
     "未命名.base",
     "拓展学习/07-数字图像处理_Gonzalez/04-频率图像增强.md",
     "拓展学习/07-数字图像处理_Gonzalez/03-空间域和频域图像增强.md",
@@ -253,7 +254,6 @@
     "技术学习/13-深度学习入门-生成模型",
     "拓展学习/03-Docker/Docker.md",
     "技术学习/12-自然语言处理/05-RNN.md",
-    "拓展学习/07-数字图像处理_Gonzalez/00-数字图像处理课本.md",
     "拓展学习/07-数字图像处理_Gonzalez/未命名 1.base"
   ]
 }
