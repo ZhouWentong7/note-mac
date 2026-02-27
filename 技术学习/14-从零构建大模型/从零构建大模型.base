@@ -1,0 +1,6 @@
+views:
+  - type: table
+    name: 表格
+    filters:
+      and:
+        - file.inFolder("技术学习/14-从零构建大模型")
