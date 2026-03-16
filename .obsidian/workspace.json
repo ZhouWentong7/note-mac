@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "技术学习/13-深度学习入门-生成模型/07-变分自编码器.md",
+                "file": "研究相关/博士支援制度说明会2026.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "07-变分自编码器"
+              "title": "博士支援制度说明会2026"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ELBO",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,12 +74,12 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 283.5
+    "width": 283.5,
+    "collapsed": true
   },
   "right": {
     "id": "42c22cc28f006f8e",
@@ -210,6 +210,21 @@
   },
   "active": "ab1f0a6ce74f9083",
   "lastOpenFiles": [
+    "研究相关/attachments/Pasted image 20260316153630.png",
+    "研究相关/attachments/Pasted image 20260316152818.png",
+    "研究相关/attachments/Pasted image 20260316152745.png",
+    "研究相关/attachments/Pasted image 20260316152727.png",
+    "研究相关/attachments/Pasted image 20260316152636.png",
+    "研究相关/attachments/Pasted image 20260316152517.png",
+    "研究相关/attachments/Pasted image 20260316152339.png",
+    "研究相关/attachments/Pasted image 20260316152258.png",
+    "研究相关/attachments/Pasted image 20260316151915.png",
+    "研究相关/attachments/Pasted image 20260316151624.png",
+    "研究相关/attachments/Pasted image 20260316151502.png",
+    "研究相关/attachments",
+    "技术学习/13-深度学习入门-生成模型/未命名.base",
+    "研究相关/博士支援制度说明会2026.md",
+    "技术学习/13-深度学习入门-生成模型/07-变分自编码器.md",
     "技术学习/13-深度学习入门-生成模型/05-EM算法.md",
     "技术学习/14-从零构建大模型/01-理解大语言模型.md",
     "技术学习/14-从零构建大模型/从零构建大模型.base",
@@ -217,23 +232,12 @@
     "技术学习/14-从零构建大模型/00-概述.md",
     "技术学习/14-从零构建大模型",
     "日常生活/03-随笔",
-    "技术学习/13-深度学习入门-生成模型/07-变分自编码器.md",
     "技术学习/13-深度学习入门-生成模型/06-神经网络.md",
     "技术学习/13-深度学习入门-生成模型/99-思路梳理.md",
     "HomePage.md",
     "拓展学习/08-大模型技术杂记/06-2025精选论文.md",
     "拓展学习/08-大模型技术杂记/04-LoRA.md",
     "拓展学习/08-大模型技术杂记/03-Reasoning LLMs.md",
-    "拓展学习/08-大模型技术杂记/attachments/The development process of DeepSeek-R1-Distill models.png",
-    "拓展学习/08-大模型技术杂记/attachments/The development process of DeepSeek-R1 model.png",
-    "拓展学习/08-大模型技术杂记/attachments/aha-moment-DS-R1-Zero.png",
-    "拓展学习/08-大模型技术杂记/attachments/Pasted image 20260127111658.png",
-    "拓展学习/08-大模型技术杂记/attachments/Pasted image 20260127111650.png",
-    "拓展学习/08-大模型技术杂记/attachments/Pasted image 20260127111617.png",
-    "拓展学习/08-大模型技术杂记/attachments/Pasted image 20260127111607.png",
-    "拓展学习/08-大模型技术杂记/attachments/LLM-search-arg.png",
-    "拓展学习/08-大模型技术杂记/attachments/CoT.png",
-    "拓展学习/08-大模型技术杂记/attachments/Development process of DeepSeeks three different reasoning models that are discussed in the DeepSeek R1 technical report.png",
     "拓展学习/08-大模型技术杂记/attachments",
     "拓展学习/08-大模型技术杂记/01-RAG.md",
     "拓展学习/08-大模型技术杂记/02-SFT.md",
@@ -249,11 +253,8 @@
     "拓展学习/07-数字图像处理_Gonzalez/04-频率图像增强.md",
     "拓展学习/07-数字图像处理_Gonzalez/03-空间域和频域图像增强.md",
     "拓展学习/07-数字图像处理_Gonzalez/未命名 3.base",
-    "拓展学习/07-数字图像处理_Gonzalez/未命名 2.base",
     "拓展学习/07-数字图像处理_Gonzalez/临时笔记.md",
-    "Icon\r",
     "拓展学习/07-数字图像处理_Gonzalez/05-图像复原与重建.md",
-    "拓展学习/07-数字图像处理_Gonzalez/00-学习安排.md",
-    "拓展学习/01-深入理解计算机系统CSAP/00-CSAP学习目录.md"
+    "拓展学习/07-数字图像处理_Gonzalez/00-学习安排.md"
   ]
 }
