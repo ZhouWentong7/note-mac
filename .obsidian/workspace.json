@@ -11,14 +11,17 @@
             "id": "ab1f0a6ce74f9083",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "研究相关/博士支援制度说明会2026.md",
-                "mode": "source",
-                "source": false
+                "file": "未命名.canvas",
+                "viewState": {
+                  "x": 160.49631512788494,
+                  "y": 51.74978884621156,
+                  "zoom": -0.09509754727284114
+                }
               },
-              "icon": "lucide-file",
-              "title": "博士支援制度说明会2026"
+              "icon": "lucide-layout-dashboard",
+              "title": "未命名"
             }
           }
         ]
@@ -78,8 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 283.5,
-    "collapsed": true
+    "width": 283.5
   },
   "right": {
     "id": "42c22cc28f006f8e",
@@ -210,6 +212,12 @@
   },
   "active": "ab1f0a6ce74f9083",
   "lastOpenFiles": [
+    "2026-03-21.md",
+    "未命名.canvas",
+    "技术学习/13-深度学习入门-生成模型/07-变分自编码器.md",
+    "技术学习/02-推荐系统（工业）/03-概要03：推荐系统的AB测试.md",
+    "技术学习/02-推荐系统（工业）/01-概要01：推荐系统的基本概念.md",
+    "研究相关/博士支援制度说明会2026.md",
     "研究相关/attachments/Pasted image 20260316153630.png",
     "研究相关/attachments/Pasted image 20260316152818.png",
     "研究相关/attachments/Pasted image 20260316152745.png",
@@ -220,11 +228,8 @@
     "研究相关/attachments/Pasted image 20260316152258.png",
     "研究相关/attachments/Pasted image 20260316151915.png",
     "研究相关/attachments/Pasted image 20260316151624.png",
-    "研究相关/attachments/Pasted image 20260316151502.png",
     "研究相关/attachments",
     "技术学习/13-深度学习入门-生成模型/未命名.base",
-    "研究相关/博士支援制度说明会2026.md",
-    "技术学习/13-深度学习入门-生成模型/07-变分自编码器.md",
     "技术学习/13-深度学习入门-生成模型/05-EM算法.md",
     "技术学习/14-从零构建大模型/01-理解大语言模型.md",
     "技术学习/14-从零构建大模型/从零构建大模型.base",
@@ -252,9 +257,6 @@
     "未命名.base",
     "拓展学习/07-数字图像处理_Gonzalez/04-频率图像增强.md",
     "拓展学习/07-数字图像处理_Gonzalez/03-空间域和频域图像增强.md",
-    "拓展学习/07-数字图像处理_Gonzalez/未命名 3.base",
-    "拓展学习/07-数字图像处理_Gonzalez/临时笔记.md",
-    "拓展学习/07-数字图像处理_Gonzalez/05-图像复原与重建.md",
-    "拓展学习/07-数字图像处理_Gonzalez/00-学习安排.md"
+    "拓展学习/07-数字图像处理_Gonzalez/未命名 3.base"
   ]
 }
