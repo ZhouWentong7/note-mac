@@ -9,6 +9,19 @@
 ## 基本参数
 官方介绍： [llama 参数](https://llamafactory.readthedocs.io/zh-cn/latest/advanced/arguments.html)
 
+### 训练方式
+
+#### SFT
+
+#### Reward Modeling
+
+#### PPO
+
+#### DPO
+
+#### KTO
+
+
 
 # EasyR1学习笔记
 > [!abstract] EasyR
