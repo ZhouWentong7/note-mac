@@ -2,7 +2,7 @@
 > 本文主要用于理解两个VLM的训练项目的参数理解，知道每个参数对VLM模型的什么部分进行了调整，以及可能产生的影响。
 
 
-# llama Factory 
+# 07-llama Factory 
 >[!abstract] 简介
 >[LLama Factory官方链接](https://llamafactory.readthedocs.io/en/latest/index.html)： LLaMA Factory 是一个易于使用且高效的平台，用于训练和微调大型语言模型。使用 LLaMA Factory，您可以在本地无需编写任何代码即可微调数百个预训练模型。
 
