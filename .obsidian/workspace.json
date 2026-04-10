@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "技术学习/31-ESP32/00-资源.md",
+                "file": "拓展学习/08-大模型技术杂记/09-Transformer论文精读.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00-资源"
+              "title": "09-Transformer论文精读"
             }
           }
         ],
@@ -93,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 283.5
+    "width": 283.5,
+    "collapsed": true
   },
   "right": {
     "id": "42c22cc28f006f8e",
@@ -225,8 +226,8 @@
   },
   "active": "c512ca04678a4355",
   "lastOpenFiles": [
-    "研究相关/未命名.md",
     "技术学习/31-ESP32/00-资源.md",
+    "研究相关/未命名.md",
     "研究相关/论文思路.md",
     "技术学习/31-ESP32",
     "研究相关/博士支援制度说明会2026.md",
