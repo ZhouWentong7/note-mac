@@ -158,13 +158,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "技术学习/13-深度学习入门-生成模型/07-变分自编码器.md",
+                "file": "拓展学习/08-大模型技术杂记/09-Transformer论文精读.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "07-变分自编码器 的大纲"
+              "title": "09-Transformer论文精读 的大纲"
             }
           },
           {
@@ -198,7 +198,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
