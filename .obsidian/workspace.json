@@ -34,9 +34,21 @@
               "icon": "lucide-file",
               "title": "09-Transformer论文精读"
             }
+          },
+          {
+            "id": "14b68213fbbaab46",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.12.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "版本说明 1.12.7"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -224,7 +236,7 @@
       "callout-manager:Insert Callout": false
     }
   },
-  "active": "c512ca04678a4355",
+  "active": "14b68213fbbaab46",
   "lastOpenFiles": [
     "技术学习/31-ESP32/00-资源.md",
     "研究相关/未命名.md",
