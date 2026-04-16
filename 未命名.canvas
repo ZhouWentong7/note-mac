@@ -1,7 +1,0 @@
-{
-	"nodes":[
-		{"id":"3cb1d012913cc73c","x":-125,"y":-30,"width":250,"height":60,"type":"text","text":""},
-		{"id":"f9217ef13ddf78c7","x":-125,"y":-30,"width":250,"height":60,"type":"text","text":"这是便笺？\n"}
-	],
-	"edges":[]
-}
