@@ -1,0 +1,10 @@
+views:
+  - type: table
+    name: 表格
+    filters:
+      and:
+        - file.inFolder("知识学习/01-信息论")
+    order:
+      - file.name
+      - file.ctime
+      - file.tags
