@@ -27,6 +27,23 @@ LoRA (Low-Rank Adaptation)，一种LLM的微调方法……
  ![[04-LoRA.png]]
 ## LoRA核心过程
 
+![[04-LoRA-detail.png]]
+
+$$ \begin{aligned} 
+Q &= Q_1 + Q_2 \\ 
+&= W_qX+\Delta W_qX \\ 
+&=W_qX + ABX \\
+&= (W_q +AB)X \\
+&= W_q^{Merged}X\end{aligned} $$
+
+- A : LoRA 模块降维矩阵，使用随机数初始化
+- B: LoRA模块升维矩阵，使用全0矩阵初始化
+- x输入到模型后，原参数冻结（不参与反向传播），仅在LoRA模块的两个小矩阵进行参数更新
+- 最后原参数和更新后的内容相加得到更新后的结果
+
+>[!note] 使用LoRA训练的模型推理时是否会造成额外延迟？
+>答：不会，在LoRA训练结束后，更新的$\Delta W$直接与原参数相加，不会改变模型结构。
 
 
-
+## LoRA在哪里使用
+ 
