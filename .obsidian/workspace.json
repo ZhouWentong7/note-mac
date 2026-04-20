@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "知识学习/01-信息论/011-Entropy.md",
+                "file": "知识学习/01-信息论/010-引言.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "011-Entropy"
+              "title": "010-引言"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 283.5
+    "width": 283.5,
+    "collapsed": true
   },
   "right": {
     "id": "42c22cc28f006f8e",
@@ -210,8 +211,10 @@
   },
   "active": "dcd1423a03cc0a4e",
   "lastOpenFiles": [
-    "知识学习/01-信息论/信息论笔记目录.base",
+    "知识学习/01-信息论/attachments/Pasted image 20260420112927.png",
+    "知识学习/01-信息论/attachments/Pasted image 20260420111712.png",
     "知识学习/01-信息论/011-Entropy.md",
+    "知识学习/01-信息论/信息论笔记目录.base",
     "知识学习/01-信息论/010-引言.md",
     "知识学习/01-信息论/attachments/011-Entropy-exp1.png",
     "知识学习/01-信息论/attachments",
@@ -234,7 +237,6 @@
     "拓展学习/08-大模型技术杂记/attachments/09-AttMechanism.png",
     "拓展学习/08-大模型技术杂记/attachments/09-Encoder-Decoder.png",
     "拓展学习/08-大模型技术杂记/attachments/09-RNN2.png",
-    "拓展学习/08-大模型技术杂记/attachments/09-RNN.png",
     "拓展学习/08-大模型技术杂记/08-笔记：近年AI应用技术串讲与优质文档分享.md",
     "拓展学习/08-大模型技术杂记/llamaFactory 与 easyR1笔记.md",
     "技术学习/02-推荐系统（工业）/03-概要03：推荐系统的AB测试.md",
