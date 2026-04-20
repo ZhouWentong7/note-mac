@@ -4,6 +4,7 @@ views:
     filters:
       and:
         - file.inFolder("知识学习/01-信息论")
+        - file.ext == "md"
     order:
       - file.name
       - file.ctime

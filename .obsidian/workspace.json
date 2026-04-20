@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 283.5,
-    "collapsed": true
+    "width": 283.5
   },
   "right": {
     "id": "42c22cc28f006f8e",
@@ -211,17 +210,17 @@
   },
   "active": "dcd1423a03cc0a4e",
   "lastOpenFiles": [
+    "知识学习/01-信息论/信息论笔记目录.base",
+    "知识学习/01-信息论/011-Entropy.md",
+    "知识学习/01-信息论/010-引言.md",
     "知识学习/01-信息论/attachments/011-Entropy-exp1.png",
     "知识学习/01-信息论/attachments",
-    "知识学习/01-信息论/010-引言.md",
     "拓展学习/08-大模型技术杂记/04-LoRA.md",
     "拓展学习/08-大模型技术杂记/attachments/04-LoRAinMLP.png",
     "拓展学习/08-大模型技术杂记/attachments/04-LoRA-Decoder.png",
     "拓展学习/08-大模型技术杂记/attachments/04-LoRA-detail.png",
     "拓展学习/08-大模型技术杂记/attachments/04-LoRA.png",
-    "知识学习/01-信息论/011-Entropy.md",
     "拓展学习/08-大模型技术杂记/09-Transformer论文精读.md",
-    "知识学习/01-信息论/信息论笔记目录.base",
     "HomePage.md",
     "研究相关/论文思路.md",
     "知识学习/01-信息论",
@@ -235,7 +234,6 @@
     "拓展学习/08-大模型技术杂记/attachments/09-AttMechanism.png",
     "拓展学习/08-大模型技术杂记/attachments/09-Encoder-Decoder.png",
     "拓展学习/08-大模型技术杂记/attachments/09-RNN2.png",
-    "拓展学习/08-大模型技术杂记/attachments/09-RNN.png",
     "拓展学习/08-大模型技术杂记/attachments/09-RNN.png",
     "拓展学习/08-大模型技术杂记/08-笔记：近年AI应用技术串讲与优质文档分享.md",
     "拓展学习/08-大模型技术杂记/llamaFactory 与 easyR1笔记.md",
