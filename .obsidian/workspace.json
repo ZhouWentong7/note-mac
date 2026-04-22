@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "10-贝叶斯公式、贝叶斯估计、最大后验估计、最大似然估计"
             }
+          },
+          {
+            "id": "59e50fb183b61d99",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "技术学习/13-深度学习入门-生成模型/07-变分自编码器.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "07-变分自编码器"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -53,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#贝叶斯公式",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,13 +89,11 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 283.5,
-    "collapsed": true
+    "width": 283.5
   },
   "right": {
     "id": "42c22cc28f006f8e",
@@ -210,22 +223,28 @@
       "callout-manager:Insert Callout": false
     }
   },
-  "active": "dcd1423a03cc0a4e",
+  "active": "59e50fb183b61d99",
   "lastOpenFiles": [
-    "知识学习/01-信息论/010-引言.md",
+    "技术学习/13-深度学习入门-生成模型/99-思路梳理.md",
     "拓展学习/08-AI技术杂记/10-贝叶斯公式、贝叶斯估计、最大后验估计、最大似然估计.md",
+    "拓展学习/08-AI技术杂记/08-笔记：近年AI应用技术串讲与优质文档分享.md",
+    "拓展学习/08-AI技术杂记/09-Transformer论文精读.md",
+    "拓展学习/08-AI技术杂记/04-LoRA.md",
+    "拓展学习/08-AI技术杂记/03-Reasoning LLMs.md",
+    "拓展学习/08-AI技术杂记/02-SFT.md",
+    "拓展学习/08-AI技术杂记/未命名.base",
+    "拓展学习/08-AI技术杂记/11-变分推断.md",
+    "知识学习/01-信息论/010-引言.md",
     "知识学习/01-信息论/attachments/Pasted image 20260420112927.png",
     "知识学习/01-信息论/attachments/Pasted image 20260420111712.png",
     "知识学习/01-信息论/011-Entropy.md",
     "知识学习/01-信息论/信息论笔记目录.base",
     "知识学习/01-信息论/attachments/011-Entropy-exp1.png",
     "知识学习/01-信息论/attachments",
-    "拓展学习/08-AI技术杂记/04-LoRA.md",
     "拓展学习/08-AI技术杂记/attachments/04-LoRAinMLP.png",
     "拓展学习/08-AI技术杂记/attachments/04-LoRA-Decoder.png",
     "拓展学习/08-AI技术杂记/attachments/04-LoRA-detail.png",
     "拓展学习/08-AI技术杂记/attachments/04-LoRA.png",
-    "拓展学习/08-AI技术杂记/09-Transformer论文精读.md",
     "HomePage.md",
     "研究相关/论文思路.md",
     "知识学习/01-信息论",
@@ -238,7 +257,6 @@
     "拓展学习/08-AI技术杂记/attachments/09-TransformerArchitecture..png",
     "拓展学习/08-AI技术杂记/attachments/09-AttMechanism.png",
     "拓展学习/08-AI技术杂记/attachments/09-Encoder-Decoder.png",
-    "拓展学习/08-AI技术杂记/08-笔记：近年AI应用技术串讲与优质文档分享.md",
     "拓展学习/08-AI技术杂记/llamaFactory 与 easyR1笔记.md",
     "技术学习/02-推荐系统（工业）/03-概要03：推荐系统的AB测试.md",
     "2026-03-21.md",
@@ -252,12 +270,7 @@
     "拓展学习/08-AI技术杂记/05-LLM的2025.md",
     "技术学习/14-从零构建大模型/00-概述.md",
     "技术学习/14-从零构建大模型",
-    "日常生活/03-随笔",
     "技术学习/13-深度学习入门-生成模型/06-神经网络.md",
-    "技术学习/13-深度学习入门-生成模型/99-思路梳理.md",
-    "拓展学习/08-AI技术杂记/06-2025精选论文.md",
-    "拓展学习/08-AI技术杂记/03-Reasoning LLMs.md",
-    "拓展学习/08-AI技术杂记/01-RAG.md",
-    "拓展学习/08-AI技术杂记/02-SFT.md"
+    "拓展学习/08-AI技术杂记/06-2025精选论文.md"
   ]
 }
