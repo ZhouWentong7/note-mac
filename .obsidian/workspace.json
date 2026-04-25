@@ -74,7 +74,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 283.5
+    "width": 283.5,
+    "collapsed": true
   },
   "right": {
     "id": "42c22cc28f006f8e",
@@ -90,7 +91,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "技术学习/12-自然语言处理/未命名.base",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +100,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "未命名 的反向链接列表"
+              "title": "反向链接"
             }
           },
           {
@@ -109,12 +109,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "技术学习/12-自然语言处理/未命名.base",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "未命名 的出链列表"
+              "title": "出链"
             }
           },
           {
@@ -138,13 +137,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "技术学习/12-自然语言处理/未命名.base",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "未命名 的大纲"
+              "title": "大纲"
             }
           },
           {
@@ -204,10 +202,10 @@
       "callout-manager:Insert Callout": false
     }
   },
-  "active": "352016358fb19a13",
+  "active": "baf35e8eaa4d76e7",
   "lastOpenFiles": [
-    "技术学习/12-自然语言处理/06-Gated RNN.md",
     "技术学习/12-自然语言处理/未命名.base",
+    "技术学习/12-自然语言处理/06-Gated RNN.md",
     "拓展学习/08-AI技术杂记/08-笔记：近年AI应用技术串讲与优质文档分享.md",
     "拓展学习/08-AI技术杂记/06-2025精选论文.md",
     "拓展学习/08-AI技术杂记/05-LLM的2025.md",
@@ -251,7 +249,6 @@
     "技术学习/02-推荐系统（工业）/03-概要03：推荐系统的AB测试.md",
     "2026-03-21.md",
     "技术学习/02-推荐系统（工业）/01-概要01：推荐系统的基本概念.md",
-    "研究相关/attachments",
-    "技术学习/13-深度学习入门-生成模型/05-EM算法.md"
+    "研究相关/attachments"
   ]
 }
