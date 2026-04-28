@@ -24,10 +24,9 @@ Step 2. Conduct phonetic analyses of the names in each language and extract patt
 
 Step 3. Create correlation tables between phonetic features and biological parameters (e.g., body size, pitch of voice, etc.), and investigate patterns of similarity, difference, and possible interaction among language families.
 Step 4. Summarize cross-linguistic similarities and differences in these correlations, and examine the influence of perception, cognition, and speech production on language development.
-步骤三：构建语音特征与生物参数（如体型大小、发声音调等）的关联对照表，探究不同语系之间的共性特征、差异规律以及潜在的相互作用关系。
+步骤三：构建语音特征与生物参数（如体型大小、发声音调等）的关联对照表，探究**不同语系之间的共性特征、差异规律以及潜在的相互作用关系**。
 步骤四：归纳总结不同语言在上述关联规律中的异同点，探究感知能力、认知水平与言语发声机制对语言演化发展产生的影响。
 
- 
 Research on sound symbolism has typically been conducted using a limited number of languages. Studies like this one, which apply big data methodologies and AI to analyze correlations in naming across many languages, are still relatively rare. Expanding this approach is expected to enable large-scale investigations of linguistic features and similarities across the world’s languages.
 过往针对语音象征的研究，通常仅围绕少数几种语言展开。而像本研究这样，运用大数据研究方法与人工智能技术，分析多种语言命名规律内在关联的研究，目前仍较为稀缺。推广此类研究方法，有望助力学界对全球各类语言的语言特征及共通规律开展大规模系统性研究。
 
@@ -37,3 +36,10 @@ The interdisciplinary approach and use of data science methods in this study can
 Furthermore, the findings of this research are important not only for science, but also have important practical applications. Phonetic analyses of brand and product names worldwide have shown that certain sounds are associated with particular characteristics. By investigating the cross-linguistic consistency of these effects, this study aims to uncover their physiological basis, with potential applications in marketing, branding, and related fields.
 此外，本研究成果不仅具备重要的科研价值，还拥有广泛的实际应用价值。针对全球范围内品牌与产品名称开展的语音分析表明，特定的语音会与特定的属性特征产生关联。本研究通过探究这类语音效应在不同语言中的共性规律，旨在揭示其背后的生理机制，相关研究成果可应用于市场营销、品牌打造等诸多相关领域。
 
+
+---
+
+选取单一生物类别，分析该类别下的不同物种名称在不同语言下语音与其特征的关系，但一些物种仅在特定地区出现，且物种越细分，越是只有专业人士了解其命名，且越是细分，其命名越脱离“自然生成”。
+
+如：菲律宾鹃鸠
+中文里这种动物的名称以地理分布命名，但在物种的吗
