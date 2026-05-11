@@ -7,14 +7,10 @@ tags:
 
 LoRA (Low-Rank Adaptation)，一种LLM的微调方法……
 
-> 选择LoRA是因为它通过向变换器层注入可训练的低秩矩阵，主要针对语言模型组件，从而高效适应大型预训练模型。这种方法显著减少了可训练参数的数量，使微调在计算上更轻松，同时保持了强有力的性能。（Kvasir-VQA-x1数据集中介绍）
+> 选择LoRA是因为它通过向变换器层**注入**可训练的低秩矩阵，主要针对语言模型组件，从而高效适应大型预训练模型。这种方法显著减少了可训练参数的数量，使微调在计算上更轻松，同时保持了强有力的性能。（Kvasir-VQA-x1数据集中介绍）
 
-【LoRA毁掉了我的大厂面试——从原理到大厂面试题再到实操微调，一个视频讲清楚】 https://www.bilibili.com/video/BV1wecpzpEWY/?share_source=copy_web&vd_source=fe1e50f3e19ee2c5f4cd32de1f11a963
-
-> 带有AutoDL的使用方法、使用AutoDL、LlamaFactory微调大模型：从登录AutoDL、下载库、upload数据集在内的所有流程
-
-
-
+>[!info] 【LoRA毁掉了我的大厂面试——从原理到大厂面试题再到实操微调，一个视频讲清楚】 https://www.bilibili.com/video/BV1wecpzpEWY/?share_source=copy_web&vd_source=fe1e50f3e19ee2c5f4cd32de1f11a963
+> - 带有AutoDL的使用方法、使用AutoDL、LlamaFactory微调大模型：从登录AutoDL、下载库、upload数据集在内的所有流程
 
 以Qwen2.5-7B为例：
 - 7B = 70亿参数 × 2 Bytes ≈ 14G （只是加载或推理）
@@ -113,6 +109,7 @@ Q1：为什么A是随机初始化，B是全0？为什么不能都随机或者都
 	&=W_qX + ABX \\
 	&= (W_q +AB)X \\
 	&= W_q^{Merged}X\end{aligned} $$
+	
 	则：
 	$$
 	W_{final} = W_{pretrained} + LargeNoise
