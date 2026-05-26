@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "739ae2f9ff40b9ae",
+        "id": "37e7bab914cf276b",
         "type": "tabs",
         "children": [
           {
-            "id": "6525bf51f3be0334",
+            "id": "68aa773b9631d355",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "日常生活/00-事件分析/2026年5月22日山西沁园煤场爆炸事件-知乎分析.md",
+                "file": "HomePage.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026年5月22日山西沁园煤场爆炸事件-知乎分析"
+              "title": "HomePage"
             }
           }
         ]
@@ -205,15 +205,16 @@
       "callout-manager:Insert Callout": false
     }
   },
-  "active": "6525bf51f3be0334",
+  "active": "68aa773b9631d355",
   "lastOpenFiles": [
-    "拓展学习/08-AI技术杂记/llamaFactory 与 easyR1笔记.md",
+    "未命名.canvas",
+    "HomePage.md",
+    "日常生活/00-事件分析/未命名.base",
     "日常生活/00-事件分析/2026年5月22日山西沁园煤场爆炸事件-知乎分析.md",
+    "拓展学习/08-AI技术杂记/llamaFactory 与 easyR1笔记.md",
     "日常生活/00-事件分析",
     "拓展学习/08-AI技术杂记/未命名 1.base",
     "拓展学习/08-AI技术杂记/未命名.base",
-    "HomePage.md",
-    "未命名.canvas",
     "未命名.base",
     "知识学习/02-语言学/Research Plan.md",
     "知识学习/01-信息论/010-引言.md",
@@ -249,10 +250,8 @@
     "知识学习/01-信息论/attachments/Pasted image 20260420112927.png",
     "知识学习/01-信息论/attachments/Pasted image 20260420111712.png",
     "知识学习/01-信息论/attachments/011-Entropy-exp1.png",
-    "知识学习/01-信息论/attachments",
     "拓展学习/08-AI技术杂记/attachments/04-LoRAinMLP.png",
     "拓展学习/08-AI技术杂记/attachments/04-LoRA-Decoder.png",
-    "拓展学习/08-AI技术杂记/attachments/04-LoRA-detail.png",
-    "研究相关/论文思路.md"
+    "拓展学习/08-AI技术杂记/attachments/04-LoRA-detail.png"
   ]
 }
