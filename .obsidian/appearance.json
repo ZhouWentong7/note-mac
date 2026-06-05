@@ -4,5 +4,6 @@
   "theme": "system",
   "accentColor": "#5ca6f5",
   "nativeMenus": false,
-  "translucency": true
+  "translucency": true,
+  "textFontFamily": "Courier"
 }
