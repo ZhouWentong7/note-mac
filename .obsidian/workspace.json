@@ -8,34 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2707ee6d5f785668",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "拓展学习/08-AI技术杂记/llamaFactory 与 easyR1笔记.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "llamaFactory 与 easyR1笔记"
-            }
-          },
-          {
-            "id": "9a455fcd7db21690",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "拓展学习/08-AI技术杂记/02-SFT.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "02-SFT"
-            }
-          },
-          {
             "id": "a62b58da83748c1e",
             "type": "leaf",
             "state": {
@@ -96,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "easy",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -117,8 +89,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -285,53 +256,23 @@
         "height": 919,
         "maximize": false,
         "zoom": -0.5
-      },
-      {
-        "id": "56090ed0208ebf88",
-        "type": "window",
-        "children": [
-          {
-            "id": "6080fc17854687cc",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "fea178bff79ed162",
-                "type": "leaf",
-                "state": {
-                  "type": "webviewer",
-                  "state": {
-                    "url": "https://obsidian.md/help/data-storage#Metadata+cache",
-                    "title": "How Obsidian stores data - Obsidian Help",
-                    "mode": "webview"
-                  },
-                  "icon": "globe-2",
-                  "title": "How Obsidian stores data - Obsidian Help"
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 0,
-        "y": 37,
-        "width": 1470,
-        "height": 919,
-        "maximize": false,
-        "zoom": -0.5
       }
     ]
   },
-  "active": "fea178bff79ed162",
+  "active": "acd21dec2fa97134",
   "lastOpenFiles": [
+    "拓展学习/08-AI技术杂记/12-马尔科夫蒙特卡洛.md",
     "拓展学习/08-AI技术杂记/llamaFactory 与 easyR1笔记.md",
+    "拓展学习/08-AI技术杂记/05-LLM的2025.md",
+    "拓展学习/08-AI技术杂记/06-2025精选论文.md",
     "拓展学习/08-AI技术杂记/08-笔记：近年AI应用技术串讲与优质文档分享.md",
+    "拓展学习/08-AI技术杂记/未命名 1.base",
+    "拓展学习/08-AI技术杂记/未命名.base",
     "拓展学习/08-AI技术杂记/11-变分推断.md",
     "拓展学习/08-AI技术杂记/02-SFT.md",
-    "拓展学习/08-AI技术杂记/12-马尔科夫蒙特卡洛.md",
     "拓展学习/08-AI技术杂记/10-贝叶斯公式、贝叶斯估计、最大后验估计、最大似然估计.md",
     "拓展学习/08-AI技术杂记/09-Transformer论文精读.md",
-    "拓展学习/08-AI技术杂记/attachments/Pasted image 20260605104315.png",
-    "拓展学习/08-AI技术杂记/未命名.base",
+    "拓展学习/08-AI技术杂记/attachments/Acceptance-RejectionSampling.png",
     "拓展学习/08-AI技术杂记/未命名 2.base",
     "拓展学习/08-AI技术杂记/13-强化学习图谱.md",
     "知识学习/02-语言学/Research Plan.md",
@@ -343,13 +284,11 @@
     "日常生活/00-事件分析/未命名.base",
     "日常生活/00-事件分析/2026年5月22日山西沁园煤场爆炸事件-知乎分析.md",
     "日常生活/00-事件分析",
-    "拓展学习/08-AI技术杂记/未命名 1.base",
     "未命名.base",
     "技术学习/11-目标检测YOLO-小土堆/02-目标检测常用数据集.md",
     "技术学习/11-目标检测YOLO-小土堆/03-必备基础知识.md",
     "技术学习/10-Pytorch深入浅出/学习资源.md",
     "技术学习/10-Pytorch深入浅出",
-    "拓展学习/08-AI技术杂记/06-2025精选论文.md",
     "拓展学习/08-AI技术杂记/04-LoRA.md",
     "拓展学习/08-AI技术杂记/attachments/12-RLStructure.png",
     "拓展学习/08-AI技术杂记/attachments/12-RGV示意图.png",
@@ -359,7 +298,6 @@
     "Excalidraw",
     "知识学习/02-语言学",
     "技术学习/12-自然语言处理/06-Gated RNN.md",
-    "拓展学习/08-AI技术杂记/05-LLM的2025.md",
     "拓展学习/08-AI技术杂记/03-Reasoning LLMs.md",
     "拓展学习/08-AI技术杂记/01-RAG.md",
     "技术学习/13-深度学习入门-生成模型/07-变分自编码器.md",
