@@ -64,6 +64,7 @@
             }
           }
         ],
+        "currentTab": 2,
         "stacked": true
       }
     ],
@@ -117,8 +118,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -249,10 +249,11 @@
       "callout-manager:Insert Callout": false
     }
   },
-  "active": "fded60d3ac21cbd2",
+  "active": "1ecff4644cf6519d",
   "lastOpenFiles": [
     "技术学习/13-深度学习入门-生成模型/04-高斯混合模型.md",
     "技术学习/13-深度学习入门-生成模型/05-EM算法.md",
+    "技术学习/13-深度学习入门-生成模型/03-多维正态分布.md",
     "技术学习/13-深度学习入门-生成模型/07-变分自编码器.md",
     "技术学习/13-深度学习入门-生成模型/06-神经网络.md",
     "技术学习/13-深度学习入门-生成模型/未命名.base",
@@ -288,7 +289,6 @@
     "知识学习/01-信息论/信息论笔记目录.base",
     "知识学习/01-信息论/010-引言.md",
     "HomePage.md",
-    "日常生活/00-事件分析/2026年5月22日山西沁园煤场爆炸事件-知乎分析.md",
     "拓展学习/08-AI技术杂记/attachments/12-RLStructure.png",
     "拓展学习/08-AI技术杂记/attachments/12-RGV示意图.png",
     "拓展学习/08-AI技术杂记/attachments/Pasted image 20260502012057.png",
