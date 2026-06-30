@@ -51,7 +51,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "拓展学习/08-AI技术杂记/09-Transformer论文精读.md",
+                "file": "拓展学习/08-AI技术杂记/08-笔记：近年AI应用技术串讲与优质文档分享.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -66,7 +66,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "09-Transformer论文精读"
+              "title": "08-笔记：近年AI应用技术串讲与优质文档分享"
             }
           },
           {
@@ -271,6 +271,7 @@
   },
   "active": "1ecff4644cf6519d",
   "lastOpenFiles": [
+    "拓展学习/08-AI技术杂记/09-Transformer论文精读.md",
     "拓展学习/08-AI技术杂记/08-笔记：近年AI应用技术串讲与优质文档分享.md",
     "拓展学习/08-AI技术杂记/14-AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归.md",
     "拓展学习/08-AI技术杂记/attachments/DDPM-draft.png",
@@ -310,7 +311,6 @@
     "拓展学习/08-AI技术杂记/未命名 1.base",
     "拓展学习/08-AI技术杂记/02-SFT.md",
     "拓展学习/08-AI技术杂记/10-贝叶斯公式、贝叶斯估计、最大后验估计、最大似然估计.md",
-    "拓展学习/08-AI技术杂记/09-Transformer论文精读.md",
     "拓展学习/08-AI技术杂记/attachments/Acceptance-RejectionSampling.png",
     "拓展学习/08-AI技术杂记/未命名 2.base",
     "知识学习/02-语言学/Research Plan.md",
