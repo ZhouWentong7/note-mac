@@ -114,6 +114,81 @@ Decoder
 > [!cite] GAN — Generative Adversarial Network (2014)
 _Generative Adversarial Nets_ — Goodfellow et al. (2014)https://arxiv.org/abs/1406.2661
 
+因为生成的图像比VAE更为清晰，再2014到2020期间处于统治地位，直到2020年出现Diffusion。
+
+核心思想
+- 生成器：从随机噪声直接生成随机图像丢给判别器 —— 越逼真越好
+	- 固定维度的随机噪音进行上采样，输出到和训练数据一样尺寸，用MLP（后2015年的DCGAN替换为转置CNN）实现。
+- 判别器：一个分类器，接收一个图像，输出一个0~1的概率标量。判断是真实图像还是生成器生成的图像 —— 努力打假
+	- 原始为MLP，后DCGAN改为CNN。
+- 通过对抗的作用提升生图效果—— 纳什均衡
+
+> [!note] 纳什均衡
+> 一组策略组合，给定其他所有人策略不变，任意参与者单独更换策略，收益不会提升甚至受损，因此无人有动机单方面改变现状，局面自动稳定
+>- 稳定≠最优:均衡只保证个体不愿单独改变，不代表整体收益最大；极易出现个体理性导致集体吃亏。
+>- 一场博弈可存在多个纳什均衡:如情侣博弈（性别战）：一起看男方电影、一起看女方电影，两个均衡，容易协调失败。
+>- 仅适用于无强制合约的非合作博弈:双方无法签订约束性协议、不能互相监督惩罚，才会陷入低效均衡；若有强制合作，可跳出纳什均衡。
+>- 纳什存在定理:任何有限博弈，至少存在一个纳什均衡（纯策略或混合策略）。
+
+![GAN架构示意图](attachments/GAN-draft.png)
+
+训练过程
+- 损失函数：生成器G与判别器D共享一个min-max目标函数，判别器想最大化这个目标（尽量区分出真假），生成器想尽量最小化该目标（不让判别器看出来）
+- 前向传播：
+	- G生成得到假样本
+	- D随机接收真假样本，尽量判别出区别
+- 反向传播：
+	- D：固定生成器，根据判别器loss对判别器进行反向传播，更新参数，使D更精准
+	- G：固定判别器，梯度从D的打分一路回到G，更新G的参数，使生成的假样本更真
+
+核心贡献
+- 对抗框架：无显示定义的似然函数，无复杂的变分近似计算，利用博弈隐式学习数据分布
+- 生成质量提升：相较于同期的VAE，GAN的图像更为锐利逼真，生成模型的输出达到“可用”级别
+- 架构通用：该思想几乎可以用到任何网络架构和损失结合，有大量变体存在
+
+GAN的局限
+- **训练不稳定**：G和D的平衡难以维持，容易出现梯度消失、模式坍缩
+	- G和D需要保持动态平衡。如果D过强，G难以获得有效梯度；如果G过强，D难以学习有效判别特征，两者容易陷入震荡或训练失败。
+- **多样性不足**：模式坍缩意味着 G发现自己生成某种图总是被打假，但是另一种图很容易通过，于是只生成那种（种类较少）安全的不会被打假的图。 
+
+然而，GAN 的训练不稳定和模式坍缩问题始终未被根本解决，这为后来扩散模型的崛起埋下了伏笔。
+
+GAN 的对抗训练思想也被后续大量工作借用。最典型的例子是 **VQGAN**（2021）。它把 GAN 的对抗损失引入 **VQ-VAE 的 tokenizer 训练**中，大幅提升了图像离散化的质量，成为**自回归范式**的关键组件。
+
+2021 年，Diffusion Models Beat GANs 一文的诞生标志着 GAN 在无条件/有条件图像生成上的统治地位正式被**扩散模型**终结。
+
+**GAN 参考文档**
+
+- [ ] https://lilianweng.github.io/posts/2017-08-20-gan/
+- [ ] https://jonathan-hui.medium.com/gan-whats-generative-adversarial-networks-and-its-application-f39ed278ef09
+- [ ] https://towardsai.net/p/machine-learning/diffusion-models-vs-gans-vs-vaes-comparison-of-deep-generative-models
+- [ ] https://aws.amazon.com/cn/what-is/gan/
+# 二、基础工作
+不直接用于生成范式，但是为后续研究的扩散和自回归两种范式起到关键铺垫。
+
+## 1. ViT（2020）
+> [!quote] ViT — Vision Transformer (2020)
+_An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale_ — Dosovitskiy et al. (2020)https://arxiv.org/abs/2010.11929
+
+>[!hint] 证明Transformer在视觉任务上的可用性。
+
+![ViT架构图：将图片切分为固定大小的patch，对每个patch做线性嵌入，加上位置编码，作为向量输入到标准的Transformer编码器中](attachments/ViT-draft.png)
+ 
+核心：第一次使用完全标准的Transformer（NLP领域的架构）完成视觉任务，没有使用任何卷积。是跨CV和NLP的标志性工作。
+
+做法：将图像切分为固定大小的 patch（例如 16×16），每个 patch 线性投影成一个 token，然后用标准 Transformer 处理这些 token 序列。在<u>足够大的数据上训练后</u>，ViT **超越了所有 CNN 模型**
+
+缺点：
+- 预训练需要的数据比CNN大得多： 在中等规模数据集（如仅用 ImageNet-1k 训练）上，ViT 的表现不如同规模的 CNN，需要大规模数据或强数据增强才能发挥优势。
+- 计算成本高：自注意力的二次复杂度使得处理高分辨率图像的计算成本很高
+
+核心贡献：
+- 证明纯Transformer在视觉任务的可行性：打破视觉任务必须用CNN的认知。
+- **Patch Tokenization：** 将图像视为"patch 序列"的思想，为后来的 DiT（用 Transformer 替代 U-Net 做扩散）和自回归图像生成（把图像当 token 序列逐个预测）奠定了基础。
+- **扩展性（Scalability）：** 展示了 Transformer 在视觉领域同样遵循**"更大模型 + 更多数据 = 更好性能"**的 Scaling Law。
+
+> [!note-toolbar] CNN 的局限性
+> CNN 的每一层只看局部区域，必须通过堆叠很多层才能间接获得全局视野。捕捉图像中远距离的关联（如图片左上角的物体与右下角的物体之间的关系）需要经过层层传递，效率较低。而 Transformer 通过注意力机制，让每个 token 在第一层就能直接与所有其他 token 建立关联，全局关系一步到位。这也是为什么在数据足够充分的条件下，ViT 能够超越所有精心设计的 CNN 模型
 
 
 

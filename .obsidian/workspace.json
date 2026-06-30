@@ -67,7 +67,17 @@
               "state": {
                 "file": "拓展学习/08-AI技术杂记/14-AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
               "title": "14-AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归"
@@ -146,8 +156,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "42c22cc28f006f8e",
@@ -277,6 +286,10 @@
   "active": "1ecff4644cf6519d",
   "lastOpenFiles": [
     "拓展学习/08-AI技术杂记/14-AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归.md",
+    "拓展学习/08-AI技术杂记/attachments/ViT-draft.png",
+    "拓展学习/08-AI技术杂记/未命名.base",
+    "attachiments.md",
+    "拓展学习/08-AI技术杂记/attachments/GAN-draft.png",
     "技术学习/13-深度学习入门-生成模型/07-变分自编码器.md",
     "拓展学习/08-AI技术杂记/attachments/reconstruction_KL_loss.png",
     "拓展学习/08-AI技术杂记/attachments/Autoencoder-draft.png",
@@ -307,20 +320,16 @@
     "拓展学习/08-AI技术杂记/06-2025精选论文.md",
     "拓展学习/08-AI技术杂记/08-笔记：近年AI应用技术串讲与优质文档分享.md",
     "拓展学习/08-AI技术杂记/未命名 1.base",
-    "拓展学习/08-AI技术杂记/未命名.base",
     "拓展学习/08-AI技术杂记/02-SFT.md",
     "拓展学习/08-AI技术杂记/10-贝叶斯公式、贝叶斯估计、最大后验估计、最大似然估计.md",
     "拓展学习/08-AI技术杂记/09-Transformer论文精读.md",
     "拓展学习/08-AI技术杂记/attachments/Acceptance-RejectionSampling.png",
     "拓展学习/08-AI技术杂记/未命名 2.base",
     "知识学习/02-语言学/Research Plan.md",
-    "知识学习/01-信息论/011-Entropy.md",
     "知识学习/01-信息论/信息论笔记目录.base",
     "拓展学习/08-AI技术杂记/attachments/12-RLStructure.png",
     "拓展学习/08-AI技术杂记/attachments/12-RGV示意图.png",
     "拓展学习/08-AI技术杂记/attachments/Pasted image 20260502012057.png",
-    "拓展学习/08-AI技术杂记/attachments/12-三大学习范式.png",
-    "知识学习/01-信息论/attachments/Pasted image 20260420112927.png",
-    "知识学习/01-信息论/attachments/Pasted image 20260420111712.png"
+    "拓展学习/08-AI技术杂记/attachments/12-三大学习范式.png"
   ]
 }
