@@ -87,7 +87,7 @@ tags:
 
 > The DeepSeek R1 technical report categorizes common inference-time scaling methods (such as Process Reward Model-based and Monte Carlo Tree Search-based approaches) under "unsuccessful attempts." This suggests that DeepSeek did not explicitly use these techniques beyond the R1 model's natural tendency to generate longer responses, which serves as an implicit form of inference-time scaling compared to the V3 base model.
 
-### ## 2）纯强化学习（RL
+### 2）纯强化学习（RL
 
 这是DS R1的两点，他们在获得R1-zero的模式，没有初始SFT，完全采用了RL。
 
@@ -102,7 +102,7 @@ DS组使用了两种奖励策略：准确性和格式
 > DS 是第一个演示纯强化学习可以让模型生成推理步骤的
 
 
-### ## 3）监督式微调与强化学习（SFT + RL）
+### 3）监督式微调与强化学习（SFT + RL）
 
 #SFT #RL 
 

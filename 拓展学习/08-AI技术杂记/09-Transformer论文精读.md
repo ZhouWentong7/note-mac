@@ -1,7 +1,7 @@
-> [!info]
+> [!info] 学习来源
 > [【《Attention is all you need》论文解读及Transformer架构详细介绍】](https://www.bilibili.com/video/BV1xoJwzDESD/?share_source=copy_web&vd_source=fe1e50f3e19ee2c5f4cd32de1f11a963)
 
-思路：
+**阅读思路**
 - 以往的模型存在的问题/平静——结构的哪些缺陷导致了性能的有限
 	- Intro和BG
 - 论文提出的注意力结构解决了什么问题，为什么可以解决
