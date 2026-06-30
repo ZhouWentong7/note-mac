@@ -190,6 +190,116 @@ _An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale_ —
 > [!note-toolbar] CNN 的局限性
 > CNN 的每一层只看局部区域，必须通过堆叠很多层才能间接获得全局视野。捕捉图像中远距离的关联（如图片左上角的物体与右下角的物体之间的关系）需要经过层层传递，效率较低。而 Transformer 通过注意力机制，让每个 token 在第一层就能直接与所有其他 token 建立关联，全局关系一步到位。这也是为什么在数据足够充分的条件下，ViT 能够超越所有精心设计的 CNN 模型
 
+对后续工作的影响
+- CLIP：视觉与语言的对其
+- DiT：用Transformer替代Unet做扩散的骨干
+- 自回归视觉生成模型：DALL-E1、 LlamaGen
+- 
+
+**CNN & VIT 参考文档**
+
+-  https://www.datacamp.com/tutorial/vision-transformers（VIT）
+- https://www.codecademy.com/article/vision-transformers-working-architecture-explained（VIT）
+- https://learnopencv.com/understanding-convolutional-neural-networks-cnn/（CNN）
+- https://www.codecademy.com/article/understanding-convolutional-neural-network-cnn-architecture（CNN）
+
+## 2.CLIP
+> [!quote] CLIP — Contrastive Language-Image Pre-training (2021)_Learning Transferable Visual Models From Natural Language Supervision_ — Radford et al. (OpenAI) (2021)https://arxiv.org/abs/2103.00020
+
+
+> [!abstract]
+> OpenAI提出的通过**对比学习**将图和文映射到同一语义空间。
+> 使用了4亿个图文对（大力出奇迹），训练图像编码器和文本编码器，使两个编码器在嵌入空间中的相对一得文本更近，不匹配的对距离更远
+
+
+![CLIP架构图](attachments/Clip-draft.png)
+
+CLIP训练
+- 获取数据：从互联网上得到的4亿个图-文对
+- 两个编码器
+	- 图像编码器：ResNet或者ViT
+	- 文本编码器：Transformer
+	- 每个编码器将数据压缩到固定维度（如：512维，不同版本维度不同）
+- 训练目标
+	- 对于一个batch中N个图文对，正确配对的图文向量在向量空间中距离更近（余弦相似度→1），另外的$N^2 - N$个不配对内容要更远（余弦相似度→0），训练结束后，两个编码器学会将语义相似的图文映射到接近的位置
+
+CLIP的应用（文生图）
+- 只使用文本编码器
+- 流程：prompt → CLIP文本编码器 → 语义embedding → 扩散模型（UNet)→ 在每一步去噪过程中引导生成方向  
+- CLIP本身不生成图像，而是作为一个“翻译工具”，将文本与图像的语义对齐： $\text{text embedding} \approx \text{image embedding in same space}$
+
+影响
+- 扩散范式中
+	- CLIP作为Stable Diffusion的条件输入
+	- DALL E2/unCLIP 则以CLIP为核心构建
+
+
+
+
+**CLIP 参考文档**
+- https://openai.com/index/clip/
+- https://viso.ai/deep-learning/clip-machine-learning/
+- https://medium.com/@ManishChablani/clip-contrastive-language-image-pretraining-summary-and-intuition-52e329a67377
+
+
+
+---
+
+# 三、扩散模型
+> [!hint] 核心思想
+> 逐步添加高斯噪声，直到该图像转换为纯噪声图像，再反向训练一个网络逐步去噪。
+> 
+
+## 1. DDPM（2020）
+> [!quote] _Denoising Diffusion Probabilistic Models_ — Ho, Jain & Abbeel (2020)https://arxiv.org/abs/2006.11239
+
+> [!abstract] 摘要
+> 向前过程中逐步为图像添加高斯噪声，直到变为纯噪声图。；反向过程训练一个神经网络（U-Net）逐步去噪，从纯噪声恢复出数据。训练目标转化为：预测每一步添加的噪声。
+
+![DDPM processing](attachments/DDPM-draft.png)
+
+**DDPM训练过程**
+- 前向加噪
+	- 给定一个原图$x_0$，按照预设的噪声调度表（noise schedule）一步步叠加高斯噪声
+	- 经过T步（通常T=1000）后，原图信息被噪声覆盖，变为纯噪声图像。
+	- 纯数学叠加，不涉及可学习参数。关键性质： 任意时刻 t，$x_t$ 可以直接由 $x_0$ 生成，而不需要逐步递推。
+	  > 高斯噪声的可合成性，多次叠加的高斯噪声仍然是高斯噪声
+- 反向去噪
+	- 输入加噪后的图像$x_t$，和当前时间步t，输出为对该时刻加噪的预测。
+	- 训练流程是一个朴素的回归任务：：在每次迭代中，从数据集中采样真实图像 $x_0$，随机采样时间步 $t$，并通过封闭形式直接构造带噪样本 $x_t$。同时根据前向扩散公式生成对应的高斯噪声 $\epsilon$，训练网络在给定 $x_t$ 和 $t$ 的条件下预测该噪声，并通过均方误差（MSE）进行优化。
+	- 时间步t也会被作为条件输入给网络，原因在于：不同 t 对应不同噪声水平，使得 $x_t$ 的统计分布显著不同。在大 t 时，**样本接近纯高斯噪声**，模型需要**恢复全局**结构；在小 t 时，**样本仅含少量噪声**，模型主要进行**高频细节修复**。因此去噪函数本质上是一个依赖噪声强度的条件函数 $\epsilon_\theta(x_t, t)$，而非统一映射。
+	  - 人话：t 表示当前噪声强度，输入给模型是为了让它知道图像“被破坏到什么程度”，从而在不同噪声水平下学习不同的去噪方式：大噪声时恢复结构，小噪声时补细节
+	- 损失函数：MSE均方误差，计算真实噪声与预测噪声之间的差距
+
+**DDPM生成图像**
+- 随机采样一张纯高斯噪声图作为 x_T，从 t=T 开始，每一步让去噪网络预测当前噪声并将其减去，同时注入一点更小的随机噪声（维持采样的随机性），得到 $x_{t-1}$
+
+**主流去噪网络框架**
+- U-Net
+	- 原文架构
+	- 编码器逐层提取抽象特征
+	- 解码器放大还原分辨率
+	- skip connection传递信息，使输出同事保留深层语义和浅层细节
+	- 输入输出尺寸相同，适用于去噪任务
+- Transformer（DiT)
+	- 噪声图像切分为patch，注意力机制让每个patch可以从第一层就与其他patch直接交互，全局信息捕捉效率更高，扩展性强。（Sora已采用[Link](https://arxiv.org/abs/2212.09748）)
+
+**局限性**
+- **采样速度慢**：反向去噪需要上千步迭代（如 T=1000），每一步都需要一次完整的网络前向传播，生成一张图像需要数分钟，远慢于 GAN 的单次前向传播。
+- **分辨率受限**：在**像素空间**直接做扩散的计算成本随分辨率平方增长，DDPM 的实验仅限于 32×32 和 256×256。
+- **无条件生成：** 原始 DDPM 仅做**无条件生成**，不支持文本、类别等条件引导。
+**DDPM 参考文档**
+- https://lilianweng.github.io/posts/2021-07-11-diffusion-models/  （非常严谨清晰，推荐）
+- https://learnopencv.com/denoising-diffusion-probabilistic-models/
+- https://theaisummer.com/diffusion-models/
+- https://zhouyifan.net/2023/07/07/20230330-diffusion-model/（中文）
+- https://calvinyluo.com/2022/08/26/diffusion-tutorial.html
+
+## 2. Diffusion Models Beats GANs（2021）
+> [!quote] _Diffusion Models Beat GANs on Image Synthesis_ — Dhariwal & Nichol (OpenAI) (2021)https://arxiv.org/abs/2105.05233
+
+> [!hint] 使用**分类器**实现**条件化生成图像**；扩散模型正式超越GAN
+
 
 
 ---

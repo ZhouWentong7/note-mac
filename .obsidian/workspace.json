@@ -32,20 +32,6 @@
             }
           },
           {
-            "id": "c29ac1826f51a2e5",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://bluefisher.github.io/2020/02/07/%E7%90%86%E8%A7%A3-Variational-Autoencoders-VAEs/",
-                "title": "理解 Variational Autoencoders (VAEs) | Fisher's Blog",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "理解 Variational Autoencoders (VAEs) | Fisher's Blog"
-            }
-          },
-          {
             "id": "0418a8b325025a64",
             "type": "leaf",
             "state": {
@@ -65,7 +51,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "拓展学习/08-AI技术杂记/14-AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归.md",
+                "file": "拓展学习/08-AI技术杂记/09-Transformer论文精读.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -80,7 +66,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "14-AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归"
+              "title": "09-Transformer论文精读"
             }
           },
           {
@@ -98,7 +84,7 @@
             }
           }
         ],
-        "currentTab": 3,
+        "currentTab": 2,
         "stacked": true
       }
     ],
@@ -285,7 +271,10 @@
   },
   "active": "1ecff4644cf6519d",
   "lastOpenFiles": [
+    "拓展学习/08-AI技术杂记/08-笔记：近年AI应用技术串讲与优质文档分享.md",
     "拓展学习/08-AI技术杂记/14-AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归.md",
+    "拓展学习/08-AI技术杂记/attachments/DDPM-draft.png",
+    "拓展学习/08-AI技术杂记/attachments/Clip-draft.png",
     "拓展学习/08-AI技术杂记/attachments/ViT-draft.png",
     "拓展学习/08-AI技术杂记/未命名.base",
     "attachiments.md",
@@ -318,7 +307,6 @@
     "拓展学习/08-AI技术杂记/llamaFactory 与 easyR1笔记.md",
     "拓展学习/08-AI技术杂记/05-LLM的2025.md",
     "拓展学习/08-AI技术杂记/06-2025精选论文.md",
-    "拓展学习/08-AI技术杂记/08-笔记：近年AI应用技术串讲与优质文档分享.md",
     "拓展学习/08-AI技术杂记/未命名 1.base",
     "拓展学习/08-AI技术杂记/02-SFT.md",
     "拓展学习/08-AI技术杂记/10-贝叶斯公式、贝叶斯估计、最大后验估计、最大似然估计.md",
@@ -328,8 +316,6 @@
     "知识学习/02-语言学/Research Plan.md",
     "知识学习/01-信息论/信息论笔记目录.base",
     "拓展学习/08-AI技术杂记/attachments/12-RLStructure.png",
-    "拓展学习/08-AI技术杂记/attachments/12-RGV示意图.png",
-    "拓展学习/08-AI技术杂记/attachments/Pasted image 20260502012057.png",
-    "拓展学习/08-AI技术杂记/attachments/12-三大学习范式.png"
+    "拓展学习/08-AI技术杂记/attachments/12-RGV示意图.png"
   ]
 }
