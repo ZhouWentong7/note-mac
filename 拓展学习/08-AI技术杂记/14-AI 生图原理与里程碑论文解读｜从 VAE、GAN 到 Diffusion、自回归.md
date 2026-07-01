@@ -1,4 +1,4 @@
-> [!quote] 知识来源
+> [!quote] 来源
 > [【AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归】 ](https://www.bilibili.com/video/BV1bZTA61Eip/?share_source=copy_web&vd_source=fe1e50f3e19ee2c5f4cd32de1f11a963)
 > 文档链接：https://oigi8odzc5w.feishu.cn/wiki/RcuYwK1iviseDhkOXmAcFH6Snve 
 > word & pdf：https://github.com/huangyf2013320506/bilibili_repository/tree/master/20260628_AI生图
