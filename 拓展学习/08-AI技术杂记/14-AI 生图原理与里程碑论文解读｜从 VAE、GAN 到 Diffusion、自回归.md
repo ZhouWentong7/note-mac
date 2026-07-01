@@ -308,6 +308,16 @@ CLIP的应用（文生图）
 
 ![](attachments/Pasted%20image%2020260701100729.png)
 
+```Plain
+具体来说，每一步去噪时：
+1. 扩散模型先正常预测去噪方向
+2. 把当前的中间结果丢给分类器，问它"这像不像目标类别（比如'金毛犬'）？"
+3. 分类器算出一个梯度，指示"往哪个方向改一改就更像金毛犬"
+4. 把这个梯度叠加到去噪方向上（最终方向 = 原始去噪方向 + 分类器梯度）
+
+注意这里的关键：扩散模型本身完全不认识文字，也没有任何文本输入。它就是个无条件去噪器。所有的"引导"都来自外部的分类器梯度硬拽。
+```
+
 >[!sucess] **核心贡献**
 - **架构大步升级**：探明了更深/更宽的网络、多头注意力机制、全分辨率注意力层、BigGAN 残差块以及自适应组归一化（AdaGN）对扩散模型效果的显著加成。 
 - **分类器引导机制（Classifier Guidance）**：提出利用分类器梯度控制生图走向的方法，不仅适用于随机采样，也成功适配了确定性采样（DDIM）。
@@ -323,6 +333,18 @@ CLIP的应用（文生图）
 - **推动了无分类器引导（Classifier-Free Guidance, CFG）的诞生**：正因为本文指出了“引导机制”对提升生图质量的决定性作用，随后业内（Ho & Salimans）在此基础上进化出了不需要独立分类器的 CFG 技术。如今无论是 **Stable Diffusion**、**Midjourney** 还是 **Flux**，其中控制提示词相关性的关键滑块（Prompt Weight / CFG Scale）全部源自于本文的核心思想。
 - **直接孵化了 OpenAI 的里程碑模型**：OpenAI 随后将这一套“改进版 UNet 架构 + 引导思想”直接复用并扩展到了多模态领域，成功打造了震动业界的 **DALL-E 2**。  
 - **加速了超分辨率级联架构（Upsampling Stacks）的普及**：文中证明了“低分辨率引导生图 + 高分辨率扩散上采样”的互补性，这一级联思路被后来的 Google Imagen 等多款顶级商业大模型广泛采纳。
+
+## GLIDE(2021)
+
+> [!quote] GLIDE - **G**uided **L**anguage to **I**mage **D**iffusion for Generation and **E**diting
+_GLIDE: Towards Photorealistic Image Generation and Editing with Text-Guided Diffusion Models_ — Nichol et al. (OpenAI) 
+(2021)https://arxiv.org/abs/2112.10741
+
+> [!important] 实现无需分类器的自然语言生图
+
+![GLIDE：](attachments/GLIDE-draft.png)
+
+
 
 ---
 其他笔记：
