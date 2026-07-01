@@ -8,6 +8,20 @@
         "type": "tabs",
         "children": [
           {
+            "id": "0418a8b325025a64",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://oigi8odzc5w.feishu.cn/wiki/RcuYwK1iviseDhkOXmAcFH6Snve",
+                "title": "AI生图范式演进与里程碑论文解读｜从VAE、GAN到 Diffusion、自回归 - 飞书云文档",
+                "mode": "blank"
+              },
+              "icon": "globe-2",
+              "title": "AI生图范式演进与里程碑论文解读｜从VAE、GAN到 Diffusion、自回归 - 飞书云文档"
+            }
+          },
+          {
             "id": "72fa1a6f32d4cdd6",
             "type": "leaf",
             "state": {
@@ -43,20 +57,6 @@
               },
               "icon": "globe-2",
               "title": "AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归_哔哩哔哩_bilibili"
-            }
-          },
-          {
-            "id": "0418a8b325025a64",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://oigi8odzc5w.feishu.cn/wiki/RcuYwK1iviseDhkOXmAcFH6Snve",
-                "title": "AI生图范式演进与里程碑论文解读｜从VAE、GAN到 Diffusion、自回归 - 飞书云文档",
-                "mode": "blank"
-              },
-              "icon": "globe-2",
-              "title": "AI生图范式演进与里程碑论文解读｜从VAE、GAN到 Diffusion、自回归 - 飞书云文档"
             }
           }
         ],
@@ -118,7 +118,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "42c22cc28f006f8e",
@@ -245,9 +246,10 @@
       "callout-manager:Insert Callout": false
     }
   },
-  "active": "eaa8e6f71757cec4",
+  "active": "72fa1a6f32d4cdd6",
   "lastOpenFiles": [
     "拓展学习/08-AI技术杂记/14-AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归.md",
+    "拓展学习/08-AI技术杂记/attachments/Pasted image 20260701100729.png",
     "拓展学习/08-AI技术杂记/04-LoRA.md",
     "拓展学习/08-AI技术杂记/09-Transformer论文精读.md",
     "拓展学习/08-AI技术杂记/08-笔记：近年AI应用技术串讲与优质文档分享.md",
@@ -287,12 +289,10 @@
     "拓展学习/08-AI技术杂记/11-变分推断.md",
     "拓展学习/08-AI技术杂记/13-强化学习图谱.md",
     "拓展学习/08-AI技术杂记/12-马尔科夫蒙特卡洛.md",
-    "拓展学习/08-AI技术杂记/llamaFactory 与 easyR1笔记.md",
     "拓展学习/08-AI技术杂记/未命名 1.base",
     "拓展学习/08-AI技术杂记/attachments/Acceptance-RejectionSampling.png",
     "拓展学习/08-AI技术杂记/未命名 2.base",
     "知识学习/01-信息论/信息论笔记目录.base",
-    "拓展学习/08-AI技术杂记/attachments/12-RLStructure.png",
-    "拓展学习/08-AI技术杂记/attachments/12-RGV示意图.png"
+    "拓展学习/08-AI技术杂记/attachments/12-RLStructure.png"
   ]
 }
