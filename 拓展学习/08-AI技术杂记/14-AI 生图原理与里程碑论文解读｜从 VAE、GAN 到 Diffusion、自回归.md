@@ -389,7 +389,8 @@ _GLIDE: Towards Photorealistic Image Generation and Editing with Text-Guided Dif
 - **社会偏见与安全隐患：** 模型仍会保留并可能放大训练数据集中的西方刻板印象及性别偏见（如“女孩的玩具”会产生更多的粉色）；同时其强大的编辑修复功能存在被滥用制作为伪造 disinformation 的风险。
 
 【参考文档】
-https://ffighting.net/deep-learning-paper-review/diffusion-model/glide/
+[一个韩语的博客](https://ffighting.net/deep-learning-paper-review/diffusion-model/glide/)
+
 
 ---
 其他笔记：
