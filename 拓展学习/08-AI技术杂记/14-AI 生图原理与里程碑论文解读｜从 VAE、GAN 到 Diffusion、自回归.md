@@ -1,3 +1,11 @@
+---
+tags:
+  - VAE
+  - diffusion
+  - 生成模型
+B站: https://www.bilibili.com/video/BV1TP411v7v6?spm_id_from=333.788.videopod.episodes&vd_source=69a3eecb8fce5149ffe1597cbbfc9364&p=2
+---
+
 > [!quote] 来源
 > [【AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归】 ](https://www.bilibili.com/video/BV1bZTA61Eip/?share_source=copy_web&vd_source=fe1e50f3e19ee2c5f4cd32de1f11a963)
 > 文档链接：https://oigi8odzc5w.feishu.cn/wiki/RcuYwK1iviseDhkOXmAcFH6Snve 
@@ -334,11 +342,13 @@ CLIP的应用（文生图）
 - **直接孵化了 OpenAI 的里程碑模型**：OpenAI 随后将这一套“改进版 UNet 架构 + 引导思想”直接复用并扩展到了多模态领域，成功打造了震动业界的 **DALL-E 2**。  
 - **加速了超分辨率级联架构（Upsampling Stacks）的普及**：文中证明了“低分辨率引导生图 + 高分辨率扩散上采样”的互补性，这一级联思路被后来的 Google Imagen 等多款顶级商业大模型广泛采纳。
 
-## GLIDE(2021)
+## 3. GLIDE(2021)
 
 > [!quote] GLIDE - **G**uided **L**anguage to **I**mage **D**iffusion for Generation and **E**diting
 _GLIDE: Towards Photorealistic Image Generation and Editing with Text-Guided Diffusion Models_ — Nichol et al. (OpenAI) 
 (2021)https://arxiv.org/abs/2112.10741
+> [code](https://github.com/openai/glide-text2im)
+> 
 
 > [!important] 实现无需分类器的自然语言生图
 
@@ -389,7 +399,73 @@ _GLIDE: Towards Photorealistic Image Generation and Editing with Text-Guided Dif
 - **社会偏见与安全隐患：** 模型仍会保留并可能放大训练数据集中的西方刻板印象及性别偏见（如“女孩的玩具”会产生更多的粉色）；同时其强大的编辑修复功能存在被滥用制作为伪造 disinformation 的风险。
 
 【参考文档】
-[一个韩语的博客](https://ffighting.net/deep-learning-paper-review/diffusion-model/glide/)
+[一个韩语的GLIDE讲解博客](https://ffighting.net/deep-learning-paper-review/diffusion-model/glide/)
+
+---
+## 4. LDM（2021）/ Stable Diffusion
+
+>[!quote] _High-Resolution Image Synthesis with Latent Diffusion Models_ — Rombach et al. (2021)https://arxiv.org/abs/2112.10752
+
+>[!important] 引入VAE，在隐空间解决扩散架构算力问题
+
+**【简介】**
+ LDM是Stable Diffusion的理论基础。
+ 从上述的学习中，生成范式已经有了：扩散模型骨架、条件化生图、自然语言生图。
+ 
+ 仍存在的问题：以往的扩散模型训练和推理需要**高频、连续地在极高维度的RGB空间**内进行复杂的梯度计算与函数评估，造成了巨大的资源消耗； 最大似然目标函数容易使模型将**大量容量花费在拟合人类难以察觉的高频像素细节**上，而非专注学习宏观的语义与概念构成。
+ 
+ LDM的解决方案：将完整扩散去噪过程从原始像素空间迁移至低维潜空间执行。以预训练 VAE 实现图像压缩与重建：先通过 VAE 编码器把高分辨率原图映射为低分辨率潜向量；仅在该潜空间训练扩散模型完成加噪 / 去噪；推理阶段对去噪后的潜特征输入 VAE 解码器，还原输出高分辨率图像。
+> 该架构后备用于Stability AI用于训练并开源Stable Diffusion
+
+![LDM架构 来自原论文](attachments/LDMs-arch.png)
+
+```Plain
+左边的红色区域是 Pixel Space（像素空间）。
+原始图像 x 在这里进出。上方的编码器 E 把图像压缩成 latent z，下方的解码器 D 把 latent 还原回图像 x̃。这一对 E/D 就是一个预训练好的 autoencoder（论文里用的是带感知损失的 VQ-VAE 变体），训练完就冻住不动了。它的作用只有一个：让后面所有的扩散运算都在小得多的 latent 上进行，而不是在高分辨率像素上硬算。
+
+中间的绿色区域是 Latent Space（潜空间）。
+这是整个模型真正干活的地方。上方那条从左到右的箭头标着 "Diffusion Process"，就是前向加噪：干净的 latent z 被逐步加噪变成纯噪声 z_T。下方那个蓝色的蝴蝶结形状就是 Denoising U-Net ε_θ，负责反向去噪：从 z_T 一步步预测噪声、还原出 z。上面标的 ×(T−1) 表示这个去噪过程要迭代 T 步。
+
+右边的灰色区域是 Conditioning（条件输入）。
+这里画了好几种可能的条件来源：语义图（Semantic Map）、文本（Text）、图像（Images）等等。不管输入是什么模态，都先通过一个领域专用的编码器 τ_θ 编码成统一的中间表示（Representations），然后送进 U-Net。
+```
+
+
+**【模型结构】**
+ - **VAE（encoder+decoder)**：负责像素空间与潜在空间之间转换。Encoder：将高分辨率图像压缩为低维表示；Decoder：将隐表示还原为高分辨图像。VAE在扩散训练之前单独训练完成，扩散阶段参数不变。
+ - **去噪U-Net**：作为扩散模型的骨干，输入的不是像素图像，而是来自VAE压缩后的隐表示，结构与DDPM的U-Net一致，输入和输出的尺寸相同，任务：预测噪声。
+ - **条件机制（cross-attention)**：继承GLIDE思路，由文本编码器为模型嵌入信息，通过交叉注意力注入U-Net各层，引导生成方向。除文本外的：图像不拘、语义图等条件可以用类似方式接入。
+ > 原始LDM采用BERT风格文本编码器，后Stable Diffusion v1 采用CLIP ViT-L/14作为文本编码器。
+
+**【训练过程】**
+- 第一阶段：训练VAE，使编码器学会将图像压缩为紧凑表示、解码器可以高质量还原 —— 获得“感知压缩”良好的隐空间。训练好后冻结VAE参数。
+- 第二阶段：在音空间中训练扩散模型：图片输入VAE编码器获得压缩的隐表示$z_0$，对$z_0$执行DDPM一样扩散流程：按照时间步t为$z_0$加噪得到$z_t$，让Unet预测所加早上，与真实噪声做MSE得到损失，反向传播优化模型。文本经由cross-attentioin参与每一步预测。
+>[!hint] 关键：扩散的加噪去噪和迭代都发生在低维空间，处理的数据量比像素空间小2个数量级，训练成本大幅下降。
+
+【局限性】
+- VAE重建瓶颈：图像质量上限受到VAE解码器限制，会丢失部分高频细节，在精细纹理不如像素级扩散模型
+- 两阶段训练：要先预训练VAE，再训练扩散模型
+- 小物体和文字生成弱
+
+【**地位 & 影响**】
+
+这篇论文就是 **Stable Diffusion** 的学术基础。它的开源让整个社区爆发，直接催生了 **Midjourney** 等生态。可以说是整个扩散生成领域影响力最大的一篇文章。
+
+【**Stable Diffusion 参考文档**】
+
+- https://jalammar.github.io/illustrated-stable-diffusion/
+- https://www.louisbouchard.ai/latent-diffusion-models/
+
+## 5. DALL·E2（2022）
+>[!quote] _Hierarchical Text-Conditional Image Generation with CLIP Latents_ — Ramesh et al. (OpenAI) (2022) https://arxiv.org/abs/2204.06125
+
+> [!hint] 使用反转CLIP的创意生图，提升扩散模型的图文对齐质量。
+
+思考：CLIP中图文match的点在空间距离更为接近，是否能从文本出发找到图像对应的点？
+
+【简介】
+对比E1，技术路线从自回归转向扩散模型。
+
 
 
 ---

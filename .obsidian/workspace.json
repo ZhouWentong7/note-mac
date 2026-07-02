@@ -60,7 +60,7 @@
             }
           }
         ],
-        "currentTab": 1,
+        "currentTab": 2,
         "stacked": true
       }
     ],
@@ -152,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "linksCollapsed": false,
+                "linksCollapsed": true,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
@@ -219,7 +219,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -245,9 +245,12 @@
       "callout-manager:Insert Callout": false
     }
   },
-  "active": "72fa1a6f32d4cdd6",
+  "active": "eaa8e6f71757cec4",
   "lastOpenFiles": [
     "拓展学习/08-AI技术杂记/14-AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归.md",
+    "拓展学习/08-AI技术杂记/15-元认知与LLM.md",
+    "拓展学习/08-AI技术杂记/attachments/LDMs-arch.png",
+    "拓展学习/08-AI技术杂记/未命名.base",
     "拓展学习/08-AI技术杂记/attachments/GLIDE-draft.png",
     "拓展学习/08-AI技术杂记/attachments/Pasted image 20260701100729.png",
     "拓展学习/08-AI技术杂记/04-LoRA.md",
@@ -261,7 +264,6 @@
     "拓展学习/08-AI技术杂记/attachments/DDPM-draft.png",
     "拓展学习/08-AI技术杂记/attachments/Clip-draft.png",
     "拓展学习/08-AI技术杂记/attachments/ViT-draft.png",
-    "拓展学习/08-AI技术杂记/未命名.base",
     "attachiments.md",
     "拓展学习/08-AI技术杂记/attachments/GAN-draft.png",
     "技术学习/13-深度学习入门-生成模型/07-变分自编码器.md",
@@ -290,7 +292,6 @@
     "拓展学习/08-AI技术杂记/13-强化学习图谱.md",
     "拓展学习/08-AI技术杂记/12-马尔科夫蒙特卡洛.md",
     "拓展学习/08-AI技术杂记/未命名 1.base",
-    "拓展学习/08-AI技术杂记/attachments/Acceptance-RejectionSampling.png",
     "拓展学习/08-AI技术杂记/未命名 2.base",
     "知识学习/01-信息论/信息论笔记目录.base"
   ]
