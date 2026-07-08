@@ -259,6 +259,8 @@ CLIP的应用（文生图）
 > 
 
 ## 1. DDPM（2020）
+#DDPM
+
 > [!quote] _Denoising Diffusion Probabilistic Models_ — Ho, Jain & Abbeel (2020)https://arxiv.org/abs/2006.11239
 
 > [!abstract] 摘要
@@ -522,6 +524,7 @@ CLIP objective（双向箭头）拉近配对的两者、推远不配对的。
 - 闭源： DALL·E 2 未开源，限制了学术复现
 
 ## 6. DiT(2022）
+#DiT
 >[!quote] DiT — Diffusion Transformer (2022) _Scalable Diffusion Models with Transformers_ — Peebles & Xie (2022)https://arxiv.org/abs/2212.09748
 
 >[!hint] **将扩散模型的骨干网络从 U-Net 换成 Transformer。**
@@ -574,6 +577,13 @@ CLIP objective（双向箭头）拉近配对的两者、推远不配对的。
 > - 图像模型中：**生成的是像素（或 token）**
 > - 核心：序列化、逐步推进、前面决定后面
 > - 与扩散模型的区别：扩散模型直接处理整个图像，而不是一个位置一个位置地填充
+
+发展流程，编号对应后续算法介绍
+1. 引入自回归骨干网络，还未引入tokenizer
+2. 引入tokenizer
+3. 使用两种不同细粒度的 tokenizer
+4. 用GAN的思想进一步优化了tokenizer的质量，骨干生成网络换成Transformer
+5. 
 
 ## 1. Pi限额了RNN/PixelCNN(2-16)
 
@@ -707,17 +717,272 @@ VQ-VAE 首次提出可学习的离散潜空间（Discrete Latent），把连续�
 >[!hint] **在 VQ-VAE 基础上引入分层设计，大幅提升生成质量。**
 
 
+1. 原版VQ-VAE核心痛点
+单层矢量量化只有一套离散token：
+- 量化码本粒度粗：全局轮廓能稳住，但纹理、边缘等局部细节丢失；
+- 量化码本粒度细：细节清晰，但token总量暴增，后续自回归建模计算成本爆炸、训练难度上升。
+单层结构无法同时平衡**全局构图**与**局部精细纹理**。
+2. VQ-VAE-2 核心改进：双尺度分层量化
+搭建两层层级编码结构，分离全局、局部信息：
+	1. **顶层粗尺度量化**：下采样程度高，token数量少，负责编码图像整体布局、大结构、色彩全局分布；
+	2. **底层细尺度量化**：分辨率更高，token侧重像素级纹理、小边缘、精细细节。
+
+两层独立量化，各司其职，不用单一码本强行兼顾两端。
+3. 配套优化：分层自回归先验
+两层量化特征各自训练专属自回归先验模型：
+	- 顶层先验建模全局结构的分布规律；
+	- 底层先验基于顶层全局信息，再预测局部细节token；
+分层建模降低单一层的建模压力，生成时先画整体轮廓，再填充细节。
+4. 最终效果
+在不激增token总量、控制计算开销的前提下，解决单层VQ-VAE细节模糊、结构失真问题，图像生成保真度、清晰度显著提升。
+
+
+![VQ-VAE-2架构图](attachments/VQ-VAE-2-architecture.png)
+
+**【模型结构】**
+从**单层量化**转化为**分层量化**，架构维持“编码→量化→解码”框架
+- 编码
+	- 顶层（全局）：粗颗粒、token少，负责把握物体大致信息
+	- 底层（局部）：颗粒细、token多，负责编码精细信息。量化时以顶层信息为条件，使生成细节与全局结构保持一致
+- 解码
+	- 综合顶层与底层两套离散表示，共同建造高分辨率图像
+- 每层配套独立自回归先验模型
+
+>[!note] 什么是codebook
+>**Codebook（码本）** 本质上是一个有限的、可学习的“数字标准特征字典”，它包含了一组固定长度的特征向量（称为码本向量）；它的作用是将编码器生成的连续、无限种可能的图像特征，通过“就近匹配”强行映射为字典里固定、离散的“特征暗号”（即索引 ID），从而在极大压缩数据的同时，将图像转化为类似文本 Token 的离散表示，以便后续的生成模型（如 PixelCNN）像玩文字接龙一样进行自回归预测与创造。
+
+**【训练与生成过程】**
+这里是为您翻译并整理好的 VQ-VAE-2 两阶段训练算法的中文 Markdown 版本，您可以直接复制到笔记中：
+
+---
+
+算法 1：VQ-VAE 训练（阶段 1）
+**输入函数与数据：** * $E_{top}$（顶层编码器）
+* $E_{bottom}$（底层编码器）
+* $D$（解码器）
+* $\mathbf{x}$（训练图像的 Batch 批次）
+---
+**训练步骤：**
+1. **计算顶层连续表征：**
+$$\mathbf{h}_{top} \leftarrow E_{top}(\mathbf{x})$$
+
+2. **顶层离散量化：**
+> ▷ *使用顶层码本（Codebook）进行矢量量化（对应公式 1）*
+> $$\mathbf{e}_{top} \leftarrow Quantize(\mathbf{h}_{top})$$
+
+3. **计算底层连续表征：**
+> *（将原始图像与已量化的顶层特征一同输入底层编码器）*
+> $$\mathbf{h}_{bottom} \leftarrow E_{bottom}(\mathbf{x}, \mathbf{e}_{top})$$
+3. **底层离散量化：**
+> ▷ *使用底层码本（Codebook）进行矢量量化（对应公式 1）*
+> $$\mathbf{e}_{bottom} \leftarrow Quantize(\mathbf{h}_{bottom})$$
+4. **图像重建：**
+$$\mathbf{\hat{x}} \leftarrow D(\mathbf{e}_{top}, \mathbf{e}_{bottom})$$
+
+5. **参数更新：**
+> ▷ *根据公式 2 计算总损失（重建损失 + 承诺损失）并更新网络参数 $\theta$*
+> $$\theta \leftarrow Update(\mathcal{L}(\mathbf{x}, \mathbf{\hat{x}}))$$
+
+---
+
+**算法 2：先验模型训练（阶段 2）**
+
+**初始化：**
+
+* $\mathbf{T}_{top}, \mathbf{T}_{bottom} \leftarrow \emptyset$ （初始化顶层和底层的潜码训练集为空）
+---
+
+**第一步：提取全量数据的离散潜码（Latent Codes）**
+* **For** 每一张图像 $\mathbf{x} \in \text{训练集}$ **do**
+1. $\mathbf{e}_{top} \leftarrow Quantize(E_{top}(\mathbf{x}))$
+2. $\mathbf{e}_{bottom} \leftarrow Quantize(E_{bottom}(\mathbf{x}, \mathbf{e}_{top}))$
+3. $\mathbf{T}_{top} \leftarrow \mathbf{T}_{top} \cup \mathbf{e}_{top}$
+4. $\mathbf{T}_{bottom} \leftarrow \mathbf{T}_{bottom} \cup \mathbf{e}_{bottom}$
+* **End For**
+
+**第二步：训练自回归先验模型**
+1. **训练顶层自回归模型**（例如带自注意力机制的 PixelCNN）：
+$$p_{top} = TrainPixelCNN(\mathbf{T}_{top})$$
+2. **训练底层条件自回归模型**（以顶层潜码为条件的 PixelCNN）：
+
+$$p_{bottom} = TrainCondPixelCNN(\mathbf{T}_{bottom}, \mathbf{T}_{top})$$
+
+**第三步：独立采样与生成生成流程（Sampling Procedure）**
+* **While** 模型上线 / 持续生成 **do**
+1. **从顶层先验中采样：** $\mathbf{e}_{top} \sim p_{top}$
+2. **结合顶层潜码，从底层条件先验中采样：** $\mathbf{e}_{bottom} \sim p_{bottom}(\mathbf{e}_{top})$
+3. **送入纯前向解码器生成新图像：** $\mathbf{x} \leftarrow D(\mathbf{e}_{top}, \mathbf{e}_{bottom})$
+* **End While**
+
+![训练的两阶段过程](attachments/VQ-VAE-train.png)
+
+【**局限**】
+
+- 仍依赖独立的先验模型： 生成质量受限于自回归先验（如 **PixelCNN**）的建模能力，且分层结构使训练与采样流程更复杂。
+- 对抗/感知质量仍有差距： 重建主要由像素级重建损失驱动，在感知真实感上仍不及引入对抗训练的方案（这一点由后续的 VQGAN 改进）。
+
 ## 4. VQGAN (2021)
 
+【之前的局限性】
+up总结：由于VQ-VAE还是很模糊，所以想到了借助GAN的优势对编码器进行优化。
 
+论文总结：
+- Transformer 的平方复杂度瓶颈：注意力机制计算复杂度随序列长度呈平方级（$O(N^2)$）增长，高分辨率图像（如 $256 \times 256$ 或百万像素）带来的超长序列将导致计算量崩溃。
+- 传统 VQ-VAE-2 的多层冗余： VQ-VAE-2 仅依赖像素级的 $L_2$ 重建损失。为了抓取微观纹理，它被迫使用复杂的“多层分层离散编码”（如同时保留 $64\times64$ 和 $32\times32$ 的潜变量），这造成第二阶段自回归建模时的潜编码序列长达 $5120$，PixelCNN 等传统网络根本无法有效建模全局语义。
+
+
+>[!quote] _Taming Transformers for High-Resolution Image Synthesis_ — Esser et al. (2021)https://arxiv.org/abs/2012.09841
+
+>[!hint] **在 VQ-VAE 的基础上引入 GAN 对抗训练和 Transformer 序列建模。**
+
+【简介】
+提出 **VQGAN**。一阶段不再单纯追求像素对齐，而是通过**判别器**和**感知损失**（Perceptual Loss）进行对抗训练，在极高压缩比（单层 $16\times16$）下依然保证画面局部的逼真度和真实纹理；<u>二阶段利用“被驯服”的 **Latent Transformer** 代替 PixelCNN 预测离散 Token。</u>
+
+**对生成图像领域的意义：** 它成功将 **CNN 的归纳偏置**（擅长局部连接和空间平移不变性，负责高效压缩）与 **Transformer 的表达能力**（擅长全局长程交互，负责语义组合）完美结合，打通了“跨分辨率自回归生图”的道路。
+
+**【模型结构】**
+
+![使用卷积 _VQGAN_ 学习包含丰富上下文信息的视觉部分的码本，随后使用自回归 Transformer 架构对其组成进行建模。离散码本提供了这些架构之间的接口，而基于图像块的判别器能够在保持高感知质量的同时实现强压缩。该方法将卷积方法的效率引入到基于 Transformer 的高分辨率图像合成中。](attachments/VQ-GAN-workflow.png)
+
+沿用VQVAE的"编码 → 量化 → 解码"框架，但训练目标和先验模型进行优化：
+- 编码器 / 码本 / 解码器： 与 VQ-VAE 一致，负责把图像压缩为离散 token、再从 token 还原图像。
+- 判别器（来自 GAN）： 额外引入一个 PatchGAN 判别器，对重建图像的局部块判断真假，专门用来提升还原图的感知真实感。**它只在训练 tokenizer 时使用，生成阶段不参与**。
+- 自回归先验（Transformer）： 用 GPT-2 风格的 **Transformer** 替代 VQ-VAE 的 PixelCNN，在 token 序列上学习"下一个 token"的分布。相比 PixelCNN，Transformer 建模能力更强、扩展性（scaling）更好。
+
+**【训练与生成流程】**
+**第一阶段：训练 VQGAN 自编码器（离散化与对抗训练）**
+
+目标：训练一个“高压缩比、高保真”的图像编解码器，让图像变成可以输入给 Transformer 的离散 Token。
+
+```plain
+# ========================================================
+# 阶段一：VQGAN 的前向传播与损失计算（单步迭代伪代码）
+# ========================================================
+
+输入: 真实图像 X (尺寸: 256 x 256 x 3)
+定义: 编码器 Encoder, 解码器 Decoder
+定义: 离散码本 Codebook (包含 1024 个维度为 256 的向量)
+定义: 图像块判别器 Discriminator
+
+【前向传播流程】
+1. 特征提取:
+   连续特征图 z_e = Encoder(X)                 # 尺寸变为: 16 x 16 x 256
+
+2. 向量量化 (Vector Quantization):
+   对于 z_e 在空间上的每一个网格点 (i, j):
+       a. 计算该点特征向量与 Codebook 中所有 1024 个码本向量的 L2 距离
+       b. 找到距离最近的码本向量的索引 (Index)
+       c. 记录该位置的离散 Token 索引: 索引值 s[i, j] = argmin(距离)
+       d. 取出对应的码本向量，替换原连续特征，得到量化特征图: z_q[i, j] = Codebook[s[i, j]]
+
+3. 直通梯度估计 (Straight-Through Estimator):
+   # 由于 argmin 无法计算梯度，在此处强行将解码器的梯度直接复制给编码器
+   z_q = z_e + (z_q - z_e).分离梯度()
+
+4. 图像重建:
+   重建图像 X_重建 = Decoder(z_q)             # 尺寸恢复为: 256 x 256 x 3
+
+
+【损失函数计算与反向传播】
+1. 计算自编码器总损失 (Loss_Generator):
+   a. 重建损失 = 感知损失(X, X_重建)         # 引入 LPIPS，告别模糊，抓住微观纹理
+   b. 码本损失 = L2_损失(分离梯度(z_e), z_q)   # 促使码本向量向特征靠拢
+   c. 承诺损失 = L2_损失(z_e, 分离梯度(z_q))   # 约束编码器输出不要乱飘
+   d. 对抗损失 = -ln(Discriminator(X_重建))   # 让生成的图像骗过判别器
+   
+   Loss_AE = 重建损失 + 码本损失 + 承诺损失 + 自适应权重 * 对抗损失
+   反向传播并更新 [Encoder, Decoder, Codebook] 的参数
+
+2. 计算判别器损失 (Loss_Discriminator):
+   Loss_D = -ln(Discriminator(X)) - ln(1 - Discriminator(X_重建))
+   反向传播并更新 [Discriminator] 的参数
+```
+
+>[!hint] 关键的三个损失
+>1. 感知重建损失 (Perceptual Reconstruction Loss)：保证还原正确
+>	1. **算式对应：** $\mathcal{L}_{\text{rec}} = \|x - \hat{x}\|_2$ （论文中将其替换/结合了基于 LPIPS 的感知损失）
+>	2. 它是用来拉近“原始图像”和“解码重建图像”之间距离的
+>	3. 普通的 $L_2$（像素级差值）损失，这会导致模型倾向于选择“最保险的模糊平均值”。
+>	4. 感知级损失对比两张图在高级语义和局部纹理上的相似度
+>2. 代码本与承诺损失 (Codebook & Commitment Loss)
+>	1. $$\| \text{sg}[E(x)] - z_{\mathbf{q}} \|_2^2 + \| \text{sg}[z_{\mathbf{q}}] - E(x) \|_2^2$$
+_其中 $\text{sg}$ 代表 `stop_gradient`（分离梯度/不回传梯度）。_
+>	2. 这两者是专门用来训练离散码本（Codebook）的。
+>3. 对抗损失 (Adversarial Loss)
+>	1. **算式对应：** $\mathcal{L}_{\text{GAN}}(\{E, G, \mathcal{Z}\}, D) = [\log D(x) + \log(1 - D(\hat{x}))]$
+>	2. **通俗解释：** 这就是引入了生成对抗网络（GAN）的机制
+>	3. 有了对抗损失的兜底，编码器哪怕把图像压缩 20 倍，解码器也能在判别器的“逼迫”下，脑补出清晰、锐利、没有模糊感的局部边缘和高级视觉特征。
+
+
+**第二阶段：训练 Latent Transformer（自回归语义建模）**
+**固定住 VQGAN 的所有参数不再变动**。此时，每张图像都可以通过编码器完美转化为一个 $16 \times 16 = 256$ 长度的整数序列（Token 序列）
+
+```plain
+# ========================================================
+# 阶段二：Transformer 的自回归训练与生成（伪代码）
+# ========================================================
+
+输入: 真实图像 X，或可选的控制条件 C (如：类别标签、分割图、文本描述)
+定义: 已训练完毕并冻结的 VQGAN 模型
+定义: 序列生成模型 Latent_Transformer (如 GPT-2 架构)
+
+【训练阶段 (自回归因果建模)】
+1. 提取视觉词汇:
+   通过 VQGAN 编码器，将图像 X 转化为一维离散 Token 序列: S_图像 = [s_1, s_2, ..., s_256]
+
+2. 提取条件词汇 (若有控制条件 C):
+   If C 是空间布局(如分割图):
+       S_条件 = 通过另一个VQGAN编码得到Token序列
+   Else C 是非空间布局(如类别标签):
+       S_条件 = 类别对应的 Embedding Token
+   
+   # 将条件 Token 拼接到图像 Token 前面，组合成一个大序列
+   输入序列 = 连接([S_条件, S_图像]) 
+
+3. 预测下一字 (Next-Token Prediction):
+   对于序列中的每一个位置 t:
+       Transformer 根据当前位置之前的所有 Token [s_<t]，预测下一个 Token 的概率分布 P(s_t)
+   
+4. 计算损失:
+   Loss_Transformer = 交叉熵损失(P(s_t), 真实的 s_t)
+   反向传播并更新 [Latent_Transformer] 的参数
+
+
+【推理/生成阶段 (自回归图片采样)】
+1. 初始化输入序列:
+   当前序列 = [S_条件] (若无条件，则从起始符 [SOS] 开始)
+
+2. 逐点循环生成 (生成 256 次):
+   For 步数 t 从 1 到 256:
+       a. 预测分布 = Latent_Transformer(当前序列)
+       b. 提取最后一个位置的概率分布，使用 Top-k 或核采样(Nucleus Sampling)抽签决定下一个 Token
+       c. 当前序列 = 连接([当前序列, 抽中Token])
+
+3. 渲染出图:
+   a. 截取生成的最后 256 个图像 Token，恢复成 16 x 16 的索引矩阵
+   b. 根据索引矩阵，从 VQGAN 的 Codebook 中查找对应的特征向量，拼接成特征图 z_q
+   c. 最终图像 = VQGAN_Decoder(z_q)
+   输出最终图像
+```
+
+**【核心贡献】**
+**VQGAN = VQ-VAE 的离散量化 + GAN 的对抗训练 + Transformer 的序列建模**。
+
+【局限性】
+- **自回归推断速度极慢：** 在第二阶段生成图像时，必须像 GPT 写文章一样，“一个点一个点（Token by Token）”循环迭代生成。由于无法并行，生成高分辨率图像的时间开销非常巨大。
+- **累积误差与伪影：** 自回归模型固有的“一步错步步错”问题在图像上表现为局部伪影。一旦中间某个视觉 Token 预测歪了，后续滑动窗口内生成的图像纹理可能会出现不连贯、扭曲或统计特性漂移。
+- **高低频权衡的临界点：** 编码器的下采样因子 $f$ 存在严格限制（如 faces 数据集在 $f=16$ 是极限）。若进一步压缩至 $f=32$ 或 $f=64$ 以缩短序列，一阶段的自编码器重建能力会发生断崖式下跌，产生不可逆的细节丢失。
 ## 5. DALL·E1(2021）
+> [!quote] _Zero-Shot Text-to-Image Generation_ — Ramesh et al. (OpenAI) (2021)https://arxiv.org/abs/2102.12092
+
+>[!hint] **第一个大规模的文生图自回归模型。**
 
 
 ## 6. VAR（2024）
-
+转化token的生成思维，更模仿人看图
 
 ## 7. LlamaGen（2024）
-
+大力出奇迹
 
 # 五、大厂的选择
 
