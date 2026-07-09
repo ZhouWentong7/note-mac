@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "拓展学习/08-AI技术杂记/11-变分推断.md",
+                "file": "知识学习/02-语言学/认知语言学vs生成语言学.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "11-变分推断"
+              "title": "认知语言学vs生成语言学"
             }
           }
         ],
@@ -220,6 +220,10 @@
   },
   "active": "0418a8b325025a64",
   "lastOpenFiles": [
+    "知识学习/02-语言学/Research Plan.md",
+    "知识学习/02-语言学/认知语言学vs生成语言学.md",
+    "拓展学习/08-AI技术杂记/11-变分推断.md",
+    "知识学习/02-语言学/未命名",
     "拓展学习/08-AI技术杂记/10-贝叶斯公式、贝叶斯估计、最大后验估计、最大似然估计.md",
     "拓展学习/08-AI技术杂记/09-Transformer论文精读.md",
     "拓展学习/08-AI技术杂记/08-笔记：近年AI应用技术串讲与优质文档分享.md",
@@ -241,7 +245,6 @@
     "拓展学习/08-AI技术杂记/attachments/VQ-VAE-2-architecture.png",
     "拓展学习/08-AI技术杂记/llamaFactory 与 easyR1笔记.md",
     "个人研究/01-用IPA对语言模型进行预训练.md",
-    "知识学习/02-语言学/Research Plan.md",
     "技术学习/15-从零构建",
     "技术学习/15-从零构建生成模型.md",
     "个人研究",
@@ -257,15 +260,12 @@
     "attachiments.md",
     "技术学习/13-深度学习入门-生成模型/07-变分自编码器.md",
     "技术学习/13-深度学习入门-生成模型/05-EM算法.md",
-    "技术学习/13-深度学习入门-生成模型/04-高斯混合模型.md",
-    "技术学习/13-深度学习入门-生成模型/06-神经网络.md",
     "技术学习/13-深度学习入门-生成模型/未命名.base",
     "未命名.canvas",
     "Users/zhou-wentong/Documents/books",
     "Users/zhou-wentong/Documents",
     "Users/zhou-wentong",
     "Users",
-    "技术学习/13-深度学习入门-生成模型/生成模型学习记录.base",
-    "拓展学习/08-AI技术杂记/未命名 1.base"
+    "技术学习/13-深度学习入门-生成模型/生成模型学习记录.base"
   ]
 }
