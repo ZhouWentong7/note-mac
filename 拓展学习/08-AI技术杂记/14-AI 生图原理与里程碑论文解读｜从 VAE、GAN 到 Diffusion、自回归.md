@@ -989,6 +989,8 @@ _其中 $\text{sg}$ 代表 `stop_gradient`（分离梯度/不回传梯度）。_
 ## 1. OpenAI
 
 
+
+
 ## 2. Google
 
 

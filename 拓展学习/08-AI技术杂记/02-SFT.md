@@ -1,8 +1,7 @@
 ---
 tags:
-  - "#SFT"
-  - CoT
-  - LLMs
+  - LLMs/SFT
+  - LLMs/CoT
 ---
 
 SFT： Supervised Fine-Tuning，监督微调

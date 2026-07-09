@@ -11,23 +11,9 @@
             "id": "0418a8b325025a64",
             "type": "leaf",
             "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://oigi8odzc5w.feishu.cn/wiki/RcuYwK1iviseDhkOXmAcFH6Snve",
-                "title": "AI生图范式演进与里程碑论文解读｜从VAE、GAN到 Diffusion、自回归 - 飞书云文档",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "AI生图范式演进与里程碑论文解读｜从VAE、GAN到 Diffusion、自回归 - 飞书云文档"
-            }
-          },
-          {
-            "id": "72fa1a6f32d4cdd6",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
-                "file": "拓展学习/08-AI技术杂记/14-AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归.md",
+                "file": "拓展学习/08-AI技术杂记/08-笔记：近年AI应用技术串讲与优质文档分享.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -42,59 +28,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "14-AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归"
-            }
-          },
-          {
-            "id": "eaa8e6f71757cec4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "拓展学习/08-AI技术杂记/16-Verbalizable Representations Form a Global Workspace in Language Models.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "16-Verbalizable Representations Form a Global Workspace in Language Models"
-            }
-          },
-          {
-            "id": "186a811a836410dc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "拓展学习/08-AI技术杂记/A-意识与P-意识.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "A-意识与P-意识"
+              "title": "08-笔记：近年AI应用技术串讲与优质文档分享"
             }
           }
         ],
-        "currentTab": 2,
         "stacked": true
       }
     ],
@@ -152,7 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 290.5024719238281
   },
   "right": {
     "id": "42c22cc28f006f8e",
@@ -281,11 +218,21 @@
       "callout-manager:Insert Callout": false
     }
   },
-  "active": "eaa8e6f71757cec4",
+  "active": "0418a8b325025a64",
   "lastOpenFiles": [
-    "拓展学习/08-AI技术杂记/A-意识与P-意识.md",
-    "拓展学习/08-AI技术杂记/16-Verbalizable Representations Form a Global Workspace in Language Models.md",
+    "拓展学习/08-AI技术杂记/06-2025精选论文.md",
+    "拓展学习/08-AI技术杂记/05-LLM的2025.md",
+    "拓展学习/08-AI技术杂记/04-LoRA.md",
+    "拓展学习/08-AI技术杂记/03-Reasoning LLMs.md",
+    "拓展学习/08-AI技术杂记/02-SFT.md",
+    "拓展学习/08-AI技术杂记/01-RAG.md",
+    "拓展学习/08-AI技术杂记/12-马尔科夫蒙特卡洛.md",
+    "Users/zhou-wentong/Documents/books/深度学习入门.md",
+    "Excalidraw/Drawing 2026-05-02 01.13.42.excalidraw.md",
     "拓展学习/08-AI技术杂记/14-AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归.md",
+    "拓展学习/08-AI技术杂记/10-贝叶斯公式、贝叶斯估计、最大后验估计、最大似然估计.md",
+    "拓展学习/08-AI技术杂记/16-Verbalizable Representations Form a Global Workspace in Language Models.md",
+    "拓展学习/08-AI技术杂记/A-意识与P-意识.md",
     "拓展学习/08-AI技术杂记/attachments/VQ-GAN-workflow.png",
     "拓展学习/08-AI技术杂记/attachments/VQ-VAE-train.png",
     "拓展学习/08-AI技术杂记/attachments/VQ-VAE-2-architecture.png",
@@ -304,14 +251,8 @@
     "拓展学习/08-AI技术杂记/未命名.base",
     "拓展学习/08-AI技术杂记/attachments/GLIDE-draft.png",
     "拓展学习/08-AI技术杂记/attachments/Pasted image 20260701100729.png",
-    "拓展学习/08-AI技术杂记/04-LoRA.md",
     "拓展学习/08-AI技术杂记/09-Transformer论文精读.md",
     "拓展学习/08-AI技术杂记/08-笔记：近年AI应用技术串讲与优质文档分享.md",
-    "拓展学习/08-AI技术杂记/05-LLM的2025.md",
-    "拓展学习/08-AI技术杂记/06-2025精选论文.md",
-    "拓展学习/08-AI技术杂记/01-RAG.md",
-    "拓展学习/08-AI技术杂记/02-SFT.md",
-    "拓展学习/08-AI技术杂记/03-Reasoning LLMs.md",
     "attachiments.md",
     "技术学习/13-深度学习入门-生成模型/07-变分自编码器.md",
     "技术学习/13-深度学习入门-生成模型/05-EM算法.md",
@@ -319,10 +260,6 @@
     "技术学习/13-深度学习入门-生成模型/03-多维正态分布.md",
     "技术学习/13-深度学习入门-生成模型/06-神经网络.md",
     "技术学习/13-深度学习入门-生成模型/未命名.base",
-    "技术学习/13-深度学习入门-生成模型/99-思路梳理.md",
-    "技术学习/13-深度学习入门-生成模型/02-最大似然估计.md",
-    "技术学习/11-目标检测YOLO-小土堆/03-必备基础知识.md",
-    "技术学习/11-目标检测YOLO-小土堆/02-目标检测常用数据集.md",
     "未命名.canvas",
     "Users/zhou-wentong/Documents/books",
     "Users/zhou-wentong/Documents",

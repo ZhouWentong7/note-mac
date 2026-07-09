@@ -1,6 +1,4 @@
 ---
 tags:
-  - RAG
-  - SFT
-  - LLMs
+  - LLMs/RAG
 ---

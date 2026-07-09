@@ -1,7 +1,6 @@
 ---
 tags:
-  - LLMs
-  - LoRA
+  - LLMs/LoRA
   - 降维基础
 ---
 
