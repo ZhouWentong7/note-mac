@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "拓展学习/08-AI技术杂记/08-笔记：近年AI应用技术串讲与优质文档分享.md",
+                "file": "拓展学习/08-AI技术杂记/11-变分推断.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "08-笔记：近年AI应用技术串讲与优质文档分享"
+              "title": "11-变分推断"
             }
           }
         ],
@@ -220,17 +220,20 @@
   },
   "active": "0418a8b325025a64",
   "lastOpenFiles": [
+    "拓展学习/08-AI技术杂记/10-贝叶斯公式、贝叶斯估计、最大后验估计、最大似然估计.md",
+    "拓展学习/08-AI技术杂记/09-Transformer论文精读.md",
+    "拓展学习/08-AI技术杂记/08-笔记：近年AI应用技术串讲与优质文档分享.md",
     "拓展学习/08-AI技术杂记/06-2025精选论文.md",
     "拓展学习/08-AI技术杂记/05-LLM的2025.md",
     "拓展学习/08-AI技术杂记/04-LoRA.md",
     "拓展学习/08-AI技术杂记/03-Reasoning LLMs.md",
+    "技术学习/13-深度学习入门-生成模型/03-多维正态分布.md",
     "拓展学习/08-AI技术杂记/02-SFT.md",
     "拓展学习/08-AI技术杂记/01-RAG.md",
     "拓展学习/08-AI技术杂记/12-马尔科夫蒙特卡洛.md",
     "Users/zhou-wentong/Documents/books/深度学习入门.md",
     "Excalidraw/Drawing 2026-05-02 01.13.42.excalidraw.md",
     "拓展学习/08-AI技术杂记/14-AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归.md",
-    "拓展学习/08-AI技术杂记/10-贝叶斯公式、贝叶斯估计、最大后验估计、最大似然估计.md",
     "拓展学习/08-AI技术杂记/16-Verbalizable Representations Form a Global Workspace in Language Models.md",
     "拓展学习/08-AI技术杂记/A-意识与P-意识.md",
     "拓展学习/08-AI技术杂记/attachments/VQ-GAN-workflow.png",
@@ -251,13 +254,10 @@
     "拓展学习/08-AI技术杂记/未命名.base",
     "拓展学习/08-AI技术杂记/attachments/GLIDE-draft.png",
     "拓展学习/08-AI技术杂记/attachments/Pasted image 20260701100729.png",
-    "拓展学习/08-AI技术杂记/09-Transformer论文精读.md",
-    "拓展学习/08-AI技术杂记/08-笔记：近年AI应用技术串讲与优质文档分享.md",
     "attachiments.md",
     "技术学习/13-深度学习入门-生成模型/07-变分自编码器.md",
     "技术学习/13-深度学习入门-生成模型/05-EM算法.md",
     "技术学习/13-深度学习入门-生成模型/04-高斯混合模型.md",
-    "技术学习/13-深度学习入门-生成模型/03-多维正态分布.md",
     "技术学习/13-深度学习入门-生成模型/06-神经网络.md",
     "技术学习/13-深度学习入门-生成模型/未命名.base",
     "未命名.canvas",

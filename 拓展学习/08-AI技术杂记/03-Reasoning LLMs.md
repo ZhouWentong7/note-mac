@@ -1,7 +1,8 @@
 ---
 tags:
-  - LLMs
-  - CoT
+  - LLMs/Reasoning
+  - LLMs/CoT
+  - LLMs/Deepseek
 ---
 参考博客
 - [一文读懂：思维链 CoT（Chain of Thought）-知乎](https://www.zhihu.com/tardis/zm/art/670907685?source_id=1003)
