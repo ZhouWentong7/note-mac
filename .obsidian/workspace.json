@@ -4,16 +4,36 @@
     "type": "split",
     "children": [
       {
-        "id": "df062a73202e0348",
+        "id": "7e724db63b05f450",
         "type": "tabs",
         "children": [
           {
-            "id": "0418a8b325025a64",
+            "id": "3b7777d1a0ec9198",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://oigi8odzc5w.feishu.cn/wiki/RcuYwK1iviseDhkOXmAcFH6Snve",
+                "title": "AI生图范式演进与里程碑论文解读｜从VAE、GAN到 Diffusion、自回归 - 飞书云文档",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "AI生图范式演进与里程碑论文解读｜从VAE、GAN到 Diffusion、自回归 - 飞书云文档"
+            }
+          }
+        ]
+      },
+      {
+        "id": "7ca0b54184ad804e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "173c35cdfca13207",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "知识学习/02-语言学/认知语言学vs生成语言学.md",
+                "file": "拓展学习/08-AI技术杂记/14-AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +48,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "认知语言学vs生成语言学"
+              "title": "14-AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归"
             }
           }
         ],
@@ -89,7 +109,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 290.5024719238281
+    "width": 290.5024719238281,
+    "collapsed": true
   },
   "right": {
     "id": "42c22cc28f006f8e",
@@ -152,13 +173,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "拓展学习/08-AI技术杂记/14-AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "14-AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归 的大纲"
+              "title": "大纲"
             }
           },
           {
@@ -192,12 +212,11 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -218,10 +237,53 @@
       "callout-manager:Insert Callout": false
     }
   },
-  "active": "0418a8b325025a64",
+  "floating": {
+    "id": "87539aac83180cf0",
+    "type": "floating",
+    "children": [
+      {
+        "id": "100195eba8ac2512",
+        "type": "window",
+        "children": [
+          {
+            "id": "26841f90704c657e",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "1ea1049b8fc7b21a",
+                "type": "leaf",
+                "state": {
+                  "type": "webviewer",
+                  "state": {
+                    "url": "https://www.bilibili.com/video/BV1bZTA61Eip/?share_source=copy_web&vd_source=fe1e50f3e19ee2c5f4cd32de1f11a963",
+                    "title": "AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归_哔哩哔哩_bilibili",
+                    "mode": "webview"
+                  },
+                  "icon": "globe-2",
+                  "title": "AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归_哔哩哔哩_bilibili"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 1633,
+        "y": 153,
+        "width": 741,
+        "height": 809,
+        "maximize": false,
+        "zoom": -0.5
+      }
+    ]
+  },
+  "active": "1ea1049b8fc7b21a",
   "lastOpenFiles": [
-    "知识学习/02-语言学/Research Plan.md",
+    "拓展学习/08-AI技术杂记/14-AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归.md",
+    "拓展学习/08-AI技术杂记/attachments/Standar-AR-vs-VAR.png",
+    "拓展学习/08-AI技术杂记/未命名 1.base",
+    "拓展学习/08-AI技术杂记/未命名.base",
     "知识学习/02-语言学/认知语言学vs生成语言学.md",
+    "知识学习/02-语言学/Research Plan.md",
     "拓展学习/08-AI技术杂记/11-变分推断.md",
     "知识学习/02-语言学/未命名",
     "拓展学习/08-AI技术杂记/10-贝叶斯公式、贝叶斯估计、最大后验估计、最大似然估计.md",
@@ -237,7 +299,6 @@
     "拓展学习/08-AI技术杂记/12-马尔科夫蒙特卡洛.md",
     "Users/zhou-wentong/Documents/books/深度学习入门.md",
     "Excalidraw/Drawing 2026-05-02 01.13.42.excalidraw.md",
-    "拓展学习/08-AI技术杂记/14-AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归.md",
     "拓展学习/08-AI技术杂记/16-Verbalizable Representations Form a Global Workspace in Language Models.md",
     "拓展学习/08-AI技术杂记/A-意识与P-意识.md",
     "拓展学习/08-AI技术杂记/attachments/VQ-GAN-workflow.png",
@@ -254,18 +315,14 @@
     "拓展学习/08-AI技术杂记/attachments/DALLE2.png",
     "拓展学习/08-AI技术杂记/15-元认知与LLM.md",
     "拓展学习/08-AI技术杂记/attachments/LDMs-arch.png",
-    "拓展学习/08-AI技术杂记/未命名.base",
     "拓展学习/08-AI技术杂记/attachments/GLIDE-draft.png",
-    "拓展学习/08-AI技术杂记/attachments/Pasted image 20260701100729.png",
     "attachiments.md",
     "技术学习/13-深度学习入门-生成模型/07-变分自编码器.md",
-    "技术学习/13-深度学习入门-生成模型/05-EM算法.md",
     "技术学习/13-深度学习入门-生成模型/未命名.base",
     "未命名.canvas",
     "Users/zhou-wentong/Documents/books",
     "Users/zhou-wentong/Documents",
     "Users/zhou-wentong",
-    "Users",
-    "技术学习/13-深度学习入门-生成模型/生成模型学习记录.base"
+    "Users"
   ]
 }
