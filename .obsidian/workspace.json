@@ -4,26 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "7e724db63b05f450",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "3b7777d1a0ec9198",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://oigi8odzc5w.feishu.cn/wiki/RcuYwK1iviseDhkOXmAcFH6Snve",
-                "title": "AI生图范式演进与里程碑论文解读｜从VAE、GAN到 Diffusion、自回归 - 飞书云文档",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "AI生图范式演进与里程碑论文解读｜从VAE、GAN到 Diffusion、自回归 - 飞书云文档"
-            }
-          }
-        ]
-      },
-      {
         "id": "7ca0b54184ad804e",
         "type": "tabs",
         "children": [
@@ -109,8 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 290.5024719238281,
-    "collapsed": true
+    "width": 290.5024719238281
   },
   "right": {
     "id": "42c22cc28f006f8e",
@@ -173,12 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "拓展学习/08-AI技术杂记/14-AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "14-AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归 的大纲"
             }
           },
           {
@@ -237,46 +217,7 @@
       "callout-manager:Insert Callout": false
     }
   },
-  "floating": {
-    "id": "87539aac83180cf0",
-    "type": "floating",
-    "children": [
-      {
-        "id": "100195eba8ac2512",
-        "type": "window",
-        "children": [
-          {
-            "id": "26841f90704c657e",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "1ea1049b8fc7b21a",
-                "type": "leaf",
-                "state": {
-                  "type": "webviewer",
-                  "state": {
-                    "url": "https://www.bilibili.com/video/BV1bZTA61Eip/?share_source=copy_web&vd_source=fe1e50f3e19ee2c5f4cd32de1f11a963",
-                    "title": "AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归_哔哩哔哩_bilibili",
-                    "mode": "webview"
-                  },
-                  "icon": "globe-2",
-                  "title": "AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归_哔哩哔哩_bilibili"
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 1633,
-        "y": 153,
-        "width": 741,
-        "height": 809,
-        "maximize": false,
-        "zoom": -0.5
-      }
-    ]
-  },
-  "active": "1ea1049b8fc7b21a",
+  "active": "173c35cdfca13207",
   "lastOpenFiles": [
     "拓展学习/08-AI技术杂记/14-AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归.md",
     "拓展学习/08-AI技术杂记/attachments/Standar-AR-vs-VAR.png",
