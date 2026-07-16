@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "拓展学习/08-AI技术杂记/14-AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归.md",
+                "file": "拓展学习/08-AI技术杂记/17-压缩即智能.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +28,25 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "14-AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归"
+              "title": "17-压缩即智能"
+            }
+          },
+          {
+            "id": "7ff938ea384fd7da",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://www.bilibili.com/video/BV1yVNU6xERx/?share_source=copy_web&vd_source=fe1e50f3e19ee2c5f4cd32de1f11a963",
+                "title": "【官方双语】压缩即智能：Part1，重新发明熵_哔哩哔哩_bilibili",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "【官方双语】压缩即智能：Part1，重新发明熵_哔哩哔哩_bilibili"
             }
           }
         ],
+        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -64,7 +79,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#交叉熵",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,7 +104,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 290.5024719238281
+    "width": 290.5024719238281,
+    "collapsed": true
   },
   "right": {
     "id": "42c22cc28f006f8e",
@@ -152,13 +168,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "拓展学习/08-AI技术杂记/14-AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "14-AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归 的大纲"
+              "title": "大纲"
             }
           },
           {
@@ -196,7 +211,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -217,8 +233,12 @@
       "callout-manager:Insert Callout": false
     }
   },
-  "active": "173c35cdfca13207",
+  "active": "7ff938ea384fd7da",
   "lastOpenFiles": [
+    "拓展学习/08-AI技术杂记/17-压缩即智能.md",
+    "知识学习/01-信息论/010-引言.md",
+    "拓展学习/08-AI技术杂记/16-Verbalizable Representations Form a Global Workspace in Language Models.md",
+    "拓展学习/08-AI技术杂记/15-元认知与LLM.md",
     "拓展学习/08-AI技术杂记/14-AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归.md",
     "拓展学习/08-AI技术杂记/attachments/Standar-AR-vs-VAR.png",
     "拓展学习/08-AI技术杂记/未命名 1.base",
@@ -240,7 +260,6 @@
     "拓展学习/08-AI技术杂记/12-马尔科夫蒙特卡洛.md",
     "Users/zhou-wentong/Documents/books/深度学习入门.md",
     "Excalidraw/Drawing 2026-05-02 01.13.42.excalidraw.md",
-    "拓展学习/08-AI技术杂记/16-Verbalizable Representations Form a Global Workspace in Language Models.md",
     "拓展学习/08-AI技术杂记/A-意识与P-意识.md",
     "拓展学习/08-AI技术杂记/attachments/VQ-GAN-workflow.png",
     "拓展学习/08-AI技术杂记/attachments/VQ-VAE-train.png",
@@ -254,11 +273,9 @@
     "拓展学习/08-AI技术杂记/attachments/PixelRNN_CNN.png",
     "拓展学习/08-AI技术杂记/attachments/DiT架构.png",
     "拓展学习/08-AI技术杂记/attachments/DALLE2.png",
-    "拓展学习/08-AI技术杂记/15-元认知与LLM.md",
     "拓展学习/08-AI技术杂记/attachments/LDMs-arch.png",
     "拓展学习/08-AI技术杂记/attachments/GLIDE-draft.png",
     "attachiments.md",
-    "技术学习/13-深度学习入门-生成模型/07-变分自编码器.md",
     "技术学习/13-深度学习入门-生成模型/未命名.base",
     "未命名.canvas",
     "Users/zhou-wentong/Documents/books",
