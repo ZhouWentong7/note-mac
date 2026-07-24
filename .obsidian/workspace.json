@@ -94,7 +94,7 @@
             }
           }
         ],
-        "currentTab": 3,
+        "currentTab": 2,
         "stacked": true
       }
     ],
@@ -152,7 +152,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 290.5024719238281
+    "width": 290.5024719238281,
+    "collapsed": true
   },
   "right": {
     "id": "42c22cc28f006f8e",
@@ -215,13 +216,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "拓展学习/08-AI技术杂记/威诺格拉德模式挑战（Winograd Schema Challenge）.md",
+                "file": "拓展学习/08-AI技术杂记/NLP任务.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "威诺格拉德模式挑战（Winograd Schema Challenge） 的大纲"
+              "title": "NLP任务 的大纲"
             }
           },
           {
@@ -281,7 +282,7 @@
       "callout-manager:Insert Callout": false
     }
   },
-  "active": "3f50e235347b0773",
+  "active": "8fb745e6b3e1255a",
   "lastOpenFiles": [
     "拓展学习/08-AI技术杂记/威诺格拉德模式挑战（Winograd Schema Challenge）.md",
     "拓展学习/08-AI技术杂记/NLP任务.md",
