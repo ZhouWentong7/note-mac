@@ -51,7 +51,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "拓展学习/08-AI技术杂记/Harness Engineering.md",
+                "file": "拓展学习/08-AI技术杂记/NLP任务.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -66,11 +66,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Harness Engineering"
+              "title": "NLP任务"
+            }
+          },
+          {
+            "id": "3f50e235347b0773",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "拓展学习/08-AI技术杂记/威诺格拉德模式挑战（Winograd Schema Challenge）.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "威诺格拉德模式挑战（Winograd Schema Challenge）"
             }
           }
         ],
-        "currentTab": 2,
+        "currentTab": 3,
         "stacked": true
       }
     ],
@@ -191,13 +215,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "拓展学习/08-AI技术杂记/Harness Engineering.md",
+                "file": "拓展学习/08-AI技术杂记/威诺格拉德模式挑战（Winograd Schema Challenge）.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Harness Engineering 的大纲"
+              "title": "威诺格拉德模式挑战（Winograd Schema Challenge） 的大纲"
             }
           },
           {
@@ -257,10 +281,12 @@
       "callout-manager:Insert Callout": false
     }
   },
-  "active": "8fb745e6b3e1255a",
+  "active": "3f50e235347b0773",
   "lastOpenFiles": [
-    "Clippings/工程技术：在智能体优先的世界中利用 Codex.md",
+    "拓展学习/08-AI技术杂记/威诺格拉德模式挑战（Winograd Schema Challenge）.md",
+    "拓展学习/08-AI技术杂记/NLP任务.md",
     "拓展学习/08-AI技术杂记/Harness Engineering.md",
+    "Clippings/工程技术：在智能体优先的世界中利用 Codex.md",
     "Clippings",
     "拓展学习/08-AI技术杂记/17-压缩即智能.md",
     "拓展学习/08-AI技术杂记/08-笔记：近年AI应用技术串讲与优质文档分享.md",
@@ -299,8 +325,6 @@
     "拓展学习/08-AI技术杂记/02-SFT.md",
     "拓展学习/08-AI技术杂记/01-RAG.md",
     "拓展学习/08-AI技术杂记/12-马尔科夫蒙特卡洛.md",
-    "Users/zhou-wentong/Documents/books/深度学习入门.md",
-    "Excalidraw/Drawing 2026-05-02 01.13.42.excalidraw.md",
     "技术学习/15-从零构建",
     "个人研究",
     "技术学习/13-深度学习入门-生成模型/未命名.base",
