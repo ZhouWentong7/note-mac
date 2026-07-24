@@ -13,6 +13,44 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "拓展学习/08-AI技术杂记/08-笔记：近年AI应用技术串讲与优质文档分享.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "08-笔记：近年AI应用技术串讲与优质文档分享"
+            }
+          },
+          {
+            "id": "b99f7c1274891d6a",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://oigi8odzc5w.feishu.cn/wiki/WBMfwiNkfi6uNFkRtXdcavDzn0e",
+                "title": "近年 AI 应用技术串讲与优质文档分享｜Agent、Skill、OpenClaw、Harness…… - 飞书云文档",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "近年 AI 应用技术串讲与优质文档分享｜Agent、Skill、OpenClaw、Harness…… - 飞书云文档"
+            }
+          },
+          {
+            "id": "8fb745e6b3e1255a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "拓展学习/08-AI技术杂记/Harness Engineering.md",
                 "mode": "source",
                 "source": false,
@@ -32,6 +70,7 @@
             }
           }
         ],
+        "currentTab": 2,
         "stacked": true
       }
     ],
@@ -89,8 +128,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 290.5024719238281,
-    "collapsed": true
+    "width": 290.5024719238281
   },
   "right": {
     "id": "42c22cc28f006f8e",
@@ -219,10 +257,14 @@
       "callout-manager:Insert Callout": false
     }
   },
-  "active": "625cb7fbdcd313ca",
+  "active": "8fb745e6b3e1255a",
   "lastOpenFiles": [
-    "拓展学习/01-深入理解计算机系统CSAP/11-计算机系统的漫游.md",
+    "Clippings/工程技术：在智能体优先的世界中利用 Codex.md",
     "拓展学习/08-AI技术杂记/Harness Engineering.md",
+    "Clippings",
+    "拓展学习/08-AI技术杂记/17-压缩即智能.md",
+    "拓展学习/08-AI技术杂记/08-笔记：近年AI应用技术串讲与优质文档分享.md",
+    "拓展学习/01-深入理解计算机系统CSAP/11-计算机系统的漫游.md",
     "知识学习/01-信息论/信息论笔记目录.base",
     "拓展学习/01-深入理解计算机系统CSAP/00-CSAP学习目录.md",
     "拓展学习/01-深入理解计算机系统CSAP/attachments/Caches matter.png",
@@ -234,7 +276,6 @@
     "拓展学习/08-AI技术杂记/attachments/Pasted image 20260127111607.png",
     "拓展学习/08-AI技术杂记/attachments/Pasted image 20260127111617.png",
     "拓展学习/08-AI技术杂记/attachments/Pasted image 20260127111650.png",
-    "拓展学习/08-AI技术杂记/17-压缩即智能.md",
     "拓展学习/08-AI技术杂记/attachments/Information-visual-2.png",
     "attachements/sho.md",
     "attachements",
@@ -250,7 +291,6 @@
     "知识学习/02-语言学/未命名",
     "拓展学习/08-AI技术杂记/10-贝叶斯公式、贝叶斯估计、最大后验估计、最大似然估计.md",
     "拓展学习/08-AI技术杂记/09-Transformer论文精读.md",
-    "拓展学习/08-AI技术杂记/08-笔记：近年AI应用技术串讲与优质文档分享.md",
     "拓展学习/08-AI技术杂记/06-2025精选论文.md",
     "拓展学习/08-AI技术杂记/05-LLM的2025.md",
     "拓展学习/08-AI技术杂记/04-LoRA.md",
@@ -261,12 +301,10 @@
     "拓展学习/08-AI技术杂记/12-马尔科夫蒙特卡洛.md",
     "Users/zhou-wentong/Documents/books/深度学习入门.md",
     "Excalidraw/Drawing 2026-05-02 01.13.42.excalidraw.md",
-    "拓展学习/08-AI技术杂记/A-意识与P-意识.md",
     "技术学习/15-从零构建",
     "个人研究",
     "技术学习/13-深度学习入门-生成模型/未命名.base",
     "未命名.canvas",
-    "Users/zhou-wentong/Documents/books",
-    "Users/zhou-wentong/Documents"
+    "Users/zhou-wentong/Documents/books"
   ]
 }
