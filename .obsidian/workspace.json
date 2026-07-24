@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "拓展学习/01-深入理解计算机系统CSAP/11-计算机系统的漫游.md",
+                "file": "拓展学习/08-AI技术杂记/Harness Engineering.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "11-计算机系统的漫游"
+              "title": "Harness Engineering"
             }
           }
         ],
@@ -89,7 +89,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 290.5024719238281
+    "width": 290.5024719238281,
+    "collapsed": true
   },
   "right": {
     "id": "42c22cc28f006f8e",
@@ -152,13 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "拓展学习/01-深入理解计算机系统CSAP/11-计算机系统的漫游.md",
+                "file": "拓展学习/08-AI技术杂记/Harness Engineering.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "11-计算机系统的漫游 的大纲"
+              "title": "Harness Engineering 的大纲"
             }
           },
           {
@@ -220,8 +221,9 @@
   },
   "active": "625cb7fbdcd313ca",
   "lastOpenFiles": [
-    "知识学习/01-信息论/信息论笔记目录.base",
     "拓展学习/01-深入理解计算机系统CSAP/11-计算机系统的漫游.md",
+    "拓展学习/08-AI技术杂记/Harness Engineering.md",
+    "知识学习/01-信息论/信息论笔记目录.base",
     "拓展学习/01-深入理解计算机系统CSAP/00-CSAP学习目录.md",
     "拓展学习/01-深入理解计算机系统CSAP/attachments/Caches matter.png",
     "拓展学习/08-AI技术杂记/attachments/Pasted image 20260716171818.png",
@@ -265,7 +267,6 @@
     "技术学习/13-深度学习入门-生成模型/未命名.base",
     "未命名.canvas",
     "Users/zhou-wentong/Documents/books",
-    "Users/zhou-wentong/Documents",
-    "Users/zhou-wentong"
+    "Users/zhou-wentong/Documents"
   ]
 }
