@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "拓展学习/08-AI技术杂记/Harness Engineering.md",
+                "file": "知识学习/01-信息论/011-Entropy.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Harness Engineering"
+              "title": "011-Entropy"
             }
           },
           {
@@ -103,8 +103,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 290.5024719238281,
-    "collapsed": true
+    "width": 290.5024719238281
   },
   "right": {
     "id": "42c22cc28f006f8e",
@@ -167,13 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "拓展学习/08-AI技术杂记/Harness Engineering.md",
+                "file": "知识学习/01-信息论/011-Entropy.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Harness Engineering 的大纲"
+              "title": "011-Entropy 的大纲"
             }
           },
           {
@@ -235,10 +234,11 @@
   },
   "active": "625cb7fbdcd313ca",
   "lastOpenFiles": [
-    "拓展学习/08-AI技术杂记/08-笔记：近年AI应用技术串讲与优质文档分享.md",
+    "知识学习/02-语言学/认知语言学vs生成语言学.md",
     "拓展学习/08-AI技术杂记/NLP任务.md",
-    "拓展学习/08-AI技术杂记/威诺格拉德模式挑战（Winograd Schema Challenge）.md",
     "拓展学习/08-AI技术杂记/Harness Engineering.md",
+    "拓展学习/08-AI技术杂记/08-笔记：近年AI应用技术串讲与优质文档分享.md",
+    "拓展学习/08-AI技术杂记/威诺格拉德模式挑战（Winograd Schema Challenge）.md",
     "Clippings/工程技术：在智能体优先的世界中利用 Codex.md",
     "Clippings",
     "拓展学习/08-AI技术杂记/17-压缩即智能.md",
@@ -263,7 +263,6 @@
     "拓展学习/08-AI技术杂记/15-元认知与LLM.md",
     "拓展学习/08-AI技术杂记/14-AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归.md",
     "拓展学习/08-AI技术杂记/未命名 1.base",
-    "知识学习/02-语言学/认知语言学vs生成语言学.md",
     "知识学习/02-语言学/Research Plan.md",
     "拓展学习/08-AI技术杂记/11-变分推断.md",
     "知识学习/02-语言学/未命名",
