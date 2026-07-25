@@ -4,6 +4,9 @@
 >- Mutual information 互信息
 >- Information inequality 信息不等式（常用的工具）
 
+> 参考： https://github.com/deusyu/harness-engineering
+
+
 ## 1. Entropy
 
 ### 1.1 熵的历史
