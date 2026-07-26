@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "知识学习/01-信息论/011-Entropy.md",
+                "file": "技术学习/13-深度学习入门-生成模型/05-EM算法.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,21 +28,31 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "011-Entropy"
+              "title": "05-EM算法"
             }
           },
           {
-            "id": "b99f7c1274891d6a",
+            "id": "c59568fcf3e69bc0",
             "type": "leaf",
             "state": {
-              "type": "webviewer",
+              "type": "markdown",
               "state": {
-                "url": "https://oigi8odzc5w.feishu.cn/wiki/WBMfwiNkfi6uNFkRtXdcavDzn0e",
-                "title": "近年 AI 应用技术串讲与优质文档分享｜Agent、Skill、OpenClaw、Harness…… - 飞书云文档",
-                "mode": "webview"
+                "file": "拓展学习/08-AI技术杂记/14-AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "globe-2",
-              "title": "近年 AI 应用技术串讲与优质文档分享｜Agent、Skill、OpenClaw、Harness…… - 飞书云文档"
+              "icon": "lucide-file",
+              "title": "14-AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归"
             }
           }
         ],
@@ -78,7 +88,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#交叉熵",
+                "query": "最大似然",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -167,13 +177,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "知识学习/01-信息论/011-Entropy.md",
+                "file": "技术学习/13-深度学习入门-生成模型/05-EM算法.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "011-Entropy 的大纲"
+              "title": "05-EM算法 的大纲"
             }
           },
           {
@@ -235,6 +245,20 @@
   },
   "active": "625cb7fbdcd313ca",
   "lastOpenFiles": [
+    "拓展学习/08-AI技术杂记/05-LLM的2025.md",
+    "技术学习/13-深度学习入门-生成模型/02-最大似然估计.md",
+    "技术学习/13-深度学习入门-生成模型/07-变分自编码器.md",
+    "拓展学习/08-AI技术杂记/14-AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归.md",
+    "技术学习/13-深度学习入门-生成模型/99-思路梳理.md",
+    "技术学习/13-深度学习入门-生成模型/Jensen 不等式.md",
+    "技术学习/13-深度学习入门-生成模型/学习目录.md",
+    "技术学习/13-深度学习入门-生成模型/01-正态分布.md",
+    "拓展学习/08-AI技术杂记/10-贝叶斯公式、贝叶斯估计、最大后验估计、最大似然估计.md",
+    "拓展学习/06-项目管理/00-信息收集.md",
+    "拓展学习/05-机器学习理论基础/00-资料与目录.md",
+    "拓展学习/01-深入理解计算机系统CSAP/11-计算机系统的漫游.md",
+    "拓展学习/01-深入理解计算机系统CSAP/00-CSAP学习目录.md",
+    "知识学习/01-信息论/011-Entropy.md",
     "知识学习/02-语言学/认知语言学vs生成语言学.md",
     "拓展学习/08-AI技术杂记/NLP任务.md",
     "拓展学习/08-AI技术杂记/Harness Engineering.md",
@@ -243,9 +267,7 @@
     "Clippings/工程技术：在智能体优先的世界中利用 Codex.md",
     "Clippings",
     "拓展学习/08-AI技术杂记/17-压缩即智能.md",
-    "拓展学习/01-深入理解计算机系统CSAP/11-计算机系统的漫游.md",
     "知识学习/01-信息论/信息论笔记目录.base",
-    "拓展学习/01-深入理解计算机系统CSAP/00-CSAP学习目录.md",
     "拓展学习/01-深入理解计算机系统CSAP/attachments/Caches matter.png",
     "拓展学习/08-AI技术杂记/attachments/Pasted image 20260716171818.png",
     "拓展学习/08-AI技术杂记/attachments/Pasted image 20260630110608.png",
@@ -262,21 +284,9 @@
     "知识学习/01-信息论/010-引言.md",
     "拓展学习/08-AI技术杂记/16-Verbalizable Representations Form a Global Workspace in Language Models.md",
     "拓展学习/08-AI技术杂记/15-元认知与LLM.md",
-    "拓展学习/08-AI技术杂记/14-AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归.md",
     "拓展学习/08-AI技术杂记/未命名 1.base",
     "知识学习/02-语言学/Research Plan.md",
-    "拓展学习/08-AI技术杂记/11-变分推断.md",
     "知识学习/02-语言学/未命名",
-    "拓展学习/08-AI技术杂记/10-贝叶斯公式、贝叶斯估计、最大后验估计、最大似然估计.md",
-    "拓展学习/08-AI技术杂记/09-Transformer论文精读.md",
-    "拓展学习/08-AI技术杂记/06-2025精选论文.md",
-    "拓展学习/08-AI技术杂记/05-LLM的2025.md",
-    "拓展学习/08-AI技术杂记/04-LoRA.md",
-    "拓展学习/08-AI技术杂记/03-Reasoning LLMs.md",
-    "技术学习/13-深度学习入门-生成模型/03-多维正态分布.md",
-    "拓展学习/08-AI技术杂记/02-SFT.md",
-    "拓展学习/08-AI技术杂记/01-RAG.md",
-    "拓展学习/08-AI技术杂记/12-马尔科夫蒙特卡洛.md",
     "技术学习/15-从零构建",
     "个人研究",
     "技术学习/13-深度学习入门-生成模型/未命名.base",
