@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "技术学习/13-深度学习入门-生成模型/05-EM算法.md",
+                "file": "技术学习/13-深度学习入门-生成模型/01-正态分布.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "05-EM算法"
+              "title": "01-正态分布"
             }
           },
           {
@@ -76,7 +76,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -113,8 +115,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 290.5024719238281,
-    "collapsed": true
+    "width": 290.5024719238281
   },
   "right": {
     "id": "42c22cc28f006f8e",
@@ -177,13 +178,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "技术学习/13-深度学习入门-生成模型/05-EM算法.md",
+                "file": "技术学习/13-深度学习入门-生成模型/01-正态分布.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "05-EM算法 的大纲"
+              "title": "01-正态分布 的大纲"
             }
           },
           {
@@ -245,6 +246,7 @@
   },
   "active": "625cb7fbdcd313ca",
   "lastOpenFiles": [
+    "技术学习/13-深度学习入门-生成模型/05-EM算法.md",
     "拓展学习/08-AI技术杂记/05-LLM的2025.md",
     "技术学习/13-深度学习入门-生成模型/02-最大似然估计.md",
     "技术学习/13-深度学习入门-生成模型/07-变分自编码器.md",
@@ -285,7 +287,6 @@
     "拓展学习/08-AI技术杂记/16-Verbalizable Representations Form a Global Workspace in Language Models.md",
     "拓展学习/08-AI技术杂记/15-元认知与LLM.md",
     "拓展学习/08-AI技术杂记/未命名 1.base",
-    "知识学习/02-语言学/Research Plan.md",
     "知识学习/02-语言学/未命名",
     "技术学习/15-从零构建",
     "个人研究",
