@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "技术学习/13-深度学习入门-生成模型/01-正态分布.md",
+                "file": "拓展学习/08-AI技术杂记/14-AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "01-正态分布"
+              "title": "14-AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归"
             }
           },
           {
@@ -90,7 +90,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "最大似然",
+                "query": "clip",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -111,7 +111,8 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -246,6 +247,8 @@
   },
   "active": "625cb7fbdcd313ca",
   "lastOpenFiles": [
+    "知识学习/01-信息论/011-Entropy.md",
+    "技术学习/13-深度学习入门-生成模型/01-正态分布.md",
     "技术学习/13-深度学习入门-生成模型/05-EM算法.md",
     "拓展学习/08-AI技术杂记/05-LLM的2025.md",
     "技术学习/13-深度学习入门-生成模型/02-最大似然估计.md",
@@ -254,13 +257,11 @@
     "技术学习/13-深度学习入门-生成模型/99-思路梳理.md",
     "技术学习/13-深度学习入门-生成模型/Jensen 不等式.md",
     "技术学习/13-深度学习入门-生成模型/学习目录.md",
-    "技术学习/13-深度学习入门-生成模型/01-正态分布.md",
     "拓展学习/08-AI技术杂记/10-贝叶斯公式、贝叶斯估计、最大后验估计、最大似然估计.md",
     "拓展学习/06-项目管理/00-信息收集.md",
     "拓展学习/05-机器学习理论基础/00-资料与目录.md",
     "拓展学习/01-深入理解计算机系统CSAP/11-计算机系统的漫游.md",
     "拓展学习/01-深入理解计算机系统CSAP/00-CSAP学习目录.md",
-    "知识学习/01-信息论/011-Entropy.md",
     "知识学习/02-语言学/认知语言学vs生成语言学.md",
     "拓展学习/08-AI技术杂记/NLP任务.md",
     "拓展学习/08-AI技术杂记/Harness Engineering.md",

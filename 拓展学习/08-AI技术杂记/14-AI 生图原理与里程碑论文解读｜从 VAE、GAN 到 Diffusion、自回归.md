@@ -223,7 +223,7 @@ _An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale_ —
 ![CLIP架构图](attachments/Clip-draft.png)
 
 CLIP训练
-- 获取数据：从互联网上得到的4亿个图-文对
+- 获取数据：从互联网上得到的4亿个（image-text）对
 - 两个编码器
 	- 图像编码器：ResNet或者ViT
 	- 文本编码器：Transformer
