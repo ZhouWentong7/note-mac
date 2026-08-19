@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "拓展学习/08-AI技术杂记/18-从ClaudeCodex理解Agent Harness.md",
+                "file": "拓展学习/08-AI技术杂记/19-DDPM速通.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "18-从ClaudeCodex理解Agent Harness"
+              "title": "19-DDPM速通"
             }
           }
         ],
@@ -155,13 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "技术学习/13-深度学习入门-生成模型/01-正态分布.md",
+                "file": "拓展学习/08-AI技术杂记/19-DDPM速通.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "01-正态分布 的大纲"
+              "title": "大纲"
             }
           },
           {
@@ -223,10 +223,11 @@
   },
   "active": "625cb7fbdcd313ca",
   "lastOpenFiles": [
-    "拓展学习/08-AI技术杂记/17-压缩即智能.md",
-    "拓展学习/08-AI技术杂记/18-从ClaudeCodex理解Agent Harness.md",
-    "研究相关/论文思路.md",
     "拓展学习/08-AI技术杂记/14-AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归.md",
+    "拓展学习/08-AI技术杂记/19-DDPM速通.md",
+    "拓展学习/08-AI技术杂记/18-从ClaudeCodex理解Agent Harness.md",
+    "拓展学习/08-AI技术杂记/17-压缩即智能.md",
+    "研究相关/论文思路.md",
     "知识学习/01-信息论/011-Entropy.md",
     "技术学习/13-深度学习入门-生成模型/01-正态分布.md",
     "技术学习/13-深度学习入门-生成模型/05-EM算法.md",
@@ -262,7 +263,6 @@
     "attachements/sho.md",
     "attachements",
     "拓展学习/08-AI技术杂记/未命名.base",
-    "知识学习/01-信息论/010-引言.md",
     "拓展学习/08-AI技术杂记/未命名 1.base",
     "知识学习/02-语言学/未命名",
     "技术学习/15-从零构建",
