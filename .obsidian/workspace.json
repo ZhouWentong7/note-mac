@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "拓展学习/08-AI技术杂记/19-DDPM速通.md",
+                "file": "Clippings/A hierarchical teacher-student learning framework with adaptive cross-modal fusion for brain tumor segmentation.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "19-DDPM速通"
+              "title": "A hierarchical teacher-student learning framework with adaptive cross-modal fusion for brain tumor segmentation"
             }
           }
         ],
@@ -155,7 +155,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "拓展学习/08-AI技术杂记/19-DDPM速通.md",
+                "file": "Clippings/A hierarchical teacher-student learning framework with adaptive cross-modal fusion for brain tumor segmentation.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -223,9 +223,10 @@
   },
   "active": "625cb7fbdcd313ca",
   "lastOpenFiles": [
+    "拓展学习/08-AI技术杂记/19-DDPM速通.md",
+    "Clippings/A hierarchical teacher-student learning framework with adaptive cross-modal fusion for brain tumor segmentation.md",
     "Clippings/ASMFNet Anatomical symmetry-guided multi-modal fusion network for glioma segmentation in MRI.md",
     "Clippings/工程技术：在智能体优先的世界中利用 Codex.md",
-    "拓展学习/08-AI技术杂记/19-DDPM速通.md",
     "拓展学习/08-AI技术杂记/14-AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归.md",
     "拓展学习/08-AI技术杂记/18-从ClaudeCodex理解Agent Harness.md",
     "拓展学习/08-AI技术杂记/17-压缩即智能.md",
@@ -248,7 +249,6 @@
     "拓展学习/08-AI技术杂记/NLP任务.md",
     "拓展学习/08-AI技术杂记/Harness Engineering.md",
     "拓展学习/08-AI技术杂记/08-笔记：近年AI应用技术串讲与优质文档分享.md",
-    "拓展学习/08-AI技术杂记/威诺格拉德模式挑战（Winograd Schema Challenge）.md",
     "Clippings",
     "知识学习/01-信息论/信息论笔记目录.base",
     "拓展学习/01-深入理解计算机系统CSAP/attachments/Caches matter.png",
