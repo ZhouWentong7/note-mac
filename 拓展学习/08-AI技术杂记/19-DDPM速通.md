@@ -138,7 +138,79 @@ $$q(\mathbf{x}_t \mid \mathbf{x}_0) = \mathcal{N}(\mathbf{x}_t; \sqrt{\bar{\alph
 
 **【DDPM之反向过程】—— 去噪**
 
+DDPM 反向过程——去噪
 
+目标：训练模型 $p_\theta(x_{t-1}|x_t)$，让它学会从带噪的 $x_t$ 逐步恢复出干净的 $x_0$。
+
+正向过程是不断加噪：
+
+$$x_t
+=
+\sqrt{\bar{\alpha}_t}x_0
++
+\sqrt{1-\bar{\alpha}_t}\epsilon$$
+
+其中：
+
+- $x_0$：原始图片
+- $x_t$：第 $t$ 步的带噪图片
+- $\epsilon\sim\mathcal{N}(0,I)$：加入的高斯噪声
+- $\beta_t$：第 $t$ 步的噪声强度
+- $\alpha_t=1-\beta_t$
+- $\bar{\alpha}_t=\prod_{s=1}^{t}\alpha_s$
+
+
+反向过程就是：
+
+$x_T\rightarrow x_{T-1}\rightarrow\cdots\rightarrow x_0$
+
+希望模型学习：
+
+$$p_\theta(x_{t-1}|x_t)
+\approx q(x_{t-1}|x_t)$$
+
+直接计算 $q(x_{t-1}|x_t)$ 很困难，但如果知道 $x_0$，就可以计算：
+
+$q(x_{t-1}|x_t,x_0)$
+
+因此可以得到一个可计算的训练目标。
+
+
+DDPM 的关键技巧：
+
+不直接让模型预测 $x_{t-1}$，而是让模型预测加入的噪声：
+
+$\epsilon_\theta(x_t,t)\approx\epsilon$
+
+于是 Loss 就变成非常简单的 MSE：
+
+$$\boxed{
+L=
+\mathbb{E}
+\left[
+\|\epsilon-\epsilon_\theta(x_t,t)\|^2
+\right]
+}$$
+
+
+【训练】
+$x_0$
+→ 随机选择 $t$
+→ 加入噪声得到 $x_t$
+→ 模型预测噪声 $\epsilon_\theta$
+→ 和真实噪声 $\epsilon$ 做 MSE。
+
+【生成】
+从纯噪声 $x_T$ 开始
+→ 模型预测噪声
+→ 去掉一点噪声得到 $x_{T-1}$
+→ 重复
+→ 最终得到 $x_0$。
+
+ 
+最核心的一句话：**DDPM = 训练一个模型预测噪声，然后在生成时利用这个预测一步步去噪。**
+
+  
 # 4 新话题+回顾
 
 
