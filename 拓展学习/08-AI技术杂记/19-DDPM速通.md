@@ -113,6 +113,7 @@ $$\mathcal{L}(\theta, \phi; \mathbf{x}) = \underbrace{\mathbb{E}_{q_\phi(\mathbf
 
 # 3. Diffusion家族：DDPM到DDIM
 
+## 3.1 DDPM 
 【DDPM思想】可以给干净的图像加噪，能否学会去噪呢？
 
 ---
@@ -210,6 +211,8 @@ $x_0$
  
 最核心的一句话：**DDPM = 训练一个模型预测噪声，然后在生成时利用这个预测一步步去噪。**
 
+## 3.2 DDIM
+【DDPM的核心问题】单步加噪、去噪太慢，
   
 # 4 新话题+回顾
 

@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "138699eeba4f8e7e",
+        "id": "13f60f879b51b3c5",
         "type": "tabs",
         "children": [
           {
-            "id": "625cb7fbdcd313ca",
+            "id": "2e6b2e115f5dff83",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Clippings/A hierarchical teacher-student learning framework with adaptive cross-modal fusion for brain tumor segmentation.md",
+                "file": "拓展学习/08-AI技术杂记/19-DDPM速通.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "A hierarchical teacher-student learning framework with adaptive cross-modal fusion for brain tumor segmentation"
+              "title": "19-DDPM速通"
             }
           }
         ],
@@ -155,7 +155,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Clippings/A hierarchical teacher-student learning framework with adaptive cross-modal fusion for brain tumor segmentation.md",
+                "file": "拓展学习/08-AI技术杂记/19-DDPM速通.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -221,13 +221,13 @@
       "callout-manager:Insert Callout": false
     }
   },
-  "active": "625cb7fbdcd313ca",
+  "active": "2e6b2e115f5dff83",
   "lastOpenFiles": [
+    "拓展学习/08-AI技术杂记/14-AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归.md",
     "拓展学习/08-AI技术杂记/19-DDPM速通.md",
     "Clippings/A hierarchical teacher-student learning framework with adaptive cross-modal fusion for brain tumor segmentation.md",
     "Clippings/ASMFNet Anatomical symmetry-guided multi-modal fusion network for glioma segmentation in MRI.md",
     "Clippings/工程技术：在智能体优先的世界中利用 Codex.md",
-    "拓展学习/08-AI技术杂记/14-AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归.md",
     "拓展学习/08-AI技术杂记/18-从ClaudeCodex理解Agent Harness.md",
     "拓展学习/08-AI技术杂记/17-压缩即智能.md",
     "研究相关/论文思路.md",
