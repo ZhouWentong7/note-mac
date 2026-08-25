@@ -212,7 +212,52 @@ $x_0$
 最核心的一句话：**DDPM = 训练一个模型预测噪声，然后在生成时利用这个预测一步步去噪。**
 
 ## 3.2 DDIM
-【DDPM的核心问题】单步加噪、去噪太慢，
+【DDPM的核心问题】单步加噪、去噪太慢
+解决方案：使用跳步的方式对所加噪声进行计算。
+
+**DDPM 原公式的问题**
+
+* **Markov 链假设**：DDPM 在逆向去噪过程（$x_t \to x_{t-1}$）中依赖 Markov 链性质，即 $x_{t-1}$ 的采样强依赖于上一时刻 $x_t$。
+* **采样速度极慢**：为了保证去噪分布的精准，DDPM 需要严格按照固定步长逐步计算（通常需要 1000 步），无法跳步采样。
+
+---
+
+**公式修改方向与思路**
+
+* **打破 Markov 假设（非 Markov 过程）**：将生成过程改为非 Markov 过程，使得 $x_{t-1}$ 不仅取决于 $x_t$，还依赖于初始干净图像 $x_0$。
+* **统一边缘分布**：保证前向加噪过程的边缘分布 $q(x_t|x_0)$ 与 DDPM 完全一致，使得 DDPM 训练好的噪声预测网络 $\epsilon_\theta(x_t, t)$ 无需重新训练即可直接复用。
+* **引入可控方差参数 $\sigma_t$**：通过将去噪分布写成确定的 $x_0$ 重建项、指向 $x_t$ 的方向项以及随机噪声项的组合，构造更泛化的逆向采样公式。
+
+---
+
+**优化前后的公式对比**
+
+**1. DDPM 去噪采样公式**
+
+$$x_{t-1} = \frac{1}{\sqrt{\alpha_t}} \left( x_t - \frac{1 - \alpha_t}{\sqrt{1 - \bar{\alpha}_t}} \epsilon_\theta(x_t, t) \right) + \sigma_t z \quad (z \sim \mathcal{N}(0, \mathbf{I}))$$
+
+**2. DDIM 泛化去噪采样公式**
+
+$$x_{t-1} = \sqrt{\bar{\alpha}_{t-1}} \underbrace{\left( \frac{x_t - \sqrt{1 - \bar{\alpha}_t} \epsilon_\theta(x_t, t)}{\sqrt{\bar{\alpha}_t}} \right)}_{\text{预测的 } x_0} + \sqrt{1 - \bar{\alpha}_{t-1} - \sigma_t^2} \cdot \epsilon_\theta(x_t, t) + \sigma_t \epsilon_t$$
+
+* 其中方差参数定义为：$\sigma_t^2 = \eta \cdot \sqrt{\frac{1-\bar{\alpha}_{t-1}}{1-\bar{\alpha}_t}} \sqrt{1 - \frac{\bar{\alpha}_t}{\bar{\alpha}_{t-1}}}$
+
+---
+
+**最终结果与退化机制**
+
+* **$\eta = 1$（退化为 DDPM）**：采样过程具有随机性，完全等价于 DDPM 的去噪公式。
+* **$\eta = 0$（DDIM 确定性采样）**：随机噪声项的系数变为 0，去噪过程变为完全确定性的常微分方程（ODE）求解：
+  $$x_{t-1} = \sqrt{\bar{\alpha}_{t-1}} \left( \frac{x_t - \sqrt{1 - \bar{\alpha}_t} \epsilon_\theta(x_t, t)}{\sqrt{\bar{\alpha}_t}} \right) + \sqrt{1 - \bar{\alpha}_{t-1}} \cdot \epsilon_\theta(x_t, t)$$
+* **加速效果**：由于去噪过程不再依赖紧密相邻的 Step-by-Step 采样，可以在时间序列上进行子序列抽样（如从 1000 步中仅抽取 20~50 步），实现 10~50 倍的采样加速，且支持图像的高效逆向编码（Inversion）。
+
+【DDIM的重大创新】
+令$\sigma_t^2 = \eta ^2 \cdot \hat{\beta}_t^2$，且$\eta$可调
+- $\eta=1$时退化为DDPM
+- $\eta=0$是DDIM
+
+DDIM没有了扰动项，去噪路径完全确定，可以直接顺着一直去噪。
+
   
 # 4 新话题+回顾
 
