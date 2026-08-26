@@ -256,13 +256,54 @@ $$x_{t-1} = \sqrt{\bar{\alpha}_{t-1}} \underbrace{\left( \frac{x_t - \sqrt{1 - \
 - $\eta=1$时退化为DDPM
 - $\eta=0$是DDIM
 
-DDIM没有了扰动项，去噪路径完全确定，可以直接顺着一直去噪。
+DDIM没有了扰动项，去噪路径完全确定，可以直接顺着一直去噪——跳步也成了可能。
 
-  
+![](attachments/Pasted%20image%2020260826143231.png)
+
+DDIM是**非马尔科夫**
+
+【DDIM生成】—— 采样
+希望根据刚才的公式$x_{t-1}=\sqrt{\bar{\alpha}_{t-1}}x_0 + \sqrt{1-\bar{\alpha}_{t-1}-\sigma_t^2}\epsilon_t +\sigma_t z_t$能预测$x_{t-1}$。但是生成过程中，模型不知道$x_0$，只能根据$x_t$和t来预测$\epsilon_\theta(x_t,t)$从而用$\hat{x_0}$近似$x_0$.
+
+$$x_{t-1} = \sqrt{\bar{\alpha}_{t-1}} \underbrace{\left( \frac{x_t - \sqrt{1 - \bar{\alpha}_t} \epsilon_\theta(x_t, t)}{\sqrt{\bar{\alpha}_t}} \right)}_{\text{预测的 } x_0} + \sqrt{1 - \bar{\alpha}_{t-1} - \sigma_t^2} \cdot \epsilon_\theta(x_t, t) + \sigma_t \epsilon_t$$
+
+
 # 4 新话题+回顾
 
+## 学noise？score？velocity？
+
+score：指出从当前位置出发，往哪个方向稍微走一点，可以让概率密度上升得最快。
+$$
+s(x)=\bigtriangledown_x \log p(x)$$
+- **对数变换 ($\log$)：单调**递增函数，不会改变函数的极值点和变化趋势，但能将相乘的关系转化为相加，极大地简化计算与导数推导。
+- 梯度 ($\nabla_x$)：在多元微积分中，标量场（这里是 $\log p(x)$）的梯度是一个向量，其方向指向函数值增长最快的方向，其模长代表增长的速率
+在生成模型中，如果从无序的噪声点出发，不断沿着 Score 的方向推进一步，最终就会“爬山”到高概率密度区域，生成真实的数据。
+
+DDPM的noise predictor只要乘上一个已知系数和负号，就是score network，在DDPM中，学噪声和学score只是同一事的两种描述。
+
+>[!question] 看不懂这个部分
+
+怎么理解Diffusion？
+- 是噪声学习器
+- score学习器与梯度上升器
+- 求解一个ODE/SDE 
+- 分布的搬运
+- 布朗运动的逆过程
+- 信息恢复的过程
+
+## 条件生成
+
+按照指定的标签生成。
+
+**【方法一：Classifier Guidance】**
+
+【方法二：Classifier Free Guidance】
+让模型学校习带条件的造成和不带条件的噪声
+
+## 蒸馏与加速
 
 # 5 Diffusion架构：U-Net到DiT
+
 
 
 # 6 Video Diffusion
