@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "拓展学习/08-AI技术杂记/19-DDPM速通.md",
+                "file": "拓展学习/08-AI技术杂记/VLM学习路径.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "19-DDPM速通"
+              "title": "VLM学习路径"
             }
           }
         ],
@@ -91,8 +91,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 290.5024719238281,
-    "collapsed": true
+    "width": 290.5024719238281
   },
   "right": {
     "id": "42c22cc28f006f8e",
@@ -155,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "拓展学习/08-AI技术杂记/19-DDPM速通.md",
+                "file": "拓展学习/08-AI技术杂记/VLM学习路径.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -199,8 +198,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -223,9 +221,12 @@
   },
   "active": "2e6b2e115f5dff83",
   "lastOpenFiles": [
+    "拓展学习/08-AI技术杂记/Harness Engineering.md",
+    "拓展学习/08-AI技术杂记/VLM学习路径.md",
+    "拓展学习/08-AI技术杂记/08-笔记：近年AI应用技术串讲与优质文档分享.md",
+    "拓展学习/08-AI技术杂记/19-DDPM速通.md",
     "拓展学习/08-AI技术杂记/attachments/Pasted image 20260826143231.png",
     "拓展学习/08-AI技术杂记/14-AI 生图原理与里程碑论文解读｜从 VAE、GAN 到 Diffusion、自回归.md",
-    "拓展学习/08-AI技术杂记/19-DDPM速通.md",
     "Clippings/A hierarchical teacher-student learning framework with adaptive cross-modal fusion for brain tumor segmentation.md",
     "Clippings/ASMFNet Anatomical symmetry-guided multi-modal fusion network for glioma segmentation in MRI.md",
     "Clippings/工程技术：在智能体优先的世界中利用 Codex.md",
@@ -247,8 +248,6 @@
     "拓展学习/01-深入理解计算机系统CSAP/11-计算机系统的漫游.md",
     "拓展学习/01-深入理解计算机系统CSAP/00-CSAP学习目录.md",
     "知识学习/02-语言学/认知语言学vs生成语言学.md",
-    "拓展学习/08-AI技术杂记/NLP任务.md",
-    "拓展学习/08-AI技术杂记/Harness Engineering.md",
     "Clippings",
     "知识学习/01-信息论/信息论笔记目录.base",
     "拓展学习/01-深入理解计算机系统CSAP/attachments/Caches matter.png",
@@ -260,7 +259,6 @@
     "拓展学习/08-AI技术杂记/attachments/Pasted image 20260127111607.png",
     "拓展学习/08-AI技术杂记/attachments/Pasted image 20260127111617.png",
     "拓展学习/08-AI技术杂记/attachments/Pasted image 20260127111650.png",
-    "拓展学习/08-AI技术杂记/attachments/Information-visual-2.png",
     "attachements",
     "拓展学习/08-AI技术杂记/未命名.base",
     "拓展学习/08-AI技术杂记/未命名 1.base",
