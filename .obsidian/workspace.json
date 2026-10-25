@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "拓展学习/08-AI技术杂记/20-【博客笔记】Linkpost Neural Networks Are Already Clean.md",
+                "file": "拓展学习/08-AI技术杂记/17-压缩即智能.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "20-【博客笔记】Linkpost Neural Networks Are Already Clean"
+              "title": "17-压缩即智能"
             }
           }
         ],
@@ -87,8 +87,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -223,6 +222,8 @@
   },
   "active": "1a34b7301af1ac1e",
   "lastOpenFiles": [
+    "拓展学习/08-AI技术杂记/未命名 1.base",
+    "拓展学习/08-AI技术杂记/未命名.base",
     "拓展学习/08-AI技术杂记/20-【博客笔记】Linkpost Neural Networks Are Already Clean.md",
     "拓展学习/08-AI技术杂记/17-压缩即智能.md",
     "拓展学习/08-AI技术杂记/16-Verbalizable Representations Form a Global Workspace in Language Models.md",
@@ -249,7 +250,6 @@
     "拓展学习/08-AI技术杂记/10-贝叶斯公式、贝叶斯估计、最大后验估计、最大似然估计.md",
     "拓展学习/06-项目管理/00-信息收集.md",
     "拓展学习/05-机器学习理论基础/00-资料与目录.md",
-    "拓展学习/01-深入理解计算机系统CSAP/11-计算机系统的漫游.md",
     "Clippings",
     "知识学习/01-信息论/信息论笔记目录.base",
     "拓展学习/01-深入理解计算机系统CSAP/attachments/Caches matter.png",
@@ -262,8 +262,6 @@
     "拓展学习/08-AI技术杂记/attachments/Pasted image 20260127111617.png",
     "拓展学习/08-AI技术杂记/attachments/Pasted image 20260127111650.png",
     "attachements",
-    "拓展学习/08-AI技术杂记/未命名.base",
-    "拓展学习/08-AI技术杂记/未命名 1.base",
     "知识学习/02-语言学/未命名",
     "技术学习/15-从零构建",
     "个人研究",
