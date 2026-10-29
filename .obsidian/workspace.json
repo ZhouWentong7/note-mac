@@ -30,8 +30,35 @@
               "icon": "lucide-file",
               "title": "17-压缩即智能"
             }
+          },
+          {
+            "id": "eb54e7ae5b266c84",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://www.bilibili.com/video/BV1u7hQ6rEQB/?share_source=copy_web&vd_source=fe1e50f3e19ee2c5f4cd32de1f11a963",
+                "title": "【官方双语】压缩即智能：Part 2，究竟什么是交叉熵？_哔哩哔哩_bilibili",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "【官方双语】压缩即智能：Part 2，究竟什么是交叉熵？_哔哩哔哩_bilibili"
+            }
+          },
+          {
+            "id": "f3ab750a1de1f353",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.14.5"
+              },
+              "icon": "lucide-book-up",
+              "title": "版本说明 1.14.5"
+            }
           }
         ],
+        "currentTab": 2,
         "stacked": true
       }
     ],
@@ -220,12 +247,12 @@
       "callout-manager:Insert Callout": false
     }
   },
-  "active": "1a34b7301af1ac1e",
+  "active": "f3ab750a1de1f353",
   "lastOpenFiles": [
+    "拓展学习/08-AI技术杂记/17-压缩即智能.md",
     "拓展学习/08-AI技术杂记/未命名 1.base",
     "拓展学习/08-AI技术杂记/未命名.base",
     "拓展学习/08-AI技术杂记/20-【博客笔记】Linkpost Neural Networks Are Already Clean.md",
-    "拓展学习/08-AI技术杂记/17-压缩即智能.md",
     "拓展学习/08-AI技术杂记/16-Verbalizable Representations Form a Global Workspace in Language Models.md",
     "拓展学习/08-AI技术杂记/VLM学习路径.md",
     "拓展学习/08-AI技术杂记/Harness Engineering.md",
